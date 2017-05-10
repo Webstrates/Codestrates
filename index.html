@@ -1,6 +1,6 @@
 <!doctype html>
 <html __wid="8iiFCgMH" data-auth="[{&quot;username&quot;:&quot;raedle&quot;,&quot;provider&quot;:&quot;github&quot;,&quot;permissions&quot;:&quot;rw&quot;},{&quot;username&quot;:&quot;cklokmose&quot;,&quot;provider&quot;:&quot;github&quot;,&quot;permissions&quot;:&quot;rw&quot;},{&quot;username&quot;:&quot;kbadk&quot;,&quot;provider&quot;:&quot;github&quot;,&quot;permissions&quot;:&quot;rw&quot;},{&quot;username&quot;:&quot;MidasN&quot;,&quot;provider&quot;:&quot;github&quot;,&quot;permissions&quot;:&quot;rw&quot;},{&quot;username&quot;:&quot;anonymous&quot;,&quot;provider&quot;:&quot;&quot;,&quot;permissions&quot;:&quot;r&quot;}]" class="gr__webstrates_cs_au_dk"><HEAD __wid="nyQjClRO"><META name="mobile-web-app-capable" content="yes" __wid="VC-iR3Y0"/><META name="apple-mobile-web-app-capable" content="yes" __wid="h-Ul6mwY"/><META name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" __wid="iiS6bfZA"/><SCRIPT id="script-main" __wid="dOK1EoH0">webstrate.on("loaded", function () { new Function(document.querySelector("#bootstrap").textContent)(); });</SCRIPT></HEAD><BODY __wid="KajDX5Up">
-<DIV name="Bootstrapping" class="section section-hidden" data-type="system" __wid="CZLmGLin"><DIV class="paragraph body-paragraph locked collapsed" name="Codestrate Bootstrapping" draggable="false" __wid="vjfBrvKS"><DIV data-type="content" contenteditable="false" __wid="iRvsqhTy"><H1 __wid="FpgLLgyk">Documentation</H1>Now one line left in the script tag. The #bootstrap code is executed on webstrate "loaded" event, which is defined in the script in the head of this document. The #bootstrap code then executes all code that has a class .pre-bootstrap before any of the Codestrate code is executed.<H2 __wid="UWAPfpGr">Attention</H2><DIV __wid="DXa21q-f"><UL __wid="VukgrUCy"><LI __wid="46gAQAPS">Do not change the id of the bootstrap code. It needs to be #bootstrap, otherwise the Codestrate will not load properly.<BR __wid="a_DJYLUg"/></LI></UL></DIV></DIV></DIV><DIV class="paragraph code-paragraph collapsed" name="Bootstrap Code" draggable="false" last-execution-state="success" __wid="z4skJ9Xv"><PRE data-type="content" type="text/javascript" id="bootstrap" __wid="DsUYnk0p">window.getParameterByName = function(name, url) {
+<DIV name="Bootstrapping" class="section section-hidden" data-type="system" __wid="uWU3qI-P"><DIV class="paragraph body-paragraph locked collapsed" name="Codestrate Bootstrapping" draggable="false" __wid="ea3S530f"><DIV data-type="content" contenteditable="false" __wid="kou2NaB9"><H1 __wid="ytVjddnZ">Documentation</H1>Now one line left in the script tag. The #bootstrap code is executed on webstrate "loaded" event, which is defined in the script in the head of this document. The #bootstrap code then executes all code that has a class .pre-bootstrap before any of the Codestrate code is executed.<H2 __wid="0BijmegU">Attention</H2><DIV __wid="oK-_w_VV"><UL __wid="NbAvMkfo"><LI __wid="h-ZU1cPN">Do not change the id of the bootstrap code. It needs to be #bootstrap, otherwise the Codestrate will not load properly.<BR __wid="0y8hZPKE"/></LI></UL></DIV></DIV></DIV><DIV class="paragraph code-paragraph collapsed" name="Bootstrap Code" draggable="false" last-execution-state="success" __wid="1yxNxzPp"><PRE data-type="content" type="text/javascript" id="bootstrap" __wid="oge-KtDX">window.getParameterByName = function(name, url) {
 	if (!url) {
 		url = window.location.href;
 	}
@@ -35,7 +35,7 @@ if (!modules) return;
 var len = modules.length;
 for (var i = 0; i &lt; len; i++) {
 	new Function(modules[i].textContent)();
-}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Get Parameter By Name Function" __wid="syAOHx5c"><PRE data-type="content" type="text/javascript" __wid="4iHXU4CJ">window.getParameterByName = function(name, url) {
+}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Get Parameter By Name Function" __wid="XE3VRW_f"><PRE data-type="content" type="text/javascript" __wid="Ys_1SfiA">window.getParameterByName = function(name, url) {
 	if (!url) {
 		url = window.location.href;
 	}
@@ -45,7 +45,7 @@ for (var i = 0; i &lt; len; i++) {
 	if (!results) return null;
 	if (!results[2]) return '';
 	return decodeURIComponent(results[2].replace(/\+/g, " "));
-}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Polyfills" __wid="TkcIULew"><PRE data-type="content" type="text/javascript" class="bootstrap-module" __wid="FEEPDd_-">console.log('Polyfills');
+}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Polyfills" __wid="qBgOkNWA"><PRE data-type="content" type="text/javascript" class="bootstrap-module" __wid="Nt1_5WRY">console.log('Polyfills');
 
 if (window.Element && !Element.prototype.closest) {
 
@@ -146,7 +146,7 @@ if (!Array.prototype.forEach) {
 		}
 		// 8. return undefined
 	};
-}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Loading Indicator" __wid="eDKvx8lE"><PRE data-type="content" type="text/javascript" class="bootstrap-module" __wid="GXB18anc">// Hide document while loading all external webstrates.
+}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Loading Indicator" __wid="Ez3S91KW"><PRE data-type="content" type="text/javascript" class="bootstrap-module" __wid="sg6hIbdx">// Hide document while loading all external webstrates.
 const loadingContainer = document.createElement("transient");
 loadingContainer.setAttribute("id", "active-essay-loading");
 
@@ -179,7 +179,7 @@ if (typeof Transclusion !== 'undefined') {
 			loadingContainer.remove();
 		}
 	});
-}</PRE></DIV><DIV class="paragraph style-paragraph collapsed" draggable="false" name="Loading Style" __wid="GQvkhD2M"><STYLE data-type="content" type="text/css" codemirror="true" __wid="uGzAF-NV">@-webkit-keyframes rotateplane {
+}</PRE></DIV><DIV class="paragraph style-paragraph collapsed" draggable="false" name="Loading Style" __wid="x_Nh_5fv"><STYLE data-type="content" type="text/css" codemirror="true" __wid="CkjDjsbp">@-webkit-keyframes rotateplane {
   0% {
     -webkit-transform: perspective(120px);
   }
@@ -283,7 +283,7 @@ if (typeof Transclusion !== 'undefined') {
   -moz-animation: rotateplane 1.2s infinite ease-in-out;
   -o-animation: rotateplane 1.2s infinite ease-in-out;
   animation: rotateplane 1.2s infinite ease-in-out;
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Disconnect / Reconnect Code" draggable="false" __wid="icMWzmnq"><PRE data-type="content" type="text/javascript" class="bootstrap-module" __wid="pasQqsMS">var loadingContainer;
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Disconnect / Reconnect Code" draggable="false" __wid="4IOgqtpQ"><PRE data-type="content" type="text/javascript" class="bootstrap-module" __wid="vWAuZPJE">var loadingContainer;
 
 function showOffline() {
   // Hide document while loading all external webstrates.
@@ -309,7 +309,7 @@ webstrate.on("reconnect", function() {
 
 webstrate.on("disconnect", function() {
   showOffline();
-});</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="true" name="JavaScript VM" last-execution-state="success" __wid="JJtHOjJh"><PRE data-type="content" type="text/javascript" class="bootstrap-module" __wid="ySGn5zU5">let globalContext = {};
+});</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="true" name="JavaScript VM" last-execution-state="success" __wid="y-qxB3RG"><PRE data-type="content" type="text/javascript" class="bootstrap-module" __wid="ah7gJIxb">let globalContext = {};
 
 const mergeContexts = (...contexts) => {
 	const context = {};
@@ -344,7 +344,7 @@ Codestrate.JavaScriptVM = {
 			}
 		};
 	}
-}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Event Handling" __wid="UCGumr1G"><PRE data-type="content" type="text/javascript" class="bootstrap-module" __wid="hqlwWpzv">Codestrate._listeners = [];
+}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Event Handling" __wid="_0ksa5j1"><PRE data-type="content" type="text/javascript" class="bootstrap-module" __wid="-ElG2p2W">Codestrate._listeners = [];
 
 Codestrate.addEventListener = function(name, handler) {
 	Codestrate._listeners.push({
@@ -363,7 +363,7 @@ Codestrate.dispatchEvent = function(name, event) {
 			listener.handler.call(Codestrate, event);
 		}
 	});
-}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Execute Code Paragraphs" __wid="ZBFG32U3"><PRE data-type="content" type="text/javascript" class="bootstrap-module" __wid="ZOS98Z_A">const vm = Codestrate.JavaScriptVM;
+}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Execute Code Paragraphs" __wid="uzhb6M8i"><PRE data-type="content" type="text/javascript" class="bootstrap-module" __wid="voZ_GJ8Y">const vm = Codestrate.JavaScriptVM;
 
 Codestrate.runCode = (paragraph) => {
 
@@ -491,7 +491,7 @@ Codestrate.blockExecution = (src) => {
 // Execute first paragraph if one exists.
 if (len) {
 	execute(currentIndex);
-}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Query Extensions" run-on-load="true" __wid="RljEHQqt"><PRE data-type="content" type="text/javascript" __wid="ORi8y28y">/**
+}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Query Extensions" run-on-load="true" __wid="izjkwO8J"><PRE data-type="content" type="text/javascript" __wid="HrblNDEg">/**
  * The live query selector
  */
 const liveQuerySelectorAll = function (selector, observerOptions = { subtree: true, childList: true }) {
@@ -608,7 +608,7 @@ const liveAttribute = function(attributeName) {
 	}
 };
 
-Element.prototype.liveAttribute = liveAttribute;</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Template Code" draggable="false" run-on-load="true" __wid="7IUb0B6W"><PRE data-type="content" type="text/javascript" __wid="wLqeNLDJ">window.template = function(str, data) {
+Element.prototype.liveAttribute = liveAttribute;</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Template Code" draggable="false" run-on-load="true" __wid="U5ckLHGM"><PRE data-type="content" type="text/javascript" __wid="cJyb1gWz">window.template = function(str, data) {
   return str
     .replace(
     /\${(\w*)}/g, // for "{this} instead of %this%"
@@ -616,7 +616,7 @@ Element.prototype.liveAttribute = liveAttribute;</PRE></DIV><DIV class="paragrap
       return data.hasOwnProperty( key ) ? data[ key ] : "";
     }
   );
-}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Import Function" run-on-load="true" __wid="JZ4xREH_"><PRE data-type="content" type="text/javascript" __wid="dt7-FZbf">const relativeUrlRegex = new RegExp('^\\s*(?:[a-z0-9]+:)?//', 'i');
+}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Import Function" run-on-load="true" __wid="ebbLjdKP"><PRE data-type="content" type="text/javascript" __wid="rmLHvxNZ">const relativeUrlRegex = new RegExp('^\\s*(?:[a-z0-9]+:)?//', 'i');
 const isCacheEnabled = getParameterByName("cache") !== null;
 const cacheKeyPrefix = "notestrate-import:";
 
@@ -918,7 +918,7 @@ window.importStyle = function (src) {
 	else {
 		throw new Error(`The 1 parameter must be a string or an array of strings instead of ${src}`);
 	}
-}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Require Function" run-on-load="true" last-execution-state="success" __wid="-vLEqBKc"><PRE data-type="content" type="text/javascript" __wid="LEZroZ6O">const vm = Codestrate.JavaScriptVM;
+}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Require Function" run-on-load="true" last-execution-state="success" __wid="RlweYFFY"><PRE data-type="content" type="text/javascript" __wid="wargAUH2">const vm = Codestrate.JavaScriptVM;
 
 window.require = function (selector, data) {
 	const codeElements = Array.from(document.querySelectorAll(selector));
@@ -972,13 +972,13 @@ window.require = function (selector, data) {
 	}
 
 	return undefined;
-};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" run-on-load="true" last-execution-state="success" draggable="false" name="Dialog VM Overwrite" __wid="-mkah40S"><PRE data-type="content" type="text/javascript" __wid="xfpaRfQM">const Dialogs = require('#dialogs');
+};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" run-on-load="true" last-execution-state="success" draggable="false" name="Dialog VM Overwrite" __wid="BGGgazVI"><PRE data-type="content" type="text/javascript" __wid="bwQFuuDg">const Dialogs = require('#dialogs');
 
 Codestrate.JavaScriptVM.addToGlobalContext({
 	alert: Dialogs.alert,
 	confirm: Dialogs.confirm,
 	prompt: Dialogs.prompt
-});</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Console" run-on-load="true" last-execution-state="success" __wid="hBTfe2b8"><PRE data-type="content" type="text/javascript" __wid="822kegCO">importLib("moment.min.js").then(() => {
+});</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Console" run-on-load="true" last-execution-state="success" __wid="ylXHPM6h"><PRE data-type="content" type="text/javascript" __wid="2Q1UW0Xt">importLib("moment.min.js").then(() => {
 
   class Console {
 
@@ -1288,7 +1288,7 @@ Codestrate.JavaScriptVM.addToGlobalContext({
   };
 
   document.liveQuerySelectorAll('.paragraph.code-paragraph').added(addConsole);
-});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Console Style" draggable="false" __wid="zxvfziJ1"><STYLE data-type="content" type="text/css" codemirror="true" __wid="aLPQSrXF">.console {
+});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Console Style" draggable="false" __wid="v3zZ3itC"><STYLE data-type="content" type="text/css" codemirror="true" __wid="UD_CFtLn">.console {
 /*   position: relative; */
   background: rgb(48, 48, 48);
   margin-top: 5px;
@@ -1453,7 +1453,7 @@ Codestrate.JavaScriptVM.addToGlobalContext({
   color: white;
   width: calc(100% - 15px);
   background-color: transparent;
-}</STYLE></DIV></DIV><DIV name="User Manager" class="section section-hidden" data-type="system" __wid="7izzNW27"><DIV class="paragraph body-paragraph collapsed" draggable="false" name="Documentation" __wid="ak9OnFsN"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="true" __wid="AybAxisS"><H1 __wid="VbA71eQB">User Manager</H1>The user manager adds a users array to the Codestrate global window object. Each object in the users array will have the user id and a generated user color. For example, the color can be used in the in the Codestrate to have a consistent user color for remote pointers and remote cursors.<DIV __wid="gEEdnm5G"><BR __wid="dPOHEwoW"/></DIV><H2 __wid="_xjCv1mU">Usage</H2><DIV __wid="luvxb7V-">tbd.</DIV></DIV></DIV><DIV class="paragraph code-paragraph collapsed" run-on-load="true" name="User Manager Global" __wid="LRiYKJRs"><PRE data-type="content" type="text/javascript" __wid="-txvZaWE">// Add a users array to the global Codestrate object
+}</STYLE></DIV></DIV><DIV name="User Manager" class="section section-hidden" data-type="system" __wid="Aoxg-xn-"><DIV class="paragraph body-paragraph collapsed" draggable="false" name="Documentation" __wid="XYRELpU1"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="true" __wid="FklE79Xj"><H1 __wid="3HyJ6mlA">User Manager</H1>The user manager adds a users array to the Codestrate global window object. Each object in the users array will have the user id and a generated user color. For example, the color can be used in the in the Codestrate to have a consistent user color for remote pointers and remote cursors.<DIV __wid="vzGcyMq7"><BR __wid="UXI8B1Eb"/></DIV><H2 __wid="vxzx5e62">Usage</H2><DIV __wid="6AAGoT0c">tbd.</DIV></DIV></DIV><DIV class="paragraph code-paragraph collapsed" run-on-load="true" name="User Manager Global" __wid="Yud8A9rY"><PRE data-type="content" type="text/javascript" __wid="V4XVl3n-">// Add a users array to the global Codestrate object
 if (Codestrate && !Codestrate.users) {
 	Codestrate.users = [];
 }
@@ -1499,7 +1499,7 @@ webstrate.on("clientJoin", (clientId) => {
 // Remove a client from the list of users when it leaves
 webstrate.on("clientPart", (clientId) => {	
 	removeUser(clientId);
-});</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="User Manager Utils" __wid="Co-f_fgE"><PRE data-type="content" type="text/javascript" id="user-manager" __wid="K2Q4bAyF">/**
+});</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="User Manager Utils" __wid="5e3Oegvt"><PRE data-type="content" type="text/javascript" id="user-manager" __wid="GpIqK7CM">/**
 	 * Convert a hex colour to a rgb/rgba value
 	 * @param {string} hex
 	 * @param {?number} opacity
@@ -1527,7 +1527,7 @@ const getUserColor = exports.getUserColor = (clientId = webstrate.clientId) => {
 
 exports.getUserColorInRGBA = (clientId = webstrate.clientId, opacity = 1.0) => {
 	return convertHexToRGBA(getUserColor(clientId), opacity);
-};</PRE></DIV></DIV><DIV name="Idle Timer" class="section section-hidden" data-type="system" __wid="18EM81aE"><DIV class="paragraph body-paragraph" name="Documentation" __wid="wuktxiPk"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="true" __wid="bmafF71d">Idle Timer Documentation tbd.</DIV></DIV><DIV class="paragraph code-paragraph collapsed" name="Idle Timer Code" run-on-load="true" last-execution-state="success" draggable="false" __wid="MNRqBZgY"><PRE data-type="content" type="text/javascript" __wid="dWdCZCOO">// Time until client becomes idle/inactive (in milliseconds)
+};</PRE></DIV></DIV><DIV name="Idle Timer" class="section section-hidden" data-type="system" __wid="J9jdTZPE"><DIV class="paragraph body-paragraph" name="Documentation" __wid="r-ATAwdB"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="true" __wid="LyAPao6Y">Idle Timer Documentation tbd.</DIV></DIV><DIV class="paragraph code-paragraph collapsed" name="Idle Timer Code" run-on-load="true" last-execution-state="success" draggable="false" __wid="wfCNISdd"><PRE data-type="content" type="text/javascript" __wid="0QNkupjv">// Time until client becomes idle/inactive (in milliseconds)
 const IDLE_TIMEOUT = 300 * 1000;
 
 let isIdle = false;
@@ -1595,14 +1595,14 @@ document.addEventListener("keydown", actionHappend);
 document.addEventListener("touchstart", actionHappend);
 document.addEventListener("touchmove", actionHappend);
 document.addEventListener("touchend", actionHappend);
-actionHappend();</PRE></DIV></DIV><DIV class="section section-hidden" name="Dialogs (experimental)" data-type="system" __wid="sVeg3KSr"><DIV class="paragraph body-paragraph collapsed" name="Dialog Template" draggable="false" __wid="1Zbw9wFZ"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="true" id="dialog-template" __wid="NIhmnKvL"><DIV class="modal" __wid="hRFgJFtt"></DIV>
-<DIV class="dialog" style="min-width: 300px;" __wid="qT8CJvJi">
-	<DIV class="title" __wid="AttWA_T-">${title}</DIV>
-	<DIV class="body" __wid="HE93N_zA">${message}</DIV>
-	<DIV class="actions" __wid="ZKea-MUa">
+actionHappend();</PRE></DIV></DIV><DIV class="section section-hidden" name="Dialogs (experimental)" data-type="system" __wid="C6LMgVa6"><DIV class="paragraph body-paragraph collapsed" name="Dialog Template" draggable="false" __wid="1oEcRTBn"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="true" id="dialog-template" __wid="RY6XgxtU"><DIV class="modal" __wid="_D0aGjBT"></DIV>
+<DIV class="dialog" style="min-width: 300px;" __wid="vghdaskp">
+	<DIV class="title" __wid="r4RvLVId">${title}</DIV>
+	<DIV class="body" __wid="KglnCUjt">${message}</DIV>
+	<DIV class="actions" __wid="OKWbgzjS">
 		${actions}
 	</DIV>
-</DIV></DIV></DIV><DIV class="paragraph style-paragraph collapsed" name="Dialog Style" draggable="false" __wid="6rs8CiTi"><STYLE data-type="content" type="text/css" codemirror="true" __wid="GRw1I2_D">/* .modal {
+</DIV></DIV></DIV><DIV class="paragraph style-paragraph collapsed" name="Dialog Style" draggable="false" __wid="3CDdkjMz"><STYLE data-type="content" type="text/css" codemirror="true" __wid="fopI7f_H">/* .modal {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -1670,7 +1670,7 @@ actionHappend();</PRE></DIV></DIV><DIV class="section section-hidden" name="Dial
 .dialog .actions {
 	text-align: right;
 	background-color: rgba(0, 0, 0, .8);
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" last-execution-state="success" name="Dialog Exports" __wid="mc1Xp1jC"><PRE data-type="content" type="text/javascript" id="dialogs" __wid="nnXQCQpB">exports.prompt = (message, defaultValue = "", title = "") => {
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" last-execution-state="success" name="Dialog Exports" __wid="O9BrCRjx"><PRE data-type="content" type="text/javascript" id="dialogs" __wid="E7Os0q77">exports.prompt = (message, defaultValue = "", title = "") => {
 
 	return new Promise((resolve, reject) => {
 
@@ -1782,7 +1782,7 @@ exports.confirm = (message, title = "") => {
 
 		document.body.appendChild(transient);
 	});
-};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" last-execution-state="success" run-on-load="true" name="Show Tags Dialog" __wid="d7r2CMJ1"><PRE data-type="content" type="text/javascript" __wid="FjVpeV81">Codestrate.showTags = () => {
+};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" last-execution-state="success" run-on-load="true" name="Show Tags Dialog" __wid="8Pd-6SQn"><PRE data-type="content" type="text/javascript" __wid="caXWx5eI">Codestrate.showTags = () => {
 	
 	const transient = document.createElement("transient");
 	
@@ -1825,7 +1825,7 @@ exports.confirm = (message, title = "") => {
 	});
 
 	document.body.appendChild(transient);
-};</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Show Tags Dialog Style" __wid="ubgQxR9r"><STYLE data-type="content" type="text/css" codemirror="true" __wid="0qIL-poW">.dialog ul {
+};</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Show Tags Dialog Style" __wid="Q5hkqqgF"><STYLE data-type="content" type="text/css" codemirror="true" __wid="FG9oUzpL">.dialog ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -1838,13 +1838,13 @@ exports.confirm = (message, title = "") => {
 
 .dialog ul li.tag:hover {
 	background-color: rgba(255, 255, 255, .1);
-}</STYLE></DIV></DIV><DIV class="section section-hidden" name="The Codestrate Code" data-type="system" __wid="vUwrR-bp">
+}</STYLE></DIV></DIV><DIV class="section section-hidden" name="The Codestrate Code" data-type="system" __wid="gkRlHaTg">
         
-    <DIV class="paragraph style-paragraph collapsed" draggable="false" name="Animations (@keyframes)" __wid="pZO3Fld1"><STYLE data-type="content" type="text/css" codemirror="true" __wid="g1tygxTT">/* The animation code */
+    <DIV class="paragraph style-paragraph collapsed" draggable="false" name="Animations (@keyframes)" __wid="V6f0Gj3i"><STYLE data-type="content" type="text/css" codemirror="true" __wid="8oGIJXCV">/* The animation code */
 @keyframes blink-cursor {
     from { opacity: 1.0; }
     to { opacity: 0.0; }
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="DOM Utils" run-on-load="true" __wid="29zm_K51"><PRE data-type="content" type="text/javascript" id="dom-utils" __wid="h17jXQAY">const HTMLUtils = window.HTMLUtils = (function () {
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="DOM Utils" run-on-load="true" __wid="GGKJMMEa"><PRE data-type="content" type="text/javascript" id="dom-utils" __wid="IoCkwy29">const HTMLUtils = window.HTMLUtils = (function () {
 
 	this.getCaretPosition = function (editableDiv) {
 		var caretPos = 0,
@@ -2026,7 +2026,7 @@ Element.prototype.appendChildAtCaret = function(child) {
 	}
 
 	return false;
-};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Destroy Event Listeners On Rerun" style="will-change: transform;" __wid="dXs0Kxm3"><PRE data-type="content" type="text/javascript" __wid="ASf93dQC">let beforeRunCodeRan = false;
+};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Destroy Event Listeners On Rerun" style="will-change: transform;" __wid="Y2CGDKL3"><PRE data-type="content" type="text/javascript" __wid="NMXLZO8t">let beforeRunCodeRan = false;
 let _addEventListener;
 
 Codestrate.addEventListener("beforeruncode", event => {
@@ -2069,7 +2069,7 @@ Codestrate.addEventListener("afterruncode", event => {
   if (beforeRunCodeRan) {
   	Node.prototype.addEventListener = _addEventListener;
   }
-});</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Destroy DOM Elements On Rerun" __wid="yDlzLKJR"><PRE data-type="content" type="text/javascript" __wid="W4ZAP6yF">let beforeRunCodeRan = false;
+});</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Destroy DOM Elements On Rerun" __wid="VQceycnw"><PRE data-type="content" type="text/javascript" __wid="CrD23_8y">let beforeRunCodeRan = false;
 let _appendChild;
 
 Codestrate.addEventListener("beforeruncode", event => {
@@ -2100,7 +2100,7 @@ Codestrate.addEventListener("afterruncode", event => {
   if (beforeRunCodeRan) {
   	Node.prototype.appendChild = _appendChild;
   }
-});</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Action Utils" draggable="false" __wid="wSWogw85"><PRE data-type="content" type="text/javascript" id="action-utils" __wid="NSjcO09u">exports.create = (action, options = {}) => {
+});</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Action Utils" draggable="false" __wid="WVpOYaKn"><PRE data-type="content" type="text/javascript" id="action-utils" __wid="1XAMBwn7">exports.create = (action, options = {}) => {
   
   options = Object.assign({
     classNames: null,
@@ -2127,7 +2127,7 @@ Codestrate.addEventListener("afterruncode", event => {
   button.appendChild(icon);
   
   return button;
-}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Global Menu Code" draggable="false" run-on-load="true" __wid="kv7HU4xO"><PRE data-type="content" type="text/javascript" __wid="PmbC-OXo">// The global menu.
+}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Global Menu Code" draggable="false" run-on-load="true" __wid="kleXTgYw"><PRE data-type="content" type="text/javascript" __wid="xt0avRrd">// The global menu.
 const globalMenu = document.createElement("transient");
 globalMenu.setAttribute("id", "global-menu");
 globalMenu.setAttribute("class", "closed");
@@ -2283,7 +2283,7 @@ globalMenu.appendChild(sectionTree);
 
 /*document.liveQuerySelectorAll('.section')
   .added(addSectionMeta)
-  .removed(removeArticleMeta);*/</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Global Menu Style" draggable="false" __wid="yj-eOpl0"><STYLE data-type="content" type="text/css" codemirror="true" __wid="5VbVtwFX">#global-menu {
+  .removed(removeArticleMeta);*/</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Global Menu Style" draggable="false" __wid="AQRgOtEZ"><STYLE data-type="content" type="text/css" codemirror="true" __wid="1IesOTPM">#global-menu {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -2359,7 +2359,7 @@ globalMenu.appendChild(sectionTree);
 
 #global-menu button:focus {
 	outline: none;  
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Section Code" draggable="false" run-on-load="true" __wid="CBmatqVT"><PRE data-type="content" type="text/javascript" __wid="xUZmrbjp">const ActionUtils = require('#action-utils');
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Section Code" draggable="false" run-on-load="true" __wid="RWd1_4zO"><PRE data-type="content" type="text/javascript" __wid="K_kyxOoE">const ActionUtils = require('#action-utils');
 
 /**
  * Add a transient header to the section. This transient element will
@@ -2577,7 +2577,7 @@ const addToggleSystemSectionAction = (section, header) => {
 // Live query the body for existing sections on load and new sections
 // added later.
 const sectionQuery = document.body.liveQuerySelectorAll('.section', { childList: true, subtree: false})
-  .added(addArticleHeader);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Section Style" draggable="false" style="null" __wid="FXH7m3IB"><STYLE data-type="content" type="text/css" codemirror="true" __wid="uFIIBiB9">.section {
+  .added(addArticleHeader);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Section Style" draggable="false" style="null" __wid="jNtO94zh"><STYLE data-type="content" type="text/css" codemirror="true" __wid="JgWa7CI0">.section {
   position: relative;
 }
 
@@ -2774,7 +2774,7 @@ const sectionQuery = document.body.liveQuerySelectorAll('.section', { childList:
 /* Tooltip Not System Section */
 .section[data-type="system"] .toggle-system-section:after {
   content: "Deactivate System Section";
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Variable Code" draggable="false" run-on-load="true" __wid="OL0TcTaJ"><PRE data-type="content" type="text/javascript" __wid="07fECT70">window.Variable = function (name) {
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Variable Code" draggable="false" run-on-load="true" __wid="mdQkuviQ"><PRE data-type="content" type="text/javascript" __wid="GZy39hK7">window.Variable = function (name) {
 
   const variables = Array.from(document.querySelectorAll(`div.variable[data-name="${name}"]`));
 
@@ -2806,7 +2806,7 @@ const sectionQuery = document.body.liveQuerySelectorAll('.section', { childList:
 
   return this;
 
-}.bind({});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Variable Style" draggable="false" __wid="ggGFKVIk"><STYLE data-type="content" type="text/css" codemirror="true" __wid="EUe2TO9W">.variable {
+}.bind({});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Variable Style" draggable="false" __wid="rjb97oPM"><STYLE data-type="content" type="text/css" codemirror="true" __wid="1GydNPC6">.variable {
 	position: relative;
 	display: inline;
 	color: deepskyblue;
@@ -2841,7 +2841,7 @@ const sectionQuery = document.body.liveQuerySelectorAll('.section', { childList:
 	background: rgb(135, 135, 129);
 	opacity: 1.0;
 	/*border: 5px solid transparent;*/
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Paragraph Utils Code" __wid="MK4cKHPs"><PRE data-type="content" type="text/javascript" id="paragraph-utils" __wid="41P8Ovne">const paragraphHeaderClass = "paragraph-header";
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Paragraph Utils Code" __wid="07XqtyAn"><PRE data-type="content" type="text/javascript" id="paragraph-utils" __wid="vnhpm6Kb">const paragraphHeaderClass = "paragraph-header";
 
 /**
  * Get paragraph header or create a new transient header if it does not
@@ -2928,7 +2928,7 @@ exports.addEditableElement = (target, attributeName, proxyElement) => {
     }
   });
   target.appendChild(nameElement);
-};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Focussed Section" draggable="false" run-on-load="true" __wid="oR74MtgV"><PRE data-type="content" type="text/javascript" __wid="u_9Z4B9y">window.addEventListener("click", function (event) {
+};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Focussed Section" draggable="false" run-on-load="true" __wid="NY6r9pkk"><PRE data-type="content" type="text/javascript" __wid="58WlcthE">window.addEventListener("click", function (event) {
   if (!event.target || !event.target.closest) return;
 
   if (!event.target.closest('.paragraph') && window.Codestrate.focussedSection) {
@@ -2950,7 +2950,7 @@ window.addEventListener("focus", function (event) {
   if (paragraph) {
     window.Codestrate.focussedSection = paragraph;
   }
-}, true);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Main" draggable="false" __wid="pSsB5orl"><STYLE data-type="content" type="text/css" codemirror="true" __wid="QJ2gfUYl">* {
+}, true);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Main" draggable="false" __wid="gylEn2Wz"><STYLE data-type="content" type="text/css" codemirror="true" __wid="x84ZPERy">* {
   box-sizing: border-box;
 }
 
@@ -3026,7 +3026,7 @@ h1 {
 
 .paragraph div:focus {
   outline: none;
-}</STYLE></DIV><DIV class="paragraph style-paragraph collapsed" name="Paragraph Style" draggable="false" __wid="SSUv86U3"><STYLE data-type="content" type="text/css" codemirror="true" __wid="hhcODW_-">.paragraph .paragraph-header {
+}</STYLE></DIV><DIV class="paragraph style-paragraph collapsed" name="Paragraph Style" draggable="false" __wid="UWJ4p6BB"><STYLE data-type="content" type="text/css" codemirror="true" __wid="K5fH-k7D">.paragraph .paragraph-header {
   display: block;
   position: relative;
   display: block;
@@ -3060,7 +3060,7 @@ h1 {
   position: relative;
   top: 50%;
   transform: translate3d(0, -50%, 0);
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Paragraph Collapse Action Code" run-on-load="true" __wid="7H_FO-qh"><PRE data-type="content" type="text/javascript" __wid="B3TiCvWJ">const SectionUtils = require('#paragraph-utils');
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Paragraph Collapse Action Code" run-on-load="true" __wid="KAjNOLKq"><PRE data-type="content" type="text/javascript" __wid="y656fuK5">const SectionUtils = require('#paragraph-utils');
 
 const addCollapsibleAction = function(paragraph) {
   SectionUtils.addHeaderAction(paragraph, "collapse-expand", () => {
@@ -3083,7 +3083,7 @@ const addCollapsibleAction = function(paragraph) {
   paragraph.liveAttribute("class").changed(updateEditor);
 }
 
-document.liveQuerySelectorAll('.paragraph').added(addCollapsibleAction);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Paragraph Collapse Style" draggable="false" __wid="HXiN3EBJ"><STYLE data-type="content" type="text/css" codemirror="true" __wid="UKB2uJ0S">/* Icon expanded */
+document.liveQuerySelectorAll('.paragraph').added(addCollapsibleAction);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Paragraph Collapse Style" draggable="false" __wid="8eiJ_poA"><STYLE data-type="content" type="text/css" codemirror="true" __wid="_ohWAeA2">/* Icon expanded */
 .collapse-expand i:after {
   content: "expand_less";
 }
@@ -3106,7 +3106,7 @@ document.liveQuerySelectorAll('.paragraph').added(addCollapsibleAction);</PRE></
 /* Hide all content of a paragraph except the paragraph header */
 .paragraph.collapsed > *:not(.paragraph-header) {
 	display: none;
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Paragraph Sortable Action Code" draggable="false" run-on-load="true" last-execution-state="success" __wid="PfPk9XA2"><PRE data-type="content" type="text/javascript" __wid="w617WOiL">importLib("Sortable.js").then(() => {
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Paragraph Sortable Action Code" draggable="false" run-on-load="true" last-execution-state="success" __wid="uOuGDw20"><PRE data-type="content" type="text/javascript" __wid="1xGULlIG">importLib("Sortable.js").then(() => {
 
   const ParagraphUtils = require('#paragraph-utils');
 
@@ -3208,7 +3208,7 @@ document.liveQuerySelectorAll('.paragraph').added(addCollapsibleAction);</PRE></
 
   document.liveQuerySelectorAll('.section').added(initSortable);
   document.liveQuerySelectorAll('.paragraph').added(addSortableAction);
-});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Paragraph Sortable Style" draggable="false" __wid="2UW18rvd"><STYLE data-type="content" type="text/css" codemirror="true" __wid="ezAT0f1Z">.paragraph .drag-handle {
+});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Paragraph Sortable Style" draggable="false" __wid="MG68Q75f"><STYLE data-type="content" type="text/css" codemirror="true" __wid="LALm_Sbp">.paragraph .drag-handle {
   cursor: -webkit-grabbing;
   cursor: move;
   opacity: 0;
@@ -3226,7 +3226,7 @@ document.liveQuerySelectorAll('.paragraph').added(addCollapsibleAction);</PRE></
 /* Icon Drag Handle */
 .paragraph .drag-handle i:after {
   content: "drag_handle";
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Paragraph Code Execution Actions" run-on-load="true" __wid="R4e5C7pN"><PRE data-type="content" type="text/javascript" __wid="qtD9ONkv">const SectionUtils = require('#paragraph-utils');
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Paragraph Code Execution Actions" run-on-load="true" __wid="fJ61zgP7"><PRE data-type="content" type="text/javascript" __wid="qMhJHUKt">const SectionUtils = require('#paragraph-utils');
 
 const runOnLoadAttributeName = "run-on-load";
 
@@ -3270,7 +3270,7 @@ document.liveQuerySelectorAll('.paragraph').added(paragraph => {
   addExecuteOnLoadAction(paragraph);
   addToggleConsoleAction(paragraph);
   addExecuteAction(paragraph);
-});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Paragraph Code Execution Styles" draggable="false" __wid="uQJX2XnA"><STYLE data-type="content" type="text/css" codemirror="true" __wid="_-9gqVrm">.paragraph .execute-paragraph,
+});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Paragraph Code Execution Styles" draggable="false" __wid="2BZYScWD"><STYLE data-type="content" type="text/css" codemirror="true" __wid="KjCpkpyb">.paragraph .execute-paragraph,
 .paragraph .run-on-load-paragraph,
 .paragraph .toggle-console-paragraph {
   margin-left: 5px;
@@ -3330,7 +3330,7 @@ document.liveQuerySelectorAll('.paragraph').added(paragraph => {
 
 .paragraph[last-execution-state="error"] .toggle-console-paragraph i:after {
   color: red;
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Paragraph Delete Action Code" draggable="false" run-on-load="true" __wid="-twUVplc"><PRE data-type="content" type="text/javascript" __wid="_hJpqjgc">const SectionUtils = require('#paragraph-utils');
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Paragraph Delete Action Code" draggable="false" run-on-load="true" __wid="Gi7fHxzo"><PRE data-type="content" type="text/javascript" __wid="FZKMHVYn">const SectionUtils = require('#paragraph-utils');
 
 const addDeleteAction = (paragraph) => {
   SectionUtils.addHeaderAction(paragraph, "delete-paragraph", () => {
@@ -3359,7 +3359,7 @@ const addDeleteAction = (paragraph) => {
 	});
 }
 
-document.liveQuerySelectorAll('.paragraph').added(addDeleteAction);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Paragraph Delete Action Style" draggable="false" __wid="ie5GI2e2"><STYLE data-type="content" type="text/css" codemirror="true" contenteditable="true" __wid="-YUuDvnu">.paragraph .delete-paragraph {
+document.liveQuerySelectorAll('.paragraph').added(addDeleteAction);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Paragraph Delete Action Style" draggable="false" __wid="y9irRxQI"><STYLE data-type="content" type="text/css" codemirror="true" contenteditable="true" __wid="RVnY-dhy">.paragraph .delete-paragraph {
   margin-right: 10px;
 }
 
@@ -3375,7 +3375,7 @@ document.liveQuerySelectorAll('.paragraph').added(addDeleteAction);</PRE></DIV><
 
 .paragraph .delete-paragraph i:hover:after {
   color: red;
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Fullscreen Code" draggable="false" run-on-load="true" last-execution-state="success" __wid="g5hbiNco"><PRE data-type="content" type="text/javascript" __wid="2KG0Ecsq">const toggleFullscreen = (target) => {
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Fullscreen Code" draggable="false" run-on-load="true" last-execution-state="success" __wid="Rci3e9yf"><PRE data-type="content" type="text/javascript" __wid="ciI0vYP1">const toggleFullscreen = (target) => {
 
 	const isFullscreen = document.body.classList.contains("fullscreen");
 	if (isFullscreen) {
@@ -3423,7 +3423,7 @@ importLib([
 		toggleFullscreen(e.target);
 		return false;
 	});
-});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Fullscreen Style" draggable="false" __wid="7d6NsObs"><STYLE data-type="content" type="text/css" codemirror="true" contenteditable="true" __wid="SqJmPTt8">body.fullscreen {
+});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Fullscreen Style" draggable="false" __wid="HWRhqFF1"><STYLE data-type="content" type="text/css" codemirror="true" contenteditable="true" __wid="8zd9tjjx">body.fullscreen {
   overflow: hidden;
 }
 
@@ -3548,7 +3548,7 @@ body.fullscreen .paragraph:not(.fullscreen) {
 /* Tooltip Exit Fullscreen */
 .paragraph.fullscreen .paragraph-header .toggle-fullscreen:after {
   content: "Exit Fullscreen";
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Paragraph Title Code" run-on-load="true" style="null" __wid="a8sDy9jL"><PRE data-type="content" type="text/javascript" __wid="u3NexfGr">const ParagraphUtils = require('#paragraph-utils');
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Paragraph Title Code" run-on-load="true" style="null" __wid="R4GiP7eu"><PRE data-type="content" type="text/javascript" __wid="8hLZION9">const ParagraphUtils = require('#paragraph-utils');
 
 document.liveQuerySelectorAll('.paragraph').added(paragraph => {
   
@@ -3558,7 +3558,7 @@ document.liveQuerySelectorAll('.paragraph').added(paragraph => {
   ParagraphUtils.addEditableElement(header, "name", paragraph);
   ParagraphUtils.addEditableElement(header, "id", content);
   ParagraphUtils.addEditableElement(header, "class", content);
-});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Paragraph Title Style" __wid="VBPiYEp8"><STYLE data-type="content" type="text/css" codemirror="true" __wid="0BTJLegr">.paragraph .paragraph-header:before {
+});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Paragraph Title Style" __wid="Jf-zoNIX"><STYLE data-type="content" type="text/css" codemirror="true" __wid="XrcFRoWO">.paragraph .paragraph-header:before {
 	font-family: 'Material Icons';
 	font-weight: normal;
 	font-style: normal;
@@ -3676,7 +3676,7 @@ document.liveQuerySelectorAll('.paragraph').added(paragraph => {
 
 .paragraph .paragraph-header .class-input {
   margin-left: 10px;
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Text Tools Code" run-on-load="true" __wid="4R1vDZEr"><PRE data-type="content" type="text/javascript" __wid="R_JesfFd">const ActionUtils = require('#action-utils');
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Text Tools Code" run-on-load="true" __wid="WftY-8N_"><PRE data-type="content" type="text/javascript" __wid="ROhocPwi">const ActionUtils = require('#action-utils');
 
 const addExecCommandAction = (tools, command, options, formatBlock = false) => {
 	const commandAction = ActionUtils.create((event) => {
@@ -3776,7 +3776,7 @@ const augmentText = (textElement) => {
 	textElement.parentElement.insertBefore(tools, textElement);
 };
 
-document.liveQuerySelectorAll('.paragraph.body-paragraph [data-type="content"][contenteditable]').added(augmentText);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Text Tools Style" __wid="7_gqv6q4"><STYLE data-type="content" type="text/css" codemirror="true" contenteditable="true" __wid="x1GMPSF7">.text-tools {
+document.liveQuerySelectorAll('.paragraph.body-paragraph [data-type="content"][contenteditable]').added(augmentText);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Text Tools Style" __wid="LzqNSXMf"><STYLE data-type="content" type="text/css" codemirror="true" contenteditable="true" __wid="6T-6G32S">.text-tools {
 /* 	position: relative; */
   display: block;
   width: 100%;
@@ -3928,7 +3928,7 @@ document.liveQuerySelectorAll('.paragraph.body-paragraph [data-type="content"][c
 /* Tooltip Convert HTML */
 .text-tools .text-convert-to-html:after {
 	content: "Convert HTML"
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Lock Paragraph Code" run-on-load="true" draggable="false" __wid="M1EEipHG"><PRE data-type="content" type="text/javascript" contenteditable="true" __wid="X87g2NOV">const SectionUtils = require('#paragraph-utils');
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Lock Paragraph Code" run-on-load="true" draggable="false" __wid="I_BzCPZa"><PRE data-type="content" type="text/javascript" contenteditable="true" __wid="8xg-iaaO">const SectionUtils = require('#paragraph-utils');
 
 const addLockAction = paragraph => {
   const lockElement = SectionUtils.addHeaderAction(paragraph, "lock-content", () => {
@@ -3964,7 +3964,7 @@ const addLockAction = paragraph => {
   }
 };
 
-document.liveQuerySelectorAll('.paragraph').added(addLockAction);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Lock Paragraph Style" draggable="false" __wid="E7ARFMCU"><STYLE data-type="content" type="text/css" codemirror="true" contenteditable="true" __wid="wXfaD3KN">.paragraph:not(:hover):not(.locked) .paragraph-header .lock-content {
+document.liveQuerySelectorAll('.paragraph').added(addLockAction);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Lock Paragraph Style" draggable="false" __wid="ZV0Qy4GG"><STYLE data-type="content" type="text/css" codemirror="true" contenteditable="true" __wid="hQE_9eYM">.paragraph:not(:hover):not(.locked) .paragraph-header .lock-content {
   opacity: 0.25;
   pointer-events: none;
 }
@@ -3999,7 +3999,7 @@ document.liveQuerySelectorAll('.paragraph').added(addLockAction);</PRE></DIV><DI
 
 /* .paragraph.fullscreen .paragraph-header .lock-content {
   display: block;
-} */</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Load Style (material-icons.css)" run-on-load="true" __wid="qRhJY9Nq"><PRE data-type="content" type="text/javascript" __wid="CfWM8VE2">importStyle("material-icons.css");</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Asset Utils Code" draggable="false" __wid="Ns8fQ85d"><PRE data-type="content" type="text/javascript" id="asset-utils" __wid="S9FDcW8H">// 1024 bytes * 1024 kB * 20 => 20 MB
+} */</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Load Style (material-icons.css)" run-on-load="true" __wid="Sa5Bh6dE"><PRE data-type="content" type="text/javascript" __wid="OzRnbCzY">importStyle("material-icons.css");</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Asset Utils Code" draggable="false" __wid="5OaiWbtl"><PRE data-type="content" type="text/javascript" id="asset-utils" __wid="eToM5JPh">// 1024 bytes * 1024 kB * 20 => 20 MB
 const MAX_FILE_SIZE = 1024 * 1024 * 20;
 
 const acceptFileOrThrowError = file => {
@@ -4093,7 +4093,7 @@ exports.getElementFromAsset = asset => {
 // 	node.setAttribute("contenteditable", "false");
 
   return node;
-};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Drop Assets Code" run-on-load="true" __wid="d_R9YUWC"><PRE data-type="content" type="text/javascript" __wid="oX6ECeN1">const AssetUtils = require('#asset-utils');
+};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Drop Assets Code" run-on-load="true" __wid="HDZrMQsX"><PRE data-type="content" type="text/javascript" __wid="KbIOeO0f">const AssetUtils = require('#asset-utils');
 
 // Get the text paragraph.
 var contents = document.liveQuerySelectorAll('.paragraph.body-paragraph [data-type="content"]');
@@ -4167,14 +4167,14 @@ const addDropListener = (content) => {
   });
 };
 
-contents.added(addDropListener);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Drop Assets Style" __wid="zy58yfjp"><STYLE data-type="content" type="text/css" codemirror="true" __wid="BObxLYko">.paragraph [data-type="content"] .upload-in-progress {
+contents.added(addDropListener);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Drop Assets Style" __wid="MSWZI9eo"><STYLE data-type="content" type="text/css" codemirror="true" __wid="rAduFIIN">.paragraph [data-type="content"] .upload-in-progress {
   opacity: .25;
 }
 
 .paragraph [data-type="content"] video,
 .paragraph [data-type="content"] img {
   max-width: 100%;
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Add File Code" run-on-load="true" last-execution-state="success" draggable="false" __wid="ZYWLHI8Q"><PRE data-type="content" type="text/javascript" __wid="Ro683YNN">const AssetUtils = require('#asset-utils');
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Add File Code" run-on-load="true" last-execution-state="success" draggable="false" __wid="6aQzlfd2"><PRE data-type="content" type="text/javascript" __wid="syqi5eZd">const AssetUtils = require('#asset-utils');
 
 const createDomNode = (textElement) => {
 
@@ -4276,7 +4276,7 @@ document.liveQuerySelectorAll('.paragraph.body-paragraph [data-type="content"][c
 
 //     img.src = canvas.toDataURL("image/png");
 //   }
-// }</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Add File Style" draggable="false" __wid="uKsMugMF"><STYLE data-type="content" type="text/css" codemirror="true" __wid="kXGJM5vQ">/* Hide native upload file UI element */
+// }</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Add File Style" draggable="false" __wid="bE5To-uL"><STYLE data-type="content" type="text/css" codemirror="true" __wid="XQqu2Cdw">/* Hide native upload file UI element */
 .add-file input[type="file"] {
   display: none;
 }
@@ -4289,7 +4289,7 @@ document.liveQuerySelectorAll('.paragraph.body-paragraph [data-type="content"][c
 /* Tooltip Upload File */
 .add-file:after {
   content: "Upload File";
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" run-on-load="true" name="Permission Code" draggable="false" __wid="YsetKTb_"><PRE data-type="content" type="text/javascript" __wid="kjINax1U">var Permissions = (function () {
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" run-on-load="true" name="Permission Code" draggable="false" __wid="cGpBzuDb"><PRE data-type="content" type="text/javascript" __wid="jBznkCkj">var Permissions = (function () {
 
   this.version = "0.0.2";
 
@@ -4379,7 +4379,7 @@ document.liveQuerySelectorAll('.paragraph.body-paragraph [data-type="content"][c
   return this;
 }).call({});
 
-window.webstrate.permissions = Permissions;</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Hash Scroll Code" run-on-load="true" __wid="HNm3V8Ua"><PRE data-type="content" type="text/javascript" __wid="9JraLhs4">const element = document.getElementById(window.location.hash.substr(1));
+window.webstrate.permissions = Permissions;</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Hash Scroll Code" run-on-load="true" __wid="xx3zhcO9"><PRE data-type="content" type="text/javascript" __wid="knakXNrH">const element = document.getElementById(window.location.hash.substr(1));
 
 if (element) {
   const scrollToElement = element.parentElement;
@@ -4389,7 +4389,7 @@ if (element) {
       window.scrollTo(0, scrollToElement.getBoundingClientRect().top);
     }
   });
-}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Code Failure Handling" run-on-load="true" last-execution-state="success" __wid="PYLCoMog"><PRE data-type="content" type="text/javascript" __wid="THgBcenn">Codestrate.addEventListener("successruncode", event => {
+}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Code Failure Handling" run-on-load="true" last-execution-state="success" __wid="xIVV01jX"><PRE data-type="content" type="text/javascript" __wid="xjqCjuay">Codestrate.addEventListener("successruncode", event => {
 //   window.console.log(event);
   
   const { paragraph } = event;
@@ -4403,7 +4403,7 @@ Codestrate.addEventListener("errorruncode", event => {
   const { paragraph } = event;
   
   paragraph.setAttribute("last-execution-state", "error");
-});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Tooltip" __wid="Cq8Idc0G"><STYLE data-type="content" type="text/css" codemirror="true" __wid="bDsB7Uwg">*[tooltip]:after {
+});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Tooltip" __wid="AylaylYv"><STYLE data-type="content" type="text/css" codemirror="true" __wid="DVxQb4V2">*[tooltip]:after {
 	position: absolute;
 	bottom: 0px;
 	left: 50%;
@@ -4451,7 +4451,7 @@ Codestrate.addEventListener("errorruncode", event => {
 *[tooltip]:hover:before {
 	opacity: 1.0;
 	transition: opacity 500ms ease-in-out 1500ms;
-}</STYLE></DIV></DIV><DIV name="Pull Sections" data-type="system" class="section section-hidden" __wid="5yTisFw9"><DIV class="paragraph code-paragraph collapsed" last-execution-state="success" name="Adding Pull System Sections Action to Articles" __wid="SUXsmIJg"><PRE data-type="content" type="text/javascript" __wid="gO1WxU_Y">const ActionUtils = require('#action-utils');
+}</STYLE></DIV></DIV><DIV name="Pull Sections" data-type="system" class="section section-hidden" __wid="7uIApj0R"><DIV class="paragraph code-paragraph collapsed" last-execution-state="success" name="Adding Pull System Sections Action to Articles" __wid="ak2BXbcp"><PRE data-type="content" type="text/javascript" __wid="qUDAFdfc">const ActionUtils = require('#action-utils');
 
 const addUpdateAction = (section) => {
 	
@@ -4471,7 +4471,7 @@ const addUpdateAction = (section) => {
 	header.appendChild(updateAction);
 };
 
-document.liveQuerySelectorAll('.section').added(addUpdateAction);</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Adding Pull System Sections Action to Global Menu" last-execution-state="success" run-on-load="true" __wid="kkZzkF-X"><PRE data-type="content" type="text/javascript" __wid="TmNt5m-z">// if (webstrate.webstrateId !== "Codestrate") {
+document.liveQuerySelectorAll('.section').added(addUpdateAction);</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Adding Pull System Sections Action to Global Menu" last-execution-state="success" run-on-load="true" __wid="6yVn-_Zi"><PRE data-type="content" type="text/javascript" __wid="ySEmUxjg">// if (webstrate.webstrateId !== "Codestrate") {
 
 	const globalMenu = document.querySelector('#global-menu');
 
@@ -4500,7 +4500,7 @@ document.liveQuerySelectorAll('.section').added(addUpdateAction);</PRE></DIV><DI
 // else {
 // 	console.warn("The Codestrate prototype cannot be updated. Omitting the update feature.");
 // 	return;
-// }</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Pull System Sections Code" __wid="-8HSBg2T"><PRE data-type="content" type="text/javascript" id="pull-system-sections" __wid="-SzA1cwe">// from: https://github.com/jserz/js_piece/blob/master/DOM/ChildNode/replaceWith()/replaceWith().md
+// }</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Pull System Sections Code" __wid="nXSyDiO1"><PRE data-type="content" type="text/javascript" id="pull-system-sections" __wid="-_G_iv6w">// from: https://github.com/jserz/js_piece/blob/master/DOM/ChildNode/replaceWith()/replaceWith().md
 (function (arr) {
   arr.forEach(function (item) {
     if (item.hasOwnProperty('replaceWith')) {
@@ -4639,7 +4639,7 @@ exports.pull = (pullFrom, pullClass, pullVersion) => {
 	});
 
 	// 	const systems = Array.from(document.querySelectorAll('.section[data-type="system"]'));	
-};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" run-on-load="true" last-execution-state="success" name="Pull System Sections Dialog" __wid="oqtfc9jd"><PRE data-type="content" type="text/javascript" __wid="djXPMQzG">Codestrate.showPullSystemSectionsDialog = () => {
+};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" run-on-load="true" last-execution-state="success" name="Pull System Sections Dialog" __wid="oNbXUoCp"><PRE data-type="content" type="text/javascript" __wid="SLThAiqK">Codestrate.showPullSystemSectionsDialog = () => {
 
 	return new Promise((resolve, reject) => {
 
@@ -4718,7 +4718,7 @@ exports.pull = (pullFrom, pullClass, pullVersion) => {
 
 		pullFromInput.focus();
 	});
-};</PRE></DIV></DIV><DIV class="section section-hidden" name="Drawing (experimental)" data-type="system" __wid="wiNEDap0"><DIV class="paragraph code-paragraph" last-execution-state="success" name="Drawing Main Code" draggable="false" __wid="zr8erayB"><PRE data-type="content" type="text/javascript" __wid="bhvIkNyp">const enableDrawing = drawable => {
+};</PRE></DIV></DIV><DIV class="section section-hidden" name="Drawing (experimental)" data-type="system" __wid="GKgl5dmS"><DIV class="paragraph code-paragraph" last-execution-state="success" name="Drawing Main Code" draggable="false" __wid="udhfb5pv"><PRE data-type="content" type="text/javascript" __wid="aqL2WYSf">const enableDrawing = drawable => {
 // 	console.log(drawable);
 
 	let penColor = "white";
@@ -4753,7 +4753,7 @@ exports.pull = (pullFrom, pullClass, pullVersion) => {
 	});
 };
 
-document.liveQuerySelectorAll('.drawable').added(enableDrawing);</PRE></DIV><DIV class="paragraph code-paragraph" name="Drawing Event Utils" draggable="false" __wid="EJWCBivf"><PRE data-type="content" type="text/javascript" id="event-util" __wid="n1Gq4SQ8">exports.getCoordinate = (target, event) => {
+document.liveQuerySelectorAll('.drawable').added(enableDrawing);</PRE></DIV><DIV class="paragraph code-paragraph" name="Drawing Event Utils" draggable="false" __wid="4QLQUyKO"><PRE data-type="content" type="text/javascript" id="event-util" __wid="3uWVRzu5">exports.getCoordinate = (target, event) => {
 
 	const rect = target.getBoundingClientRect();
 
@@ -4761,7 +4761,7 @@ document.liveQuerySelectorAll('.drawable').added(enableDrawing);</PRE></DIV><DIV
 		x: Math.floor(event.clientX - rect.left),
 		y: Math.floor(event.clientY - rect.top)
 	};
-};</PRE></DIV><DIV class="paragraph code-paragraph" draggable="false" __wid="vV92EGbh"><PRE data-type="content" type="text/javascript" id="drawing-util" __wid="AzqTDfzy">const ns = "http://www.w3.org/2000/svg";
+};</PRE></DIV><DIV class="paragraph code-paragraph" draggable="false" __wid="jpGZcc4P"><PRE data-type="content" type="text/javascript" id="drawing-util" __wid="MzKdIJOh">const ns = "http://www.w3.org/2000/svg";
 
 const getDrawingCanvas = drawable => {
 	let svg = drawable.querySelector(':scope > svg.drawing-canvas');
@@ -4889,7 +4889,7 @@ exports.begin = (drawable, penColor = "black") => {
 	return {
 		addPoint
 	};
-}</PRE></DIV><DIV class="paragraph code-paragraph" draggable="false" __wid="zwGIRXR9"><PRE data-type="content" type="text/javascript" id="drawing-mouse-handler" __wid="ctwrQLzQ">exports.enable = (drawable, events) => {
+}</PRE></DIV><DIV class="paragraph code-paragraph" draggable="false" __wid="jJiYFMa8"><PRE data-type="content" type="text/javascript" id="drawing-mouse-handler" __wid="Nvb7mxV9">exports.enable = (drawable, events) => {
 
 	let isDrawing = false;
 
@@ -4945,7 +4945,7 @@ exports.begin = (drawable, penColor = "black") => {
 			event.preventDefault();
 		}
 	});
-};</PRE></DIV><DIV class="paragraph code-paragraph" draggable="false" __wid="d5dElWfJ"><PRE data-type="content" type="text/javascript" id="drawing-apple-pen-handler" __wid="cu_mtntG">exports.enable = (drawable, events) => {
+};</PRE></DIV><DIV class="paragraph code-paragraph" draggable="false" __wid="uCvwG5JR"><PRE data-type="content" type="text/javascript" id="drawing-apple-pen-handler" __wid="zXfTdFG0">exports.enable = (drawable, events) => {
 
 	const { begin, move, end } = events;
 	
@@ -5017,7 +5017,7 @@ exports.begin = (drawable, penColor = "black") => {
 		consumeEvent(event);
 		end(getPoint(event));
 	});
-};</PRE></DIV><DIV class="paragraph style-paragraph" draggable="false" __wid="6fTbmglF"><STYLE data-type="content" type="text/css" codemirror="true" __wid="4CXXp4P_">.drawable {
+};</PRE></DIV><DIV class="paragraph style-paragraph" draggable="false" __wid="MU8m1nUM"><STYLE data-type="content" type="text/css" codemirror="true" __wid="ki_mfYuq">.drawable {
 	position: relative;
 	/*   background-color: orange; */
 	overflow: hidden;
@@ -5046,7 +5046,7 @@ svg.drawing-canvas {
 	width: 100%;
 	height: 100%;
 	pointer-events: none;
-}</STYLE></DIV></DIV><DIV name="Shared Pointers (experimental)" class="section section-hidden" data-type="system" __wid="dAkXENlp"><DIV class="paragraph code-paragraph collapsed" name="Shared Pointers Code" run-on-load="true" last-execution-state="success" __wid="i91KJbRE"><PRE data-type="content" type="text/javascript" __wid="qE0Mlo_K">const UserManager = require('#user-manager');
+}</STYLE></DIV></DIV><DIV name="Shared Pointers (experimental)" class="section section-hidden" data-type="system" __wid="_Zvw1f2q"><DIV class="paragraph code-paragraph collapsed" name="Shared Pointers Code" run-on-load="true" last-execution-state="success" __wid="kjAtYFS7"><PRE data-type="content" type="text/javascript" __wid="b12TiEHb">const UserManager = require('#user-manager');
 
 var clients = {};
 
@@ -5251,7 +5251,7 @@ for (var i = 0; i&lt;webstrate.clients.length; i++) {
   if (webstrate.clients[i] == webstrate.clientId) continue;
   clientJoin(webstrate.clients[i]); 
 }*/
-webstrate.clients.forEach(clientJoin);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Shared Pointers Style" __wid="nSqM_sXi"><STYLE data-type="content" type="text/css" codemirror="true" __wid="Yc9owIZ6">.remote-cursor {
+webstrate.clients.forEach(clientJoin);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Shared Pointers Style" __wid="d2rxwIxT"><STYLE data-type="content" type="text/css" codemirror="true" __wid="kh3yKJaS">.remote-cursor {
   position: absolute;
 	
 	/* Set the cursor offscreen initially. If top is not set then cursor will be appended like regular position: initial */
@@ -5290,7 +5290,7 @@ webstrate.clients.forEach(clientJoin);</PRE></DIV><DIV class="paragraph style-pa
   height: 50px; */
   transform: translate3d(-25px, -25px, 0) scale(1.0);
 	opacity: 0;
-}</STYLE></DIV></DIV><DIV name="Allow iframe Fullscreen (experimental)" class="section section-hidden" data-type="system" __wid="TllnWYiw"><DIV class="paragraph code-paragraph collapsed" last-execution-state="success" name="Allow iframe Fullscreen Code" draggable="false" __wid="JAmclXGe"><PRE data-type="content" type="text/javascript" __wid="kdFZ_1aG">importLib([
+}</STYLE></DIV></DIV><DIV name="Allow iframe Fullscreen (experimental)" class="section section-hidden" data-type="system" __wid="07Gv4nDA"><DIV class="paragraph code-paragraph collapsed" last-execution-state="success" name="Allow iframe Fullscreen Code" draggable="false" __wid="92xV5oEa"><PRE data-type="content" type="text/javascript" __wid="hnYs9OVQ">importLib([
   "mousetrap.min.js",
   "mousetrap-global-bind.min.js"
 ]).then(() => {
@@ -5341,7 +5341,7 @@ webstrate.clients.forEach(clientJoin);</PRE></DIV><DIV class="paragraph style-pa
   };
 
   document.liveQuerySelectorAll('.paragraph.body-paragraph iframe.allow-fullscreen').added(makeAllowFullscreen);
-});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Allow iframe Fullscreen Style" draggable="false" __wid="b8tXL5Wy"><STYLE data-type="content" type="text/css" codemirror="true" __wid="EyhSo_2y">/* .paragraph.body-paragraph {
+});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Allow iframe Fullscreen Style" draggable="false" __wid="7pWW4dnX"><STYLE data-type="content" type="text/css" codemirror="true" __wid="2i9q2ORQ">/* .paragraph.body-paragraph {
   overflow: hidden;
 }
 
@@ -5366,7 +5366,7 @@ webstrate.clients.forEach(clientJoin);</PRE></DIV><DIV class="paragraph style-pa
   height: 100vh;
   max-height: 100vh;
   z-index: 99;
-} */</STYLE></DIV><DIV class="paragraph style-paragraph collapsed" name="Allow iframe Fullscreen (iframe Style)" draggable="false" __wid="62Pwqmy1"><STYLE data-type="content" type="text/css" codemirror="true" id="allow-fullscreen-style" __wid="1mQ5Vna_">/* .go-to-fullscreen {
+} */</STYLE></DIV><DIV class="paragraph style-paragraph collapsed" name="Allow iframe Fullscreen (iframe Style)" draggable="false" __wid="wVfSUFQn"><STYLE data-type="content" type="text/css" codemirror="true" id="allow-fullscreen-style" __wid="QKgOTfrb">/* .go-to-fullscreen {
   background-color: white;
   position: fixed;
   top: 10px;
@@ -5381,7 +5381,7 @@ webstrate.clients.forEach(clientJoin);</PRE></DIV><DIV class="paragraph style-pa
 
 .go-to-fullscreen i:before {
   content: "${icon}";
-} */</STYLE></DIV></DIV><DIV name="CodeMirror" class="section section-hidden" data-type="system" __wid="26wAUwro"><DIV class="paragraph body-paragraph" draggable="false" __wid="ueI3Iij2"><DIV data-type="content" contenteditable="true" class="hide-variable-names" __wid="eV8-NCjv">CodeMirror integration, touching the code below should be done with <I __wid="gPb6iQK-">serious</I> care :-D<DIV __wid="e4xlZPJN"><BR __wid="Rbdnn9xq"/></DIV><DIV __wid="Si1xZKap">Using CodeMirror version <DIV class="variable" contenteditable="false" data-name="version" __wid="cbPOKTHZ"></DIV><SPAN style="font-size: 11pt;" __wid="67VdcD9P">.</SPAN></DIV><DIV __wid="9TqUe9sf"><SPAN style="font-size: 11pt;" __wid="OKTTU478"><BR __wid="VxTFuUWk"/></SPAN></DIV><DIV __wid="E55GOeSh"><SPAN style="font-size: 11pt;" __wid="1VaIXLWu">Modes <DIV class="variable" contenteditable="false" data-name="modes" __wid="bzOONLlc"></DIV></SPAN></DIV></DIV></DIV><DIV class="paragraph code-paragraph collapsed" name="CodeMirror integration code" run-on-load="true" last-execution-state="success" __wid="Wf6uPXys"><PRE data-type="content" type="text/javascript" __wid="V2ixkRJE">// Import CodeMirror basics style.
+} */</STYLE></DIV></DIV><DIV name="CodeMirror" class="section section-hidden" data-type="system" __wid="XSVNcU58"><DIV class="paragraph body-paragraph" draggable="false" __wid="n99XZxLD"><DIV data-type="content" contenteditable="true" class="hide-variable-names" __wid="GErg3Lcz">CodeMirror integration, touching the code below should be done with <I __wid="mJpCF2Go">serious</I> care :-D<DIV __wid="183_y38i"><BR __wid="-9wxonQt"/></DIV><DIV __wid="dgS29bFE">Using CodeMirror version <DIV class="variable" contenteditable="false" data-name="version" __wid="lA0cnQvL"></DIV><SPAN style="font-size: 11pt;" __wid="jPv0qYAQ">.</SPAN></DIV><DIV __wid="2s5GmIwQ"><SPAN style="font-size: 11pt;" __wid="yEvjtsyB"><BR __wid="UjZXYL7W"/></SPAN></DIV><DIV __wid="j82o-3ke"><SPAN style="font-size: 11pt;" __wid="uHEJQBg2">Modes <DIV class="variable" contenteditable="false" data-name="modes" __wid="dES2DPxZ"></DIV></SPAN></DIV></DIV></DIV><DIV class="paragraph code-paragraph collapsed" name="CodeMirror integration code" run-on-load="true" last-execution-state="success" __wid="7jnEBFQl"><PRE data-type="content" type="text/javascript" __wid="ekcPZOgK">// Import CodeMirror basics style.
 importStyle([
 	"codemirror.css",
   "codemirror-addon-show-hint.css",
@@ -5883,7 +5883,7 @@ importLib([
 			}
 		});
 	});
-});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="CodeMirror Monokai Theme" __wid="8o8Yu9UV"><STYLE data-type="content" type="text/css" codemirror="true" __wid="smQcfq1V">/* Based on Sublime Text's Monokai theme */
+});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="CodeMirror Monokai Theme" __wid="3fzBQLVG"><STYLE data-type="content" type="text/css" codemirror="true" __wid="X99d8ePY">/* Based on Sublime Text's Monokai theme */
 
 .cm-s-monokai.CodeMirror { background: rgb(48, 48, 48); color: #f8f8f2 !important; }
 .cm-s-monokai.CodeMirror div {}
@@ -5919,7 +5919,7 @@ importLib([
 .cm-s-monokai .CodeMirror-matchingbracket {
   text-decoration: underline;
   color: white !important;
-}</STYLE></DIV><DIV class="paragraph style-paragraph collapsed" name="CodeMirror integration CSS" __wid="uI7D-5Ic"><STYLE data-type="content" type="text/css" codemirror="true" __wid="qM2wtUvk">.CodeMirror {
+}</STYLE></DIV><DIV class="paragraph style-paragraph collapsed" name="CodeMirror integration CSS" __wid="ZxOaMAiH"><STYLE data-type="content" type="text/css" codemirror="true" __wid="vQRk92N-">.CodeMirror {
     isolation: isolate;
     height: auto;
     font-family: "Menlo", "consolas", monospace;
@@ -5961,7 +5961,7 @@ importLib([
 
 .paragraph .paragraph-header .toggle-html:after {
   content: "Toggle HTML Editor";
-}</STYLE></DIV></DIV><DIV name="Darkroom (Image Crop) (experimental)" class="section section-hidden" data-type="system" __wid="fvIz-9fB"><DIV class="paragraph code-paragraph collapsed" name="darkroom.js" run-on-load="true" last-execution-state="success" __wid="4wa5dIta"><PRE data-type="content" type="text/javascript" __wid="UHtrPpY9">importStyle("darkroom.css");
+}</STYLE></DIV></DIV><DIV name="Darkroom (Image Crop) (experimental)" class="section section-hidden" data-type="system" __wid="Z9i0meho"><DIV class="paragraph code-paragraph collapsed" name="darkroom.js" run-on-load="true" last-execution-state="success" __wid="yQJJI45r"><PRE data-type="content" type="text/javascript" __wid="qqt0C5A2">importStyle("darkroom.css");
 
 importLib([
 	"fabric.js"
@@ -6365,7 +6365,7 @@ img.darkroom-image-${this.uuid} {
 		}
 
 	})();
-});</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="darkroom-plugin.js" run-on-load="true" last-execution-state="success" __wid="B4sAtcfU"><PRE data-type="content" type="text/javascript" __wid="dIhtiv7G">(function() {
+});</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="darkroom-plugin.js" run-on-load="true" last-execution-state="success" __wid="AMCvR-Vw"><PRE data-type="content" type="text/javascript" __wid="O-8UyAR5">(function() {
 'use strict';
 
 Darkroom.Plugin = Plugin;
@@ -6407,7 +6407,7 @@ Plugin.extend = function(protoProps) {
   return child;
 }
 
-})();</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="darkroom-transformation.js" run-on-load="true" last-execution-state="success" __wid="jwREo3co"><PRE data-type="content" type="text/javascript" __wid="EX-wPwhL">(function() {
+})();</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="darkroom-transformation.js" run-on-load="true" last-execution-state="success" __wid="WiLUelv6"><PRE data-type="content" type="text/javascript" __wid="NI0nMbiW">(function() {
 'use strict';
 
 Darkroom.Transformation = Transformation;
@@ -6444,7 +6444,7 @@ Transformation.extend = function(protoProps) {
   return child;
 }
 
-})();</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="darkroom-ui.js" run-on-load="true" last-execution-state="success" __wid="wfh0PGJd"><PRE data-type="content" type="text/javascript" __wid="6ge8769S">(function() {
+})();</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="darkroom-ui.js" run-on-load="true" last-execution-state="success" __wid="jVupr5Zt"><PRE data-type="content" type="text/javascript" __wid="1EymgW5R">(function() {
 'use strict';
 
 Darkroom.UI = {
@@ -6534,7 +6534,7 @@ Button.prototype = {
   }
 };
 
-})();</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="darkroom-utils.js" run-on-load="true" last-execution-state="success" __wid="0QVe0SHR"><PRE data-type="content" type="text/javascript" __wid="bXBzvL2s">(function() {
+})();</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="darkroom-utils.js" run-on-load="true" last-execution-state="success" __wid="lUdLvSCA"><PRE data-type="content" type="text/javascript" __wid="f4YwKgE6">(function() {
 'use strict';
 
 Darkroom.Utils = {
@@ -6564,7 +6564,7 @@ function computeImageViewPort(image) {
   }
 }
 
-})();</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="darkroom-plugin-crop.js" run-on-load="true" last-execution-state="success" __wid="7GecLiQy"><PRE data-type="content" type="text/javascript" __wid="Z9HJ8MaA">(function() {
+})();</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="darkroom-plugin-crop.js" run-on-load="true" last-execution-state="success" __wid="2QAf5UOh"><PRE data-type="content" type="text/javascript" __wid="KyRdjMwa">(function() {
 'use strict';
 
 var Crop = Darkroom.Transformation.extend({
@@ -7240,7 +7240,7 @@ Darkroom.plugins['crop'] = Darkroom.Plugin.extend({
   }
 });
 
-})();</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="darkroom-plugin-history.js" run-on-load="true" last-execution-state="success" __wid="KlYz6kt7"><PRE data-type="content" type="text/javascript" __wid="pEmOXW4d">;(function(window, document, Darkroom, fabric) {
+})();</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="darkroom-plugin-history.js" run-on-load="true" last-execution-state="success" __wid="EUs16bJq"><PRE data-type="content" type="text/javascript" __wid="P6iTunZm">;(function(window, document, Darkroom, fabric) {
   'use strict';
 
   Darkroom.plugins['history'] = Darkroom.Plugin.extend({
@@ -7305,7 +7305,7 @@ Darkroom.plugins['crop'] = Darkroom.Plugin.extend({
       this._updateButtons();
     }
   });
-})(window, document, Darkroom, fabric);</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="darkroom-plugin-rotate.js" run-on-load="true" last-execution-state="success" __wid="kDMu0K4s"><PRE data-type="content" type="text/javascript" __wid="5qJZovEh">(function() {
+})(window, document, Darkroom, fabric);</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="darkroom-plugin-rotate.js" run-on-load="true" last-execution-state="success" __wid="rW9VK939"><PRE data-type="content" type="text/javascript" __wid="MgZcz2qh">(function() {
 'use strict';
 
 var Rotation = Darkroom.Transformation.extend({
@@ -7361,7 +7361,7 @@ Darkroom.plugins['rotate'] = Darkroom.Plugin.extend({
 
 });
 
-})();</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="darkroom-plugin-save.js" run-on-load="true" last-execution-state="success" __wid="fjK3Fg5y"><PRE data-type="content" type="text/javascript" __wid="n5ztj7qN">(function() {
+})();</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="darkroom-plugin-save.js" run-on-load="true" last-execution-state="success" __wid="TjMKWekr"><PRE data-type="content" type="text/javascript" __wid="ui2q_ERl">(function() {
 'use strict';
 
 Darkroom.plugins['save'] = Darkroom.Plugin.extend({
@@ -7383,7 +7383,7 @@ Darkroom.plugins['save'] = Darkroom.Plugin.extend({
   },
 });
 
-})();</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Initialize Image Crop" last-execution-state="success" __wid="K2XwMJd7"><PRE data-type="content" type="text/javascript" __wid="tNxt_inE">importStyle("darkroom.css");
+})();</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Initialize Image Crop" last-execution-state="success" __wid="qtn0O2ai"><PRE data-type="content" type="text/javascript" __wid="993OGTwj">importStyle("darkroom.css");
 
 if (!HTMLCanvasElement.prototype.toBlob) {
   Object.defineProperty(HTMLCanvasElement.prototype, 'toBlob', {
@@ -7475,7 +7475,7 @@ importLib([
   });
 
   //   document.addEventListener("dblclick", darkroomize, true);
-});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Custom Darkroom Style" __wid="pkuMMN26"><STYLE data-type="content" type="text/css" codemirror="true" __wid="UpYInDfV">transient.darkroom-container {
+});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Custom Darkroom Style" __wid="euwXU6Qe"><STYLE data-type="content" type="text/css" codemirror="true" __wid="r7bfFy_3">transient.darkroom-container {
   outline: none;
 }
 
@@ -7493,15 +7493,15 @@ importLib([
 
 .paragraph.body-paragraph [data-type="content"] img {
   cursor: default;
-}</STYLE></DIV></DIV><DIV name="Avatars" data-type="system" class="section section-hidden" __wid="5KYZpEyx"><DIV class="paragraph body-paragraph" draggable="false" name="Documentation and Example Rendering" __wid="NtHCwGDl"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="true" __wid="yvuFLi-G"><H2 __wid="Uc5mPF5T">Example of user list<BR __wid="TG04SXHf"/></H2>
+}</STYLE></DIV></DIV><DIV name="Avatars" data-type="system" class="section section-hidden" __wid="Rw8mO-DS"><DIV class="paragraph body-paragraph" draggable="false" name="Documentation and Example Rendering" __wid="RRKjzg8m"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="true" __wid="Lmoxuayb"><H2 __wid="6GAGrDUZ">Example of user list<BR __wid="dOiaqxBo"/></H2>
 
-<DIV class="avatars-test" __wid="5ghKhkFC">
-	<DIV class="avatar" client-id="test3" username="unknown" style="background-image: url(&quot;unknown.jpg&quot;); border-color: rgb(99, 178, 252);" __wid="2yBn_qCk"></DIV>
+<DIV class="avatars-test" __wid="69gclFsr">
+	<DIV class="avatar" client-id="test3" username="unknown" style="background-image: url(&quot;unknown.jpg&quot;); border-color: rgb(99, 178, 252);" __wid="aG_5nvgg"></DIV>
 
-	<DIV class="avatar" client-id="test2" username="cklokmose" style="background-image: url(&quot;https://avatars.githubusercontent.com/u/1607207?v=3&quot;); border-color: rgb(254, 83, 124);" __wid="8_LeU_N-"></DIV>
+	<DIV class="avatar" client-id="test2" username="cklokmose" style="background-image: url(&quot;https://avatars.githubusercontent.com/u/1607207?v=3&quot;); border-color: rgb(254, 83, 124);" __wid="jl8KO0g4"></DIV>
 
-	<DIV class="avatar self" client-id="test1" username="raedle" style="background-image: url(&quot;https://avatars.githubusercontent.com/u/489051?v=3&quot;); border-color: rgb(226, 178, 252);" __wid="-Oc1tBFO"></DIV>
-</DIV></DIV></DIV><DIV class="paragraph code-paragraph collapsed" name="Avatars Code" run-on-load="true" last-execution-state="success" __wid="LKpQrr1R"><PRE data-type="content" type="text/javascript" __wid="hfi3dezb">const UserManager = require('#user-manager');
+	<DIV class="avatar self" client-id="test1" username="raedle" style="background-image: url(&quot;https://avatars.githubusercontent.com/u/489051?v=3&quot;); border-color: rgb(226, 178, 252);" __wid="AyIJENW3"></DIV>
+</DIV></DIV></DIV><DIV class="paragraph code-paragraph collapsed" name="Avatars Code" run-on-load="true" last-execution-state="success" __wid="QchpAA39"><PRE data-type="content" type="text/javascript" __wid="QwHKER6A">const UserManager = require('#user-manager');
 const FlashScreen = require('#flash-screen');
 
 const anonymousUrl = "unknown.jpg";
@@ -7750,7 +7750,7 @@ webstrate.on("disconnect", () => {
 
 // webstrate.on("signal", (message, senderId) => {
 // 	console.log(message, senderId);
-// });</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Avatars Style" __wid="YmFaD1mr"><STYLE data-type="content" type="text/css" codemirror="true" __wid="f6yk6gC5">.avatars {
+// });</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Avatars Style" __wid="PE45bgQZ"><STYLE data-type="content" type="text/css" codemirror="true" __wid="2eh7-BC2">.avatars {
 	position: fixed;
 	bottom: 10px;
 	left: 10px;
@@ -7834,12 +7834,12 @@ webstrate.on("disconnect", () => {
 	.avatars {
 		display: none;
 	}
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Flash Screen Code" last-execution-state="success" __wid="U4qeA0pa"><PRE data-type="content" type="text/javascript" id="flash-screen" __wid="OIT2a6JU">exports.flash = () => {
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Flash Screen Code" last-execution-state="success" __wid="wWirNG3m"><PRE data-type="content" type="text/javascript" id="flash-screen" __wid="IoryQiQa">exports.flash = () => {
 	const overlay = document.createElement("transient");
 	overlay.classList.add("flash-overlay");
 	setTimeout(() => overlay.remove(), 200);
 	document.body.appendChild(overlay);
-};</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Flash Screen Style" __wid="27EeWTuG"><STYLE data-type="content" type="text/css" codemirror="true" __wid="f-daOJvx">@keyframes pulse {
+};</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Flash Screen Style" __wid="VanI27X9"><STYLE data-type="content" type="text/css" codemirror="true" __wid="CXv36i7P">@keyframes pulse {
   0% {
     background: transparent;
   }
@@ -7860,12 +7860,12 @@ webstrate.on("disconnect", () => {
 	max-width: 100vw;
 	max-height: 100vh;
   animation: pulse 0.2s ease-in-out;
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Idle Time Code" last-execution-state="success" __wid="0n3HTwkV"><PRE data-type="content" type="text/javascript" id="idle-time" __wid="c-lGyy-P">var lastAction = Date.now();
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Idle Time Code" last-execution-state="success" __wid="6tv7xckv"><PRE data-type="content" type="text/javascript" id="idle-time" __wid="ikFawizD">var lastAction = Date.now();
 const updateLastAction = () => lastAction = Date.now();
 //document.addEventListener("keydown", updateLastAction);
 document.addEventListener("mousemove", updateLastAction);
 document.addEventListener("touchstart", updateLastAction);
-exports.get = () => ((Date.now() - lastAction) / 1000) | 0;</PRE></DIV></DIV><DIV class="section section-hidden" name="WebRTC Video on Avatar (experimental)" data-type="system" __wid="xyzsZaEf"><DIV class="paragraph style-paragraph collapsed" draggable="false" name="WebRTC Style" __wid="DpVlzt2K"><STYLE data-type="content" type="text/css" codemirror="true" __wid="eE0cjFNw">.avatars .avatar .video-wrapper {
+exports.get = () => ((Date.now() - lastAction) / 1000) | 0;</PRE></DIV></DIV><DIV class="section section-hidden" name="WebRTC Video on Avatar (experimental)" data-type="system" __wid="cTpuJNn2"><DIV class="paragraph style-paragraph collapsed" draggable="false" name="WebRTC Style" __wid="6LbEvWh9"><STYLE data-type="content" type="text/css" codemirror="true" __wid="_ToS7gzW">.avatars .avatar .video-wrapper {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -7889,7 +7889,7 @@ exports.get = () => ((Date.now() - lastAction) / 1000) | 0;</PRE></DIV></DIV><DI
 
 .avatars .avatar.self .video-wrapper video {
 	transform: translate3d(-50%, -50%, 0) scaleX(-1);
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Event Handling" run-on-load="true" last-execution-state="success" __wid="XZ4HKc3A"><PRE data-type="content" type="text/javascript" __wid="4P-CDUWX">webstrate.on("signal", (message, senderId) => {
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" name="Event Handling" run-on-load="true" last-execution-state="success" __wid="QubzULun"><PRE data-type="content" type="text/javascript" __wid="7U-6Xn7A">webstrate.on("signal", (message, senderId) => {
 
 	if (message.type === "Call") {
 
@@ -7968,7 +7968,7 @@ const listenForStreams = (clientId, meta, accept) => {
 // 	document.body.webstrate.on("signalStream", listenForStreams);
 };
 
-document.body.webstrate.on("signalStream", listenForStreams);</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Video Manager" __wid="oW1Jm8gH"><PRE data-type="content" type="text/javascript" id="video-manager" __wid="_GxQbb7e">const createUserVideo = (clientId) => {
+document.body.webstrate.on("signalStream", listenForStreams);</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Video Manager" __wid="USCD-RF6"><PRE data-type="content" type="text/javascript" id="video-manager" __wid="UJXM8eJ_">const createUserVideo = (clientId) => {
 	const avatar = document.querySelector(`.avatar[client-id="${clientId}"]`);
 
 	// no avatar for client id found
@@ -8058,7 +8058,7 @@ exports.stopHearMe = () => {
 	}
 
 	video.closest('.video-wrapper').remove();
-}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Augment Avatar" run-on-load="true" last-execution-state="success" __wid="Ou-Co66A"><PRE data-type="content" type="text/javascript" __wid="xhn08ZUO">const VideoManager = require('#video-manager');
+}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Augment Avatar" run-on-load="true" last-execution-state="success" __wid="dm-a-Kbu"><PRE data-type="content" type="text/javascript" __wid="LUH4I9BA">const VideoManager = require('#video-manager');
 
 const augmentAvatar = (avatar) => {
 	const hearMe = document.createElement("div");
@@ -8083,7 +8083,7 @@ const augmentAvatar = (avatar) => {
 	avatar.appendChild(hearMe);
 }
 
-document.liveQuerySelectorAll('.avatars .avatar.self').added(augmentAvatar);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Augmented Avatar Style" __wid="vHUt0oKn"><STYLE data-type="content" type="text/css" codemirror="true" __wid="xDTL3Ddf">.avatars .avatar .hear-me {
+document.liveQuerySelectorAll('.avatars .avatar.self').added(augmentAvatar);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Augmented Avatar Style" __wid="eHMpBVkR"><STYLE data-type="content" type="text/css" codemirror="true" __wid="V-5qBuiW">.avatars .avatar .hear-me {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -8119,64 +8119,64 @@ document.liveQuerySelectorAll('.avatars .avatar.self').added(augmentAvatar);</PR
 	transform: translate3d(50px, 0, 0);
 	pointer-events: all;
 	cursor: pointer;
-}</STYLE></DIV></DIV><DIV class="section section-hidden" name="Chat" data-type="system" __wid="CtX2BKuE"><DIV class="paragraph body-paragraph locked" name="Chat" __wid="Xp_9h_Bf"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="false" id="chat" class="chat chat-closed" __wid="vzEMlDK9"><DIV class="chat-handle" __wid="lpxcWG-B"></DIV>
-<UL class="messages" __wid="2J39mKlb">
-  <LI class="message" username="raedle" __wid="ygKBdLLV">asdf</LI>
-  <LI class="message" username="raedle" __wid="LLbm5_lO">as</LI>
-  <LI class="message" username="raedle" __wid="OIwr-E9i">df</LI>
-  <LI class="message" username="raedle" __wid="eix_GPCq">sadf</LI>
-  <LI class="message" username="raedle" __wid="1VgLe1LE">asdf</LI>
-  <LI class="message" username="raedle" __wid="mvWGDvdu">sa</LI>
-  <LI class="message" username="raedle" __wid="j6jTHGK9">f</LI>
-  <LI class="message" username="raedle" __wid="I4XNnV-f">asdf</LI>
-  <LI class="message" username="raedle" __wid="ElEAQZHE">sadf</LI>
-  <LI class="message" username="raedle" __wid="sXEHL9Uc">sad</LI>
-  <LI class="message" username="raedle" __wid="eQ9DuH36">f</LI>
-  <LI class="message" username="raedle" __wid="oiNBtLYP">asd</LI>
-  <LI class="message" username="raedle" __wid="Lb1EoTOc">asf</LI>
-  <LI class="message" username="raedle" __wid="CrnYxESe">dsf</LI>
-  <LI class="message" username="raedle" __wid="FWnLsz1J">asdf</LI>
-  <LI class="message" username="raedle" __wid="l1AIY-kz">as</LI>
-  <LI class="message" username="raedle" __wid="gZ3U2TK6">f</LI>
-  <LI class="message" username="raedle" __wid="-3w8TO_j">asdf</LI>
-  <LI class="message" username="raedle" __wid="jLJCYYR_">sadf</LI>
-  <LI class="message" username="raedle" __wid="Nsovi2Dz">asdf</LI>
-  <LI class="message" username="raedle" __wid="FVQvOdOq">asd</LI>
-  <LI class="message" username="raedle" __wid="pwoYRyfe">fas</LI>
-  <LI class="message" username="raedle" __wid="0G2GtiQR">df</LI>
-  <LI class="message" username="raedle" __wid="GzeHrR9W">sadf</LI>
-  <LI class="message" username="raedle" __wid="B-SvztaN">Midas?</LI>
-  <LI class="message" username="raedle" __wid="GPHd_J9m">Bettter?</LI>
-  <LI class="message" username="raedle" __wid="rbGGboFD">Test</LI>
-  <LI class="message" username="raedle" __wid="zLyf7Fg5">a</LI>
-  <LI class="message" username="MidasN" __wid="pGyT71Ah">sdsd</LI>
-  <LI class="message" username="raedle" __wid="2HyjKFE5">Hello</LI>
-  <LI class="message" username="raedle" __wid="YdIwEzq7">It is a kind of working chat</LI>
-  <LI class="message" username="raedle" __wid="KHEKA3Ls">Kind of working, yeah!</LI>
-  <LI class="message" username="raedle" __wid="qRuHHxMX">Hello</LI>
-  <LI class="message" username="raedle" __wid="wIoP_yvl">ASDF</LI>
-  <LI class="message" username="raedle" __wid="STxybPlL">Test</LI>
-  <LI class="message" username="raedle" __wid="YnlybzJE">Clemens?</LI>
-  <LI class="message" username="raedle" __wid="JWyJITBC">Tewst</LI>
-  <LI class="message" username="raedle" __wid="J2aboTQE">Hello World</LI>
-  <LI class="message" username="raedle" __wid="J05Bkyvz">Great!</LI>
-  <LI class="message" username="raedle" __wid="7qKLvZzF">New message</LI>
-  <LI class="message" username="raedle" __wid="c5eoRp-c">Another message</LI>
-  <LI class="message" username="raedle" __wid="HvgNGF_H">Test</LI>
-  <LI class="message" username="raedle" __wid="0YsLMuvT">ASDF</LI>
-  <LI class="message" username="raedle" __wid="L3bf67hP">Hello</LI>
-  <LI class="message" username="raedle" __wid="S-SBK6g2">Better</LI>
-  <LI class="message" username="raedle" __wid="yJ2CFuEZ">Grea</LI>
-  <LI class="message" username="raedle" __wid="uMXEhijz">Aaah</LI>
-  <LI class="message" username="raedle" __wid="ZfB7PuJY">Better?</LI>
-  <LI class="message" username="raedle" __wid="ugYdqZc1">Beetteer</LI>
-  <LI class="message" username="raedle" __wid="zzhFHMer">beter</LI>
-  <LI class="message" username="raedle" __wid="bUQsP6cU">Hello?</LI>
-  <LI class="message" username="raedle" __wid="TnjpUiUP">Simple chat</LI>
-<LI class="message" username="raedle" __wid="1rvJJvNO">Hello?</LI></UL>
-<DIV class="input-wrapper" __wid="1ijiZPVr">
-  <INPUT class="input" placeholder="Type in a message and press enter" __wid="NsmqngkN"/>
-</DIV></DIV></DIV><DIV class="paragraph style-paragraph collapsed" name="Chat Style" __wid="dAykLvoz"><STYLE data-type="content" type="text/css" codemirror="true" __wid="e8PCC_g4">.chat {
+}</STYLE></DIV></DIV><DIV class="section section-hidden" name="Chat" data-type="system" __wid="2dn3oKlo"><DIV class="paragraph body-paragraph locked" name="Chat" __wid="8TQydjKF"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="false" id="chat" class="chat chat-closed" __wid="bdDFfe5X"><DIV class="chat-handle" __wid="2w2choGc"></DIV>
+<UL class="messages" __wid="VbHLcUXS">
+  <LI class="message" username="raedle" __wid="0xs4Y61h">asdf</LI>
+  <LI class="message" username="raedle" __wid="1PIz58mm">as</LI>
+  <LI class="message" username="raedle" __wid="iSamzWxQ">df</LI>
+  <LI class="message" username="raedle" __wid="zAgIvIvs">sadf</LI>
+  <LI class="message" username="raedle" __wid="kFwuq5so">asdf</LI>
+  <LI class="message" username="raedle" __wid="bXazuxJz">sa</LI>
+  <LI class="message" username="raedle" __wid="F-Gajh4_">f</LI>
+  <LI class="message" username="raedle" __wid="_JpMZxlT">asdf</LI>
+  <LI class="message" username="raedle" __wid="y4MDxRmb">sadf</LI>
+  <LI class="message" username="raedle" __wid="5UVAtSva">sad</LI>
+  <LI class="message" username="raedle" __wid="o_LBI2A5">f</LI>
+  <LI class="message" username="raedle" __wid="IiYWt3zR">asd</LI>
+  <LI class="message" username="raedle" __wid="nruPzYeW">asf</LI>
+  <LI class="message" username="raedle" __wid="vjPCaWB4">dsf</LI>
+  <LI class="message" username="raedle" __wid="O3xSDLem">asdf</LI>
+  <LI class="message" username="raedle" __wid="ookBbq2x">as</LI>
+  <LI class="message" username="raedle" __wid="FcR8gN6z">f</LI>
+  <LI class="message" username="raedle" __wid="V0F94OXk">asdf</LI>
+  <LI class="message" username="raedle" __wid="ECmJ0o9x">sadf</LI>
+  <LI class="message" username="raedle" __wid="L_luQQ3e">asdf</LI>
+  <LI class="message" username="raedle" __wid="I4sf9bBL">asd</LI>
+  <LI class="message" username="raedle" __wid="P8OLOILO">fas</LI>
+  <LI class="message" username="raedle" __wid="YxUmZHga">df</LI>
+  <LI class="message" username="raedle" __wid="5mP6CJbC">sadf</LI>
+  <LI class="message" username="raedle" __wid="ZcRFG5oL">Midas?</LI>
+  <LI class="message" username="raedle" __wid="MADBA7Fl">Bettter?</LI>
+  <LI class="message" username="raedle" __wid="gn4xjoBg">Test</LI>
+  <LI class="message" username="raedle" __wid="WDcDN39t">a</LI>
+  <LI class="message" username="MidasN" __wid="cLJUQRgX">sdsd</LI>
+  <LI class="message" username="raedle" __wid="pcVYDf7l">Hello</LI>
+  <LI class="message" username="raedle" __wid="pEazjAMP">It is a kind of working chat</LI>
+  <LI class="message" username="raedle" __wid="bilPAKm1">Kind of working, yeah!</LI>
+  <LI class="message" username="raedle" __wid="bksharXd">Hello</LI>
+  <LI class="message" username="raedle" __wid="q2IXCqcI">ASDF</LI>
+  <LI class="message" username="raedle" __wid="-kqX0FPO">Test</LI>
+  <LI class="message" username="raedle" __wid="w0GjF8bS">Clemens?</LI>
+  <LI class="message" username="raedle" __wid="hhDNdH2G">Tewst</LI>
+  <LI class="message" username="raedle" __wid="KpmsIt7h">Hello World</LI>
+  <LI class="message" username="raedle" __wid="ipPnKCoV">Great!</LI>
+  <LI class="message" username="raedle" __wid="nGgY3Ltn">New message</LI>
+  <LI class="message" username="raedle" __wid="_vjYMw-T">Another message</LI>
+  <LI class="message" username="raedle" __wid="-kUTq3jM">Test</LI>
+  <LI class="message" username="raedle" __wid="N2PcTJgR">ASDF</LI>
+  <LI class="message" username="raedle" __wid="sO_ZOROm">Hello</LI>
+  <LI class="message" username="raedle" __wid="Q_Fp7_F9">Better</LI>
+  <LI class="message" username="raedle" __wid="NmgHPgzW">Grea</LI>
+  <LI class="message" username="raedle" __wid="enqqq6p_">Aaah</LI>
+  <LI class="message" username="raedle" __wid="MrTK_ze-">Better?</LI>
+  <LI class="message" username="raedle" __wid="0duvbbxI">Beetteer</LI>
+  <LI class="message" username="raedle" __wid="dYM87X4e">beter</LI>
+  <LI class="message" username="raedle" __wid="ShxCMAUu">Hello?</LI>
+  <LI class="message" username="raedle" __wid="EGpYrYYb">Simple chat</LI>
+<LI class="message" username="raedle" __wid="OChNPcfV">Hello?</LI></UL>
+<DIV class="input-wrapper" __wid="ZSy_bipM">
+  <INPUT class="input" placeholder="Type in a message and press enter" __wid="U7iI8t6k"/>
+</DIV></DIV></DIV><DIV class="paragraph style-paragraph collapsed" name="Chat Style" __wid="ertO5SFk"><STYLE data-type="content" type="text/css" codemirror="true" __wid="xy1n4YiJ">.chat {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -8254,7 +8254,7 @@ document.liveQuerySelectorAll('.avatars .avatar.self').added(augmentAvatar);</PR
 	transform: translate3d(-50%, -40%, 0);
 	pointer-events: none;
 	font-size: 2em;
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" last-execution-state="success" name="Chat Code" __wid="w2zNLL2j"><PRE data-type="content" type="text/javascript" __wid="ceBi2gFS">let chat = document.querySelector('#chat');
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" last-execution-state="success" name="Chat Code" __wid="xLWNbFxu"><PRE data-type="content" type="text/javascript" __wid="8e4FI7S9">let chat = document.querySelector('#chat');
 chat = chat.cloneNode(true);
 
 let chatWrapper = document.createElement("transient");
@@ -8298,7 +8298,7 @@ input.addEventListener("keydown", event => {
 	messages.scrollTop = messages.scrollHeight;
 	
 	input.value = "";	
-});</PRE></DIV></DIV><DIV class="section section-hidden" name="Section browser" data-type="system" __wid="wFFrJ8PI"><DIV class="paragraph body-paragraph collapsed" draggable="false" name="Description" __wid="lHpeKT1K"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="true" __wid="c-ezMiog"><H1 __wid="nf_dg8p6">Section browser</H1><DIV __wid="LrtFqNUA">This is a prototype implementation of a section browser in the side menu.</DIV><DIV __wid="hVr1s6jS"><BR __wid="oy79GUDq"/></DIV><DIV __wid="t65MJ_ug">Usage:</DIV><DIV __wid="RMbwzTHZ"><UL __wid="RjlPH7aL"><LI __wid="wE-Sd62J">Click sections to expand/collapse</LI><LI __wid="BUI_0ISe">Click paragraph to scroll them into view</LI><LI __wid="1qUjN6pM">Click section eye to toggle visbility</LI></UL><DIV __wid="Ddp1TxNe">Bugs, ideas and ToDo</DIV></DIV><DIV __wid="ac3zYCvj"><UL __wid="UiQ37Wfe"><LI __wid="v_GkQpH0"><STRIKE __wid="36NDyCI5">Refresh CodeMirror instances on visibility change</STRIKE></LI><LI __wid="7x7XE_pF"><STRIKE __wid="l2TCfExE">Toggle visibility and expand paragraph when clicking a paragraph</STRIKE></LI><LI __wid="nn-NloS6">Integrate properly in Roman's sidebar code<BR __wid="bV4YuBgT"/></LI><LI __wid="udW5Gcka"><STRIKE __wid="_Go7Xbvp">Overflow of sections with many paragraphs. Scrolling?</STRIKE></LI><LI __wid="AcIrJpDm">Disable scrolling of main window when scrolling in section tree. But how?</LI></UL></DIV></DIV></DIV><DIV class="paragraph code-paragraph collapsed" last-execution-state="success" name="Section browser code" run-on-load="true" __wid="9hFexrEE"><PRE data-type="content" type="text/javascript" __wid="xjeiFovk">var SectionItem = function(section) {
+});</PRE></DIV></DIV><DIV class="section section-hidden" name="Section browser" data-type="system" __wid="V_9VvmXG"><DIV class="paragraph body-paragraph collapsed" draggable="false" name="Description" __wid="ojGfONcZ"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="true" __wid="f-pHyr51"><H1 __wid="kswJCJi1">Section browser</H1><DIV __wid="fP2kD4zk">This is a prototype implementation of a section browser in the side menu.</DIV><DIV __wid="z73i545C"><BR __wid="lCzQjLxy"/></DIV><DIV __wid="5D5EU3dE">Usage:</DIV><DIV __wid="g2JN3-3A"><UL __wid="83yHv1R_"><LI __wid="w07zh_Ts">Click sections to expand/collapse</LI><LI __wid="Q_Wt5-Zm">Click paragraph to scroll them into view</LI><LI __wid="pTMYahNb">Click section eye to toggle visbility</LI></UL><DIV __wid="dPobIwBB">Bugs, ideas and ToDo</DIV></DIV><DIV __wid="uLHxJVii"><UL __wid="nLNZPTMI"><LI __wid="od9BI_Ss"><STRIKE __wid="tTqXujQB">Refresh CodeMirror instances on visibility change</STRIKE></LI><LI __wid="KDEmjL-m"><STRIKE __wid="gHC9xTV0">Toggle visibility and expand paragraph when clicking a paragraph</STRIKE></LI><LI __wid="0_RHKxyQ">Integrate properly in Roman's sidebar code<BR __wid="WjEctneM"/></LI><LI __wid="cru0rxD5"><STRIKE __wid="5akNdQ_p">Overflow of sections with many paragraphs. Scrolling?</STRIKE></LI><LI __wid="x_2En10X">Disable scrolling of main window when scrolling in section tree. But how?</LI></UL></DIV></DIV></DIV><DIV class="paragraph code-paragraph collapsed" last-execution-state="success" name="Section browser code" run-on-load="true" __wid="RyGB0R37"><PRE data-type="content" type="text/javascript" __wid="evKzB2FA">var SectionItem = function(section) {
 	section.__sectionItem = this;
 	this.section = section;
 	// Create a list item for the section
@@ -8447,11 +8447,11 @@ tree.innerHTML = "";
 sections.forEach((section) => {
 	var sectionItem = new SectionItem(section);
 	tree.appendChild(sectionItem.li);
-});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Section browser style" __wid="QbGKhVeA"><STYLE data-type="content" type="text/css" codemirror="true" __wid="Ax9fwXt7">#section-tree {
+});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Section browser style" __wid="IqrEt0u3"><STYLE data-type="content" type="text/css" codemirror="true" __wid="TywVMatU">#section-tree {
 	padding-left: 0px;	
 	user-select: none;
 	max-height: 500px;
-	overflow: scroll;
+	overflow: auto;
 }
 
 #section-tree, #section-tree ul {
