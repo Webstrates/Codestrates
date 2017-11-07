@@ -7,7 +7,7 @@ To use Codestrates you need access to a [Webstrates](webstrates.net) server. Ref
 To create a new codestrate on a Webstrates server go to:  
 `yourserver.com/new?prototypeUrl=https://github.com/cklokmose/Codestrates/archive/master.zip`.
 
-[You can also try out Codestrates on the demo.webstrates.net server](demo.webstrates.net/new?prototypeUrl=https://github.com/cklokmose/Codestrates/archive/master.zip).
+[You can also try out Codestrates on the demo.webstrates.net server](https://demo.webstrates.net/new?prototypeUrl=https://github.com/cklokmose/Codestrates/archive/master.zip).
 
 ## [Screencast of functionality on youtube](https://www.youtube.com/watch?v=7HedZZoFC-s)
 You can also access this screencast by pressing _F1_ inside a codestrate.
