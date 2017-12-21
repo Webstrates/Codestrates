@@ -11121,7 +11121,7 @@ exports.importPackages = async() => {
 
 	if (typeof result === "string") {
 		PackageExportImport.importByUrl(result);
-	} else if (result.url !== "") {
+	} else if (typeof result.url === "string" && result.url !== "") {
 		PackageExportImport.importByGitHub(result.url, result.folder);
 	} else {
 		PackageExportImport.importByBlob(result);
@@ -17387,6 +17387,42 @@ html #section-tree.hide-package-sections li.hidden[data-type="package"] {
 
 	
 
+	
+
+
+
+	
+	
+	
+
+
+
+	
+	
+	
+
+
+
+	
+	
+	
+
+
+
+	
+	
+	
+
+
+
+	
+	
+	
+
+
+
+	
+	
 	
 
 
