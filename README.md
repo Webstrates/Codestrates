@@ -22,12 +22,6 @@ You can also [click here](https://demo.webstrates.net/new?prototypeUrl=https://g
 
 The codestrate prototype in this repository provides the basic functions to use Codestrates. For extended features like a drawing canvas or collaboration features Codestrates uses a package system: Features can be added and removed from a codestrate. See the [Codestrate Packages](https://github.com/Webstrates/Codestrate-Packages) repository for basic packages and more information.
 
-## Usage
-
-Click on the preview image to see a screencast on YouTube of Codestrates in action:
-
-[![Codestrates in action](https://img.youtube.com/vi/7HedZZoFC-s/maxresdefault.jpg)](http://www.youtube.com/watch?v=7HedZZoFC-s)
-
 ## Disclaimer
 
 Codestrates is a research prototype in active development. Many features are still experimental and yet to be properly documented.
