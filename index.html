@@ -12981,8 +12981,8 @@ html .paragraph .persistent-log[data-type="content"] p.warn {
 
 html .paragraph .persistent-log[data-type="content"] p.error {
 	color: var(--material-color-red);
-}</STYLE></DIV></DIV><DIV class="section section-hidden" data-id="LCcYNngp" name="Section Pulling" data-type="system" __wid="JjcisXus" data-group="editing"><DIV class="paragraph body-paragraph locked collapsed" name="Documentation" data-id="kLGMzKFm" __wid="mgcUb76H"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="false" class="section-documentation" __wid="Czxi5xpp"><H2 __wid="AAT73ZK7">Description</H2><DIV __wid="keM4rE8r">Helper functions for package and system section pulling and updating.</DIV></DIV></DIV><DIV class="paragraph data-paragraph collapsed locked" name="Properties" data-id="SMDkHRJ6" __wid="vpF3M3pd" style><PRE data-type="content" type="application/json" class="section-properties" contenteditable="false" __wid="N6NySX3H">{
-  "version": "1.1.5",
+}</STYLE></DIV></DIV><DIV class="section section-hidden" data-id="LCcYNngp" name="Section Pulling" data-type="system" data-group="editing" __wid="VtVNi9jG"><DIV class="paragraph body-paragraph locked collapsed" name="Documentation" data-id="kLGMzKFm" __wid="bZwZQVZc"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="false" class="section-documentation" __wid="mFiHeGZH"><H2 __wid="K7tyTHQt">Description</H2><DIV __wid="AkPE7tvy">Helper functions for package and system section pulling and updating.</DIV></DIV></DIV><DIV class="paragraph data-paragraph locked collapsed" name="Properties" data-id="SMDkHRJ6" style __wid="b7zQ2YDq"><PRE data-type="content" type="application/json" class="section-properties" contenteditable="false" __wid="iWZMudnC">{
+  "version": "1.1.6",
   "description": "Helper functions for package and system section pulling.",
   "changelog": {
     "1.0": "Initial Release",
@@ -12991,42 +12991,42 @@ html .paragraph .persistent-log[data-type="content"] p.error {
     "1.1.2": "Added the 'usage' property for optional dependencies.",
     "1.1.3": "Added 'github' to package property template.",
     "1.1.4": "Added 'tags' to package property template.",
-    "1.1.5": "Renamed action buttons on pull section dialog."
+    "1.1.5": "Renamed action buttons on pull section dialog.",
+    "1.1.6": "Updated templates to use spaces instead of tabs."
   }
-}</PRE></DIV><DIV class="paragraph body-paragraph locked collapsed" data-id="xVvLC9p6" name="Documentation Template" __wid="ZyLrAF6k"><DIV data-type="content" type="text/html" __wid="QwuatewJ" codemirror="true" contenteditable="false" id="section-documentation-template"><H2 __wid="dW8mGtXD">Description</H2><DIV __wid="KX5MPHfU">Your description...</DIV></DIV></DIV><DIV class="paragraph data-paragraph locked collapsed" data-id="bcEm6CE3" name="System Section Properties Template" __wid="XxgngvXq"><PRE data-type="content" type="application/json" __wid="iM5BLWLu" contenteditable="false" id="system-section-properties-template">{
-	"version": "1.0",
-	"description": "Your short description.",
-	"changelog":
-	{
-		"1.0": "Initial version."
-	}
-}</PRE></DIV><DIV class="paragraph data-paragraph locked collapsed" name="Package Section Properties Template" data-id="wN79wgzT" __wid="jWVWZJ6L"><PRE data-type="content" type="application/json" contenteditable="false" id="package-section-properties-template" __wid="PedUucBa">{
-	"version": "1.0",
-	"icon": "your_material_icon_string",
-	"description": "Your short description.",
-	"tags": [
-		"Your tags"
-	],
-	"assets": [
-		"yourAssets.js"
-	],
-	"dependencies": [
-		{
-			"id": "Dependency section-id",
-			"name": "Dependency Name",
-			"optional": false,
-			"usage": "Short explanation for what features a optional dependeny is used."
-		}
-	],
-	"changelog":
-	{
-		"1.0": "Initial version."
-	},
-	"github": {
-		"url": "https://github.com/UserName/Repository",
-		"folder": "optional/path/to/package"
-	}
-}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Section Pulling Utils" data-id="S3da4Svm" draggable="false" style __wid="eMBCPvpW"><PRE data-type="content" type="text/javascript" id="section-pulling-utils" __wid="qzuYiBMw">/**
+}</PRE></DIV><DIV class="paragraph body-paragraph locked collapsed" data-id="xVvLC9p6" name="Documentation Template" __wid="8w84aHeZ"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="false" id="section-documentation-template" __wid="zcm2igBi"><H2 __wid="wVMJnvyc">Description</H2>
+<DIV __wid="T9UNumDy">Your description...</DIV></DIV></DIV><DIV class="paragraph data-paragraph locked collapsed" data-id="bcEm6CE3" name="System Section Properties Template" __wid="NfV9VgfS"><PRE data-type="content" type="application/json" contenteditable="false" id="system-section-properties-template" __wid="xcnayubr">{
+  "version": "1.0",
+  "description": "Your short description.",
+  "changelog": {
+    "1.0": "Initial version."
+  }
+}</PRE></DIV><DIV class="paragraph data-paragraph locked collapsed" name="Package Section Properties Template" data-id="wN79wgzT" __wid="qHtgbr8D"><PRE data-type="content" type="application/json" contenteditable="false" id="package-section-properties-template" __wid="Cw9m63Za">{
+  "version": "1.0",
+  "icon": "your_material_icon_string",
+  "description": "Your short description.",
+  "tags": [
+    "Your tags"
+  ],
+  "assets": [
+    "yourAssets.js"
+  ],
+  "dependencies": [
+    {
+      "id": "Dependency section-id",
+      "name": "Dependency Name",
+      "optional": false,
+      "usage": "Short explanation for what features a optional dependeny is used."
+    }
+  ],
+  "changelog": {
+    "1.0": "Initial version."
+  },
+  "github": {
+    "url": "https://github.com/UserName/Repository",
+    "folder": "optional/path/to/package"
+  }
+}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Section Pulling Utils" data-id="S3da4Svm" draggable="false" style __wid="UwnQrBHM"><PRE data-type="content" type="text/javascript" id="section-pulling-utils" __wid="gdgrtvBN">/**
  * Gets the properties of a system section or package.
  *
  * @param sectionElement Section HTML element.
@@ -13974,7 +13974,7 @@ html table.update-system-sections tr[local="true"][version-changed="false"] {
 html table.update-system-sections tr[local="true"][version-changed="undefined"] {
 	background: var(--material-color-teal);
 	color: var(--material-color-grey-100);
-}</STYLE></DIV></DIV><DIV class="section section-hidden" data-type="system" data-group="editing" data-id="VKHriGtH" name="Package Management" __wid="FakSm2g4"><DIV class="paragraph body-paragraph locked collapsed" name="Documentation" data-id="juE5JLby" __wid="XimmeRNh"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="false" class="section-documentation" __wid="nUgZx9bd"><H2 __wid="bPwEcDE7">Packages</H2><DIV __wid="DQWaALHH">A package is a extension of the functionality of a codestrate. A package thereby consists of a single section in a codestrate. All functionality needs to reside in that section. In addition to that a package can have dependencies and assets. These are defined in the properties of a package, besides some other meta information like the version or a description.</DIV><DIV __wid="LzVussdT">A user section can be toggled as a package by using the "Activate Package Section" button in the section-header.</DIV><H3 __wid="D92KJQSr">Package ID</H3><DIV __wid="DDBchhYQ">A package is identified by a unique data-id. The ID of a package is the value of the <CODE __wid="erJjesBs">data-id</CODE>-attribute of the respective section. The name of a package section is not used to identify a package, so it may be changed.</DIV><DIV __wid="6dUiNsE7"><B __wid="rsHxT76k">Hint</B>: When a section is a package the data-id will be displayed in a box in the section-header.</DIV><H3 __wid="yzzDybuj">Documentation</H3><DIV __wid="gUDkb3jd">The first paragraph in every package should be the "Documentation" body-paragraph (<CODE __wid="yZMz8pmz">.section-documentation</CODE>). The functionality and usage of a package should be documented in that paragraph. Also shortcuts and other information can be added here.</DIV><H3 __wid="DbtmxjiU">Properties</H3><DIV __wid="T43Qb6DZ">The second paragraph after the documentation is the "Propterties" data-paragraph (<CODE __wid="4uEUXiBc">.section-properties</CODE>). In this paragraph meta information and alike should be added. A template with all available properties of a package can be found in the "Section Pulling" system section.</DIV><DIV __wid="8r5dWe35">An example of properties can be seen here:</DIV><PRE __wid="dcAuN4Sz"><CODE __wid="4wfCGC3A">{
+}</STYLE></DIV></DIV><DIV class="section section-hidden" data-group="editing" data-id="VKHriGtH" name="Package Management" __wid="gGiZrzwV" data-type="system"><DIV class="paragraph body-paragraph locked collapsed" name="Documentation" data-id="juE5JLby" __wid="kM45dzX3"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="false" class="section-documentation" __wid="aVtb9ibF"><H2 __wid="2WqV8xbV">Packages</H2><DIV __wid="EyxvuS4y">A package is a extension of the functionality of a codestrate. A package thereby consists of a single section in a codestrate. All functionality needs to reside in that section. In addition to that a package can have dependencies and assets. These are defined in the properties of a package, besides some other meta information like the version or a description.</DIV><DIV __wid="5JWPiqs8">A user section can be toggled as a package by using the "Activate Package Section" button in the section-header.</DIV><H3 __wid="Ntj9zwuu">Package ID</H3><DIV __wid="NWJ2FXY8">A package is identified by a unique data-id. The ID of a package is the value of the <CODE __wid="WX3z5mAA">data-id</CODE>-attribute of the respective section. The name of a package section is not used to identify a package, so it may be changed.</DIV><DIV __wid="4UB4Xfua"><B __wid="4a6xNHBS">Hint</B>: When a section is a package the data-id will be displayed in a box in the section-header.</DIV><H3 __wid="Nks8y4Fk">Documentation</H3><DIV __wid="jqd68inc">The first paragraph in every package should be the "Documentation" body-paragraph (<CODE __wid="jc8FYYnB">.section-documentation</CODE>). The functionality and usage of a package should be documented in that paragraph. Also shortcuts and other information can be added here.</DIV><H3 __wid="mY6cjASi">Properties</H3><DIV __wid="aMgnkZ4Z">The second paragraph after the documentation is the "Propterties" data-paragraph (<CODE __wid="b4AK2Vg6">.section-properties</CODE>). In this paragraph meta information and alike should be added. A template with all available properties of a package can be found in the "Section Pulling" system section.</DIV><DIV __wid="cndRDk6E">An example of properties can be seen here:</DIV><PRE __wid="unSGz8F3"><CODE __wid="CXt2xDpG">{
   "version": "1.1",
   "icon": "example_icon",
   "description": "This is an example.",
@@ -13983,7 +13983,7 @@ html table.update-system-sections tr[local="true"][version-changed="undefined"] 
     "1.1": "Changed something in the code.",
     "1.0": "Initial version."
   }
-}</CODE></PRE><DIV __wid="xndUbcrD"><B __wid="4hegxF8n">Hint</B>: When toggling an user section without properties as a package, Codestrates will offer to copy the templates into the new package. The template can then be adjusted to the own needs.</DIV><H3 __wid="shEMFEN8">Dependencies</H3><DIV __wid="8MrE3jtD">Packages can depend on the functionality of other packages. When an package gets installed, the dependencies will also be installed. If there are optional dependencies, the user will be asked, if he wants to install them.</DIV><DIV __wid="2FZykzUb">Dependencies can be defined in the properties of a package. An example of a dependency can be seen here:</DIV><PRE __wid="ecrsmgPG"><CODE __wid="PvRLje6F">"dependencies": [
+}</CODE></PRE><DIV __wid="FePgfRbA"><B __wid="KeJWr7KW">Hint</B>: When toggling an user section without properties as a package, Codestrates will offer to copy the templates into the new package. The template can then be adjusted to the own needs.</DIV><H3 __wid="v6NwDXVN">Dependencies</H3><DIV __wid="ycer4t5b">Packages can depend on the functionality of other packages. When an package gets installed, the dependencies will also be installed. If there are optional dependencies, the user will be asked, if he wants to install them.</DIV><DIV __wid="ZdCTVgV8">Dependencies can be defined in the properties of a package. An example of a dependency can be seen here:</DIV><PRE __wid="WajeTkB4"><CODE __wid="7aivgRze">"dependencies": [
   {
     "id": "MaIHJaI9",
     "name": "Dependency Example (will always be installed)"
@@ -13994,11 +13994,11 @@ html table.update-system-sections tr[local="true"][version-changed="undefined"] 
     "optional": true,
     "usage": "This dependency is needed to user the extended feature xyz."
   }
-]</CODE></PRE><DIV __wid="LjiFBTfT">A dependency consists of the following parts:</DIV><DIV __wid="PEnBs2Hs"><UL __wid="3NGzVZb6"><LI __wid="vQwMjeQs"><CODE __wid="jVszt5Zg">id</CODE>: The package ID of the dependency (used to identify the dependency).</LI><LI __wid="V7S9pURw"><CODE __wid="NAXp2PXb">name</CODE>: Human readable name of the dependency.</LI><LI __wid="48bjKdtM"><CODE __wid="EX4zVfSF">optional</CODE>: Sets whether the dependency is optional or mandatory (default: <CODE __wid="fTBh7uJ5">false</CODE>).</LI><LI __wid="7CXxabKf"><CODE __wid="Yq8G6fLA">usage</CODE>: Short explanation what the dependency is used for. If the dependency is optional, this message will be shown to a user in the dialog while installation.</LI></UL></DIV><H3 __wid="TZzPY9mD">Assets</H3><DIV __wid="DUNUcL2x">Besides depending on other packages, a package can also have assets like images or JavaScript libraries. Assets will be stored as Webstrates assets. When installing or pushing packages, assets will also be pulled or pushed in the other codestrate.</DIV><DIV __wid="jTK36DcB">Like dependencies assets are defined in the properties. An example can be seen below:</DIV><PRE __wid="eL347GSM"><CODE __wid="n2UEa5AB">"assets": [
+]</CODE></PRE><DIV __wid="zMgnzKPh">A dependency consists of the following parts:</DIV><DIV __wid="itKZM4B6"><UL __wid="J2nUkpvc"><LI __wid="KkpihGGF"><CODE __wid="3iDJaukD">id</CODE>: The package ID of the dependency (used to identify the dependency).</LI><LI __wid="gG8bn83b"><CODE __wid="D6UvbUms">name</CODE>: Human readable name of the dependency.</LI><LI __wid="Dj9PPpU5"><CODE __wid="T2HdpXjK">optional</CODE>: Sets whether the dependency is optional or mandatory (default: <CODE __wid="n9SNdP29">false</CODE>).</LI><LI __wid="UNsUMhNz"><CODE __wid="Ui37icc2">usage</CODE>: Short explanation what the dependency is used for. If the dependency is optional, this message will be shown to a user in the dialog while installation.</LI></UL></DIV><H3 __wid="JBX3dbhV">Assets</H3><DIV __wid="MC7YGiEx">Besides depending on other packages, a package can also have assets like images or JavaScript libraries. Assets will be stored as Webstrates assets. When installing or pushing packages, assets will also be pulled or pushed in the other codestrate.</DIV><DIV __wid="faEK53CC">Like dependencies assets are defined in the properties. An example can be seen below:</DIV><PRE __wid="bJmw5spF"><CODE __wid="JwcqFpUN">"assets": [
   "myLibrary.min.js",
   "myImage.png"
-]</CODE></PRE><H3 __wid="BBvu7unR">Persistent Paragraphs</H3><DIV __wid="P53G9X8V">Sometimes packages need a CSS style to give a proper representation of their content (like slides in the "Presentations" package or a canvas in the "Drawing" package). These styles are still needed after a package has been removed (to for example have a canvas but without the drawing tools). To tackle this it is possible to set the class of paragraphs to <CODE __wid="ibmVeV3d">persistent</CODE>.</DIV><DIV __wid="m7LHiKTK">Paragraphs of a package, which have the class <CODE __wid="tc6hj4JM">persistent</CODE> will remain in a codestrate after the package has been removed, so the functionality of a package can be removed, while being sure the created content is still correctly displayed inside the Codestrate.</DIV><DIV __wid="AnkJctBx"><B __wid="WVbwFQc4">Hint</B>: Removing a package with only persistent parts left a second time, will also remove the persistent parts of it.</DIV><H2 __wid="jYcyWYmc">Repositories</H2><DIV __wid="2Lbti72L">A repository is a codestrate, which contains and distributes packages, that can be pulled into another codestrate. In Codestrates packages can be pulled from <B __wid="eCJXNGVe">any </B>codestrate and can be pushed into <B __wid="vWTFKEWs">any </B>codestrate (given the user has read and write rights). Usually it makes sense to pull and push from/to a shared codestrate, the repository.</DIV><DIV __wid="6HYqHWS2">One can for example create multiple repositories for different groups of packages (e.g. collaboration packages).</DIV><H3 __wid="gSQ98hGA">Managing Repositories</H3><DIV __wid="9gj6pdrS">The default repository is the codestrate with the name "Codestrate-Packages" and the tag "HEAD" (so the most recent version). But it is also possible to add new repositories and tags, which are then available in the select-box in the Packages dialogs.</DIV><DIV __wid="bcH3uS3c">When pulling or pushing packages to a repository, which is not in the list, it will automatically be added. The entries can be modified or removed using the "Manage Package Repositories" button in the global menu.</DIV><H3 __wid="uvP5nVUM">Repository List</H3><DIV __wid="8FV8vCJu">The list of repositories is stored inside a Webstrates "anywhere cookie". So it will be available across all codestrates when the user is logged in and even across devices and web browsers. If the user is not logged in, the list will be stored inside the local storage of the web browser.</DIV><H2 __wid="nFm2MGj4">Package Management</H2><H3 __wid="rAawyssa">Installation</H3><DIV __wid="zx5BjiUn">To install packages one can use the "Install and Update Packages" button in the global menu. Installing a package will copy the section of the package to the current codestrate, copy the assets and also install the dependencies (for optional dependencies a dialog will be shown).</DIV><DIV __wid="pNpzjeWG">The installation dialog will show all packages available in the repository. The colors in the dialog have the following meanings:</DIV><DIV __wid="7ySx3zZD"><UL __wid="pd4pe8cd"><LI __wid="bY9s94mb"><B __wid="3kpSJkAL">Uncolored</B>: The package is not installed.</LI><LI __wid="Jjic9m8Y"><B style="color: var(--material-color-green);" __wid="z6hcaTvC">Green</B>: The package is installed and has the same version as the one in the repository.</LI><LI __wid="ke4t2GA4"><B style="color: var(--material-color-orange);" __wid="xhcBPWkg">Orange</B>: The package is installed, but has a different version as the one in the repository.</LI><LI __wid="KTBfHR54"><B style="color: var(--material-color-red);" __wid="JUWAKdG3">Red</B>: The package is uninstalled (only the persistent paragraphs of the package are left in the codestrate).</LI><LI __wid="YZGQjR6U"><B style="color: var(--material-color-teal);" __wid="9csDtZia">Teal</B>: The package is installed, but either the installed package or the package in the repository has no version or properties to match the version of the packages.</LI></UL></DIV><H3 __wid="uRdLrfms">Updates</H3><DIV __wid="nSCnZSzg">To update installed packages one can use either the "Install and Update Packages" button to update individual packages or the "Update All Packages" button to update all packages. Updating a package will overwrite the installed package with the one from the repository, so <B __wid="w56rvxNb">local changes inside the package section will be overwritten</B>.</DIV><DIV __wid="cDK2nmW8">Assets will also be updated when updating a package. Dependencies will not be updated, if they are already installed, but will be pulled again if they are not available anymore in the codestrate.</DIV><H3 __wid="FrFdJcQr">Pushing</H3><DIV __wid="D4YvfMZ6">To push package to a repository one can use the "Push Packages" button in the global menu. Pushing a package will technically install or update the package on the repository with the locally installed one. When pushing a package it always needs to be pushed to the "HEAD" tag of a codestrate.</DIV><DIV __wid="kd5UMxgp"><B __wid="5FTTZmrW">Hint</B>: Uninstalled packages (packages with only persistent paragraphs left) cannot be pushed.</DIV><H3 __wid="yzVXjnxs">Removing</H3><DIV __wid="C9YB8YA5">To remove packages one can use the "Remove Packages" button in the global menu. By removing packages the section will be removed from the codestrate (except when having persistent paragraphs, see above). Assets and dependencies stay in the codestrate.</DIV><DIV __wid="5DJMcHqA"><B __wid="qxVBkXzZ">Hint</B>: Packages should always be removed using the "Remove Packages" dialog and not by removing the section manually.</DIV><H2 __wid="Upn4C84i">Export and Import</H2><DIV __wid="GAtLFVu2">Packages can be ex- and imported from/to a codestrate. An exported package consists is a zip-file containing the section of a paragraph, a generated readme file (out of section-documentation and section-properties) and the assets of the package. This zip-file can be uploaded to a codestrate to import the packages, i.e. installing them.</DIV><DIV __wid="WQgsC8Hy">Exporting packages allows to easily share packages between different webstrates servers or in case one doesn't want to grant other people access to whole codestrates.</DIV><H3 __wid="AhTGmkie">Export</H3><DIV __wid="aaJZe78F">Packages can either be exported indivually using the icon in the section-header of a package or using a the "Export Packages" button in the global menu. When selecting multiple packages each package will be exported ina separate folder inside the zip-file.</DIV><DIV __wid="U5Fzyhsq"><B __wid="xZTkNkAK">Hint</B>: Dependencies have to be selected manually when exporting packages.</DIV><H3 __wid="ycdrqcay">Import</H3><DIV __wid="hqxu2PMh">Packages can be imported using the "Import Packages" button in the global menu. Importing packages technically installs or updates them in the codestrate. So the package section will be copied into the codestrate (or replaces the section if the package is already installed) and assets will be imported. It is possible to provide the zip-file via file upload or by providing a link.</DIV><DIV __wid="yt46DhkJ"><B __wid="myQxqSUn">Hint</B>: Because of cross-origin policies the zip-file has to be on the same server as the codestrate when providing it as a link.</DIV><H2 __wid="UnpTmz3a">GitHub Export and Import</H2><DIV __wid="aMvsGnGC">Besides exporting packages as zip-files it is also possible to push them directly to a GitHub repository or pull them from there.</DIV><H3 __wid="7LjtcEnr">Access Token</H3><DIV __wid="VcX6SqiK">Codestrates uses the GitHub Contents API (<A href="https://developer.github.com/v3/repos/contents/" target="_blank" __wid="mDjEKd4D">link</A>) to pull or push packages from/to GitHub. The API only allows 60 REST calls per hour without an access token. This is not enough, if many packages are pulled at once. Therefore it is advised to provide an access token, which increases the REST call limit to 5000.</DIV><DIV __wid="5LFbZat3">For imports from GitHub the access token needs no additional permission. For exporting to GitHub the token needs to have repository permissions. As for security the token is not stored inside a codestrate or cookie and needs to be re-entered on every page load. The token needs the following scope:</DIV><DIV __wid="ZAiMcnay"><UL __wid="ix4MFbiV"><LI __wid="C5WZHak6"><CODE __wid="3staUyPc">public_repo</CODE> for public repositories</LI><LI __wid="GWiXguYN"><CODE __wid="DkLB58RB">repo</CODE> for private repositories</LI></UL></DIV><H3 __wid="gPYu2U9N">Export to GitHub</H3><DIV __wid="77ZwJmUv">To export packages to GitHub one can use the button in the section-header of packages. When exporting a package a user needs to fill in the usual commit information: a commit message, a name and a email address. In addition a link to a repository needs to be provided and optionally a folder in which the package should be exported to. Every file changed will appear as a separate commit in the git log.</DIV><DIV __wid="fX7amPij">The option "Cleanup repository" allows to cleanup the repository (e.g. when assets were removed from a package). The cleanup will remove all files from the repository or the respective folder (if a folder is set) before the commit.</DIV><H3 __wid="XDs67hG8">Import from GitHub</H3><DIV __wid="GX3BBWgJ">To import packages from GitHub one can use the "Import Packages" dialog in the global menu. Instead of providing a URL to a zip-file one simply has to enter the URL of the GitHub repository (the root URL to the repository, e.g. <CODE __wid="GyxXy46B">https://github.com/UserName/RepositoryName</CODE>).</DIV><H3 __wid="PAWjxGgg">Compatiblity with ZIP-Files</H3><DIV __wid="sjy3EngL">The structure of a GitHub export and zip-file export is the same. So it is possible to export a package as a zip-file and upload it's contents to a GitHub repository and later import it directly off the repository or vice-versa.</DIV><H2 __wid="bdZ4fbn4">Other</H2><H3 __wid="HwbJ9mAr">Install Packages with Visible Section</H3><DIV __wid="UyM5J4pF">When packages are installed the sections are added in a hidden state by default. If the sections should be visible upon installation or update add the <CODE __wid="eGf95Y2P">package-visible</CODE> class to the package section.</DIV></DIV></DIV><DIV class="paragraph data-paragraph collapsed locked" name="Properties" data-id="iy5QSnEW" __wid="gcPXJyyQ"><PRE data-type="content" type="application/json" class="section-properties" contenteditable="false" __wid="7b62bBNd">{
-  "version": "1.7.4",
+]</CODE></PRE><H3 __wid="jWwKQTxK">Persistent Paragraphs</H3><DIV __wid="iUupk3kr">Sometimes packages need a CSS style to give a proper representation of their content (like slides in the "Presentations" package or a canvas in the "Drawing" package). These styles are still needed after a package has been removed (to for example have a canvas but without the drawing tools). To tackle this it is possible to set the class of paragraphs to <CODE __wid="tYegh3MT">persistent</CODE>.</DIV><DIV __wid="AhcYFEq4">Paragraphs of a package, which have the class <CODE __wid="kPZ7wLeK">persistent</CODE> will remain in a codestrate after the package has been removed, so the functionality of a package can be removed, while being sure the created content is still correctly displayed inside the Codestrate.</DIV><DIV __wid="hpQqHJLM"><B __wid="Q5faC9tv">Hint</B>: Removing a package with only persistent parts left a second time, will also remove the persistent parts of it.</DIV><H2 __wid="RK7tNCby">Repositories</H2><DIV __wid="UYNs5bk4">A repository is a codestrate, which contains and distributes packages, that can be pulled into another codestrate. In Codestrates packages can be pulled from <B __wid="7ipNm65d">any </B>codestrate and can be pushed into <B __wid="TfCE3me9">any </B>codestrate (given the user has read and write rights). Usually it makes sense to pull and push from/to a shared codestrate, the repository.</DIV><DIV __wid="VS4bdw6J">One can for example create multiple repositories for different groups of packages (e.g. collaboration packages).</DIV><H3 __wid="ymVBrhzL">Managing Repositories</H3><DIV __wid="vzLvaGFX">The default repository is the codestrate with the name "Codestrate-Packages" and the tag "HEAD" (so the most recent version). But it is also possible to add new repositories and tags, which are then available in the select-box in the Packages dialogs.</DIV><DIV __wid="EYeBLnqt">When pulling or pushing packages to a repository, which is not in the list, it will automatically be added. The entries can be modified or removed using the "Manage Package Repositories" button in the global menu.</DIV><H3 __wid="CdkpH7pu">Repository List</H3><DIV __wid="jqcgpXRD">The list of repositories is stored inside a Webstrates "anywhere cookie". So it will be available across all codestrates when the user is logged in and even across devices and web browsers. If the user is not logged in, the list will be stored inside the local storage of the web browser.</DIV><H2 __wid="mZcChaQ6">Package Management</H2><H3 __wid="z3BUjr72">Installation</H3><DIV __wid="RJwuuqhe">To install packages one can use the "Install and Update Packages" button in the global menu. Installing a package will copy the section of the package to the current codestrate, copy the assets and also install the dependencies (for optional dependencies a dialog will be shown).</DIV><DIV __wid="g6fbJy2R">The installation dialog will show all packages available in the repository. The colors in the dialog have the following meanings:</DIV><DIV __wid="VHY79hnf"><UL __wid="LSuT6Fpv"><LI __wid="E38zfUYi"><B __wid="Ve2nwtbu">Uncolored</B>: The package is not installed.</LI><LI __wid="BAedp32Y"><B style="color: var(--material-color-green);" __wid="wMJQg58n">Green</B>: The package is installed and has the same version as the one in the repository.</LI><LI __wid="NND7h96C"><B style="color: var(--material-color-orange);" __wid="RQed6Ldy">Orange</B>: The package is installed, but has a different version as the one in the repository.</LI><LI __wid="jwrbQYm6"><B style="color: var(--material-color-red);" __wid="PYVnFkfC">Red</B>: The package is uninstalled (only the persistent paragraphs of the package are left in the codestrate).</LI><LI __wid="6vURYPgu"><B style="color: var(--material-color-teal);" __wid="Qc6AandB">Teal</B>: The package is installed, but either the installed package or the package in the repository has no version or properties to match the version of the packages.</LI></UL></DIV><H3 __wid="nxFMQRY6">Updates</H3><DIV __wid="TM5ugvEB">To update installed packages one can use either the "Install and Update Packages" button to update individual packages or the "Update All Packages" button to update all packages. Updating a package will overwrite the installed package with the one from the repository, so <B __wid="q7cSY6cX">local changes inside the package section will be overwritten</B>.</DIV><DIV __wid="gfaPDxjU">Assets will also be updated when updating a package. Dependencies will not be updated, if they are already installed, but will be pulled again if they are not available anymore in the codestrate.</DIV><H3 __wid="yevscvp6">Pushing</H3><DIV __wid="N7wmzg5i">To push package to a repository one can use the "Push Packages" button in the global menu. Pushing a package will technically install or update the package on the repository with the locally installed one. When pushing a package it always needs to be pushed to the "HEAD" tag of a codestrate.</DIV><DIV __wid="buneD435"><B __wid="FppWD38x">Hint</B>: Uninstalled packages (packages with only persistent paragraphs left) cannot be pushed.</DIV><H3 __wid="zAYdBVGu">Removing</H3><DIV __wid="xFVbZb8Z">To remove packages one can use the "Remove Packages" button in the global menu. By removing packages the section will be removed from the codestrate (except when having persistent paragraphs, see above). Assets and dependencies stay in the codestrate.</DIV><DIV __wid="8h9rbzkQ"><B __wid="hYDMPEVb">Hint</B>: Packages should always be removed using the "Remove Packages" dialog and not by removing the section manually.</DIV><H2 __wid="idUH8Hag">Export and Import</H2><DIV __wid="mpJQMY9i">Packages can be ex- and imported from/to a codestrate. An exported package consists is a zip-file containing the section of a paragraph, a generated readme file (out of section-documentation and section-properties) and the assets of the package. This zip-file can be uploaded to a codestrate to import the packages, i.e. installing them.</DIV><DIV __wid="RMAQ7tBK">Exporting packages allows to easily share packages between different webstrates servers or in case one doesn't want to grant other people access to whole codestrates.</DIV><H3 __wid="ZYRVYKgN">Export</H3><DIV __wid="xS95jPMB">Packages can either be exported indivually using the icon in the section-header of a package or using a the "Export Packages" button in the global menu. When selecting multiple packages each package will be exported ina separate folder inside the zip-file.</DIV><DIV __wid="J7FuTsQt"><B __wid="M3Req2T5">Hint</B>: Dependencies have to be selected manually when exporting packages.</DIV><H3 __wid="3ccXKm47">Import</H3><DIV __wid="GaxAa2wt">Packages can be imported using the "Import Packages" button in the global menu. Importing packages technically installs or updates them in the codestrate. So the package section will be copied into the codestrate (or replaces the section if the package is already installed) and assets will be imported. It is possible to provide the zip-file via file upload or by providing a link.</DIV><DIV __wid="DRLwCkKb"><B __wid="9qZv2bEq">Hint</B>: Because of cross-origin policies the zip-file has to be on the same server as the codestrate when providing it as a link.</DIV><H2 __wid="XhVYrgM8">GitHub Export and Import</H2><DIV __wid="fhhGvZ9d">Besides exporting packages as zip-files it is also possible to push them directly to a GitHub repository or pull them from there.</DIV><H3 __wid="b3GbPE4t">Access Token</H3><DIV __wid="Ey4GTCds">Codestrates uses the GitHub Contents API (<A href="https://developer.github.com/v3/repos/contents/" target="_blank" __wid="WjvEbg6s">link</A>) to pull or push packages from/to GitHub. The API only allows 60 REST calls per hour without an access token. This is not enough, if many packages are pulled at once. Therefore it is advised to provide an access token, which increases the REST call limit to 5000.</DIV><DIV __wid="fpqxezhA">For imports from GitHub the access token needs no additional permission. For exporting to GitHub the token needs to have repository permissions. As for security the token is not stored inside a codestrate or cookie and needs to be re-entered on every page load. The token needs the following scope:</DIV><DIV __wid="sTEb6x66"><UL __wid="Q62wtwvr"><LI __wid="9aGbQCh7"><CODE __wid="QgAF4R34">public_repo</CODE> for public repositories</LI><LI __wid="rncVjBxY"><CODE __wid="2FxrfzYQ">repo</CODE> for private repositories</LI></UL></DIV><H3 __wid="q7Uxj9kM">Export to GitHub</H3><DIV __wid="Eh6YAyUC">To export packages to GitHub one can use the button in the section-header of packages. When exporting a package a user needs to fill in the usual commit information: a commit message, a name and a email address. In addition a link to a repository needs to be provided and optionally a folder in which the package should be exported to. Every file changed will appear as a separate commit in the git log.</DIV><DIV __wid="TTUpebkf">The option "Cleanup repository" allows to cleanup the repository (e.g. when assets were removed from a package). The cleanup will remove all files from the repository or the respective folder (if a folder is set) before the commit.</DIV><H3 __wid="rH7qmZPU">Import from GitHub</H3><DIV __wid="MQE6rhgY">To import packages from GitHub one can use the "Import Packages" dialog in the global menu. Instead of providing a URL to a zip-file one simply has to enter the URL of the GitHub repository (the root URL to the repository, e.g. <CODE __wid="ym9pfpBv">https://github.com/UserName/RepositoryName</CODE>).</DIV><H3 __wid="xcmSmVER">Compatiblity with ZIP-Files</H3><DIV __wid="ufE8HZzZ">The structure of a GitHub export and zip-file export is the same. So it is possible to export a package as a zip-file and upload it's contents to a GitHub repository and later import it directly off the repository or vice-versa.</DIV><H2 __wid="9N2D2YMQ">Other</H2><H3 __wid="pPpaRNG6">Install Packages with Visible Section</H3><DIV __wid="XqJW6Cq7">When packages are installed the sections are added in a hidden state by default. If the sections should be visible upon installation or update add the <CODE __wid="zyGmUvNS">package-visible</CODE> class to the package section.</DIV></DIV></DIV><DIV class="paragraph data-paragraph collapsed locked" name="Properties" data-id="iy5QSnEW" __wid="gtGhbp9J"><PRE data-type="content" type="application/json" class="section-properties" contenteditable="false" __wid="P5Bu2CEF">{
+  "version": "1.7.5",
   "description": "Functionality to pull and manage packages.",
   "changelog": {
     "1.0": "Initial Release",
@@ -14023,9 +14023,10 @@ html table.update-system-sections tr[local="true"][version-changed="undefined"] 
     "1.7.1": "Better style for repository manager inputs.",
     "1.7.2": "Bold package titles in dialogs and icons in dialogs.",
     "1.7.3": "Renamed action buttons on various install,update,remove,export dialogs.",
-    "1.7.4": "Added 'package-visible' class to install packages with an visible section"
+    "1.7.4": "Added 'package-visible' class to install packages with an visible section",
+    "1.7.5": "Fixed a bug with btoa and escape charaters in GitHub Export and Import, fixed always reloading on GitHub import, added action to update from GitHub."
   }
-}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Global Menu Entries" run-on-load="true" last-execution-state="success" data-id="iTmARxY2" __wid="4erED9Dz"><PRE data-type="content" type="text/javascript" __wid="vmnfTxqD">const GlobalMenuUtils = require("#global-menu-utils");
+}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Global Menu Entries" run-on-load="true" last-execution-state="success" data-id="iTmARxY2" __wid="LfEjTbCU"><PRE data-type="content" type="text/javascript" __wid="uiNBFvYx">const GlobalMenuUtils = require("#global-menu-utils");
 const PackageManagementCode = require("#package-management-code");
 const PackageRepositoryManager = require("#package-repository-manager");
 
@@ -14090,7 +14091,7 @@ GlobalMenuUtils.addMenuItemToSubMenu(pushPackagesButton, subMenuName);
 GlobalMenuUtils.addMenuItemToSubMenu(removePackagesButton, subMenuName);
 GlobalMenuUtils.addMenuItemToSubMenu(exportPackagesButton, subMenuName);
 GlobalMenuUtils.addMenuItemToSubMenu(importPackagesButton, subMenuName);
-GlobalMenuUtils.addMenuItemToSubMenu(managePackageRepositoriesButton, subMenuName);</PRE></DIV><DIV class="paragraph code-paragraph collapsed" data-id="qLQeREve" name="Dependency Graph Utils" __wid="yfQa7zup"><PRE data-type="content" type="text/javascript" id="dependency-graph-utils" __wid="J5YNdEEs">/**
+GlobalMenuUtils.addMenuItemToSubMenu(managePackageRepositoriesButton, subMenuName);</PRE></DIV><DIV class="paragraph code-paragraph collapsed" data-id="qLQeREve" name="Dependency Graph Utils" __wid="YN2BXCZQ"><PRE data-type="content" type="text/javascript" id="dependency-graph-utils" __wid="tuA9jaSQ">/**
  * A simple dependency graph
  *
  * Borrowed from:
@@ -14337,7 +14338,7 @@ DepGraph.prototype = {
       return result;
     }
   }
-};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Package Management Code" data-id="X3n8WYiT" __wid="pPWSfLWU"><PRE data-type="content" type="text/javascript" id="package-management-code" __wid="RF6WDzKN">const SectionPullingUtils = require("#section-pulling-utils");
+};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Package Management Code" data-id="X3n8WYiT" __wid="AdMzUvnN"><PRE data-type="content" type="text/javascript" id="package-management-code" __wid="rj9gtSFK">const SectionPullingUtils = require("#section-pulling-utils");
 
 const PackageManagementHelper = require("#package-management-helper");
 const PackageExportImport = require("#package-export-import");
@@ -14574,7 +14575,7 @@ exports.importPackages = async() => {
   } else {
     PackageExportImport.importByBlob(result);
   }
-};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Package Management Helper" data-id="RcAdaK3d" style __wid="33Vv89zT"><PRE data-type="content" type="text/javascript" id="package-management-helper" __wid="ZGtx7zFe">const SectionPullingUtils = require("#section-pulling-utils");
+};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Package Management Helper" data-id="RcAdaK3d" style __wid="GkJ3wF6L"><PRE data-type="content" type="text/javascript" id="package-management-helper" __wid="bGvmFnnR">const SectionPullingUtils = require("#section-pulling-utils");
 const AssetUtils = require("#asset-utils");
 const DepGraph = require('#dependency-graph-utils').DepGraph;
 
@@ -14983,7 +14984,7 @@ exports.removePackages =
   if (packagesRemoved) {
     Codestrate.reloadAll("At least one package was removed. Therefore, the codestrate will reload after removing is completed.");
   }
-};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" data-id="ikbGVj8X" name="Package Export and Import" style __wid="NtXFqkDG"><PRE data-type="content" type="text/javascript" id="package-export-import" __wid="LcCu4A7v">const SectionPullingUtils = require("#section-pulling-utils");
+};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" data-id="ikbGVj8X" name="Package Export and Import" style __wid="QvfMNNpg"><PRE data-type="content" type="text/javascript" id="package-export-import" __wid="dvDMr4Et">const SectionPullingUtils = require("#section-pulling-utils");
 const PackageExportImportHelper = require("#package-export-import-helper");
 const PackageManagementDialogs = require("#package-management-dialogs");
 const PackageManagementLogger = require("#package-management-logger");
@@ -15172,6 +15173,8 @@ importLib([
 
 const importContents = (contents) => {
 	return new Promise(async(resolve, reject) => {
+    let hasUpdatedPackage = false;
+
 		for (let i = 0; i &lt; contents.length; i++) {
 			const element = contents[i];
 
@@ -15187,7 +15190,7 @@ const importContents = (contents) => {
 
 					// Extract and generate section
 					const data = await PackageExportImportHelper.getApiObject(element.git_url);
-					const packageContent = window.atob(data.content);
+					const packageContent = decodeURIComponent(escape(window.atob(data.content)));
 					const template = document.createElement("template");
 					template.innerHTML = packageContent;
 
@@ -15201,6 +15204,7 @@ const importContents = (contents) => {
 
 					if (oldSection) {
 						oldSection.replaceWith(newSection);
+            hasUpdatedPackage = true;
 					} else {
 						const sections = document.querySelector("#sections");
 						const packagesAndSystemSections = Array.from(sections.querySelectorAll(".section[data-type='package'], .section[data-type='system']"));
@@ -15221,7 +15225,7 @@ const importContents = (contents) => {
 				}
 			}
 		}
-		resolve(true);
+		resolve(hasUpdatedPackage);
 	});
 };
 
@@ -15239,12 +15243,16 @@ exports.importByGitHub = async(url, folder) => {
 	const path = folder ? "/" + folder : "";
 
 	const contents = await PackageExportImportHelper.getApiObject(api + "/" + path);
-	await importContents(contents);
+	const hasUpdatedPackage = await importContents(contents);
 
 	PackageManagementLogger.actionFinished(dialogTitle);
 
-	// Reload all clients that have the same codestrate open to reinitialize the codestrate environment.
-	Codestrate.reloadAll("Packages were imported. Therefore, the codestrate will reload after import is completed.");
+  // Reload of codestrate is required because at least one package was updated
+  if (hasUpdatedPackage) {
+
+    // Reload all clients that have the same codestrate open to reinitialize the codestrate environment.
+    Codestrate.reloadAll("Packages were imported. Therefore, the codestrate will reload after import is completed.");
+  }
 };
 
 /******************************************************************************/
@@ -15343,7 +15351,7 @@ exports.exportToGitHub = async(section) => {
 	transients.forEach(transient => transient.remove());
 
 	// Add file
-	await pushFile(api + path + "/" + PackageExportImportHelper.packageFileName(section) + "." + packageFileExtension, window.btoa(exportSection.outerHTML), commitData);
+	await pushFile(api + path + "/" + PackageExportImportHelper.packageFileName(section) + "." + packageFileExtension, window.btoa(unescape(encodeURIComponent(exportSection.outerHTML))), commitData);
 
 	// Add README.md
 	let readMe = PackageExportImportHelper.generateReadMe(exportSection, properties);
@@ -15368,7 +15376,7 @@ exports.exportToGitHub = async(section) => {
 	}
 
 	toast("Pushed package to GitHub");
-};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" data-id="MTEmfFRm" name="Package Export and Import Helper" __wid="QWf2JiL6"><PRE data-type="content" type="text/javascript" id="package-export-import-helper" __wid="BkgD6K4P">let accessToken = "";
+};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" data-id="MTEmfFRm" name="Package Export and Import Helper" __wid="SznWugej"><PRE data-type="content" type="text/javascript" id="package-export-import-helper" __wid="8qVFmj54">let accessToken = "";
 
 /******************************************************************************/
 
@@ -15483,7 +15491,7 @@ exports.blobToB64 = (blob) => {
 		};
 		fileReader.readAsBinaryString(blob);
 	});
-};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" data-id="Ddw5QYTr" name="Package Import URL (disabled)" last-execution-state="success" style __wid="DqdFJduX"><PRE data-type="content" type="text/javascript" __wid="JAQUhMfe">const PackageExportImport = require("#package-export-import");
+};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" data-id="Ddw5QYTr" name="Package Import URL (disabled)" last-execution-state="success" style __wid="CHQPUiG4"><PRE data-type="content" type="text/javascript" __wid="HNRx7SKs">const PackageExportImport = require("#package-export-import");
 
 /******************************************************************************/
 
@@ -15500,43 +15508,63 @@ if (value) {
 			window.location = window.location.origin + window.location.pathname;
 		}
 	})();
-}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" data-id="ZcGzgrsy" name="Package Export UI" run-on-load="true" draggable="false" style last-execution-state="success" __wid="dpjFsinV"><PRE data-type="content" type="text/javascript" __wid="yiAfRBSg">const PackageExportImport = require("#package-export-import");
+}</PRE></DIV><DIV class="paragraph code-paragraph collapsed" data-id="ZcGzgrsy" name="Package Export UI" run-on-load="true" draggable="false" style last-execution-state="success" __wid="isRGS2Kz"><PRE data-type="content" type="text/javascript" __wid="Lqtf5cuf">const PackageExportImport = require("#package-export-import");
 const ActionUtils = require("#action-utils");
+const SectionPullingUtils = require("#section-pulling-utils");
 
 /******************************************************************************/
 
 const sectionQuery = document.liveQuerySelectorAll(".section-header").added((sectionHeader) => {
-	const section = sectionHeader.closest(".section");
-	if (!section || section.querySelector(".export-package")) return;
+  const section = sectionHeader.closest(".section");
+  if (!section || section.querySelector(".export-package")) return;
 
-	const action = ActionUtils.create(() => {
-		PackageExportImport.exportBySection(section);
-	}, {
-		classNames: "export-package",
-		tooltip: true,
-		title: "Export Package"
-	});
+  const actionExport = ActionUtils.create(() => {
+    PackageExportImport.exportBySection(section);
+  }, {
+    classNames: "export-package",
+    tooltip: true,
+    title: "Export Package"
+  });
 
-	sectionHeader.appendChild(action);
+  sectionHeader.appendChild(actionExport);
 
-	const actionGithub = ActionUtils.create(() => {
-		PackageExportImport.exportToGitHub(section);
-	}, {
-		classNames: "export-github-package",
-		tooltip: true,
-		title: "Export Package to GitHub"
-	});
+  const actionGithubExport = ActionUtils.create(() => {
+    PackageExportImport.exportToGitHub(section);
+  }, {
+    classNames: "export-github-package",
+    tooltip: true,
+    title: "Export Package to GitHub"
+  });
 
-	sectionHeader.appendChild(actionGithub);
-});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" data-id="RsTYGeWK" name="Package Export UI Style" style __wid="23MeQCQd"><STYLE data-type="content" type="text/css" codemirror="true" class="themable" __wid="YrzcsHhW">html .section:not([data-type="package"]) .export-package,
+  sectionHeader.appendChild(actionGithubExport);
+
+  const actionGithubImport = ActionUtils.create(() => {
+    const sectionProperties = SectionPullingUtils.getSectionProperties(section);
+    if (sectionProperties.github &&
+        sectionProperties.github.url &&
+        sectionProperties.github.folder) {
+      PackageExportImport.importByGitHub(sectionProperties.github.url, sectionProperties.github.folder);
+    } else {
+      alert("No github.url or github.folder properties defined for import.", "Import by GitHub");
+    }
+  }, {
+    classNames: "import-github-package",
+    tooltip: true,
+    title: "Import Package from GitHub"
+  });
+
+  sectionHeader.appendChild(actionGithubImport);
+});</PRE></DIV><DIV class="paragraph style-paragraph collapsed" data-id="RsTYGeWK" name="Package Export UI Style" style __wid="EDqugukr"><STYLE data-type="content" type="text/css" codemirror="true" class="themable" __wid="nZgcetNi">html .section:not([data-type="package"]) .export-package,
 html .section.uninstalled .export-package,
 html .section:not([data-type="package"]) .export-github-package,
-html .section.uninstalled .export-github-package {
+html .section.uninstalled .export-github-package,
+html .section:not([data-type="package"]) .import-github-package,
+html .section.uninstalled .import-github-package {
 	display: none;
 }
 
 html .section .export-package i:after {
-	content: var(--arrow-down-bold-hexagon-outline);
+	content: var(--arrow-up-bold-hexagon-outline);
 	font-family: "Material Design Icons";
 }
 
@@ -15545,13 +15573,22 @@ html .section .export-package:after {
 }
 
 html .section .export-github-package i:after {
-	content: var(--github-circle);
+	content: var(--cloud-upload);
 	font-family: "Material Design Icons";
 }
 
 html .section .export-github-package:after {
 	content: "Export Package to GitHub";
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" data-id="e9Wd4ts2" name="Package Management Logger" draggable="false" style __wid="JJ9VLQvx"><PRE data-type="content" type="text/javascript" id="package-management-logger" __wid="h3VYSv9B">exports.logName = "Package Management";
+}
+
+html .section .import-github-package i:after {
+	content: var(--cloud-download);
+	font-family: "Material Design Icons";
+}
+
+html .section .import-github-package:after {
+	content: "Import Package from GitHub";
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" data-id="e9Wd4ts2" name="Package Management Logger" draggable="false" style __wid="VCYFKGey"><PRE data-type="content" type="text/javascript" id="package-management-logger" __wid="mLbSYE2Z">exports.logName = "Package Management";
 
 /******************************************************************************/
 
@@ -15618,7 +15655,7 @@ exports.importedPackage = (id) => {
 
 exports.importedAsset = (fileName) => {
 	Codestrate.persistentLog.log(`Imported asset "${fileName}".`, exports.logName);
-};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" data-id="xGaF3wLU" draggable="false" style name="Package Repository Manager" __wid="46cxga93"><PRE data-type="content" type="text/javascript" id="package-repository-manager" __wid="zy2JvcHu">const defaultPackageRepository = {
+};</PRE></DIV><DIV class="paragraph code-paragraph collapsed" data-id="xGaF3wLU" draggable="false" style name="Package Repository Manager" __wid="SzZW2wwZ"><PRE data-type="content" type="text/javascript" id="package-repository-manager" __wid="5wcx2eKq">const defaultPackageRepository = {
 	packageRepositoryName : "Codestrate-Packages",
 	packageRepositoryTag: "HEAD"
 };
@@ -15848,44 +15885,44 @@ exports.openPackageRepositoryManagerDialog = () => {
 	cancelBtn.addEventListener("click", e => cancel());
 
 	document.body.appendChild(transient);
-};</PRE></DIV><DIV class="paragraph style-paragraph collapsed" data-id="kk2sTtWu" name="Package Repository Manager Style" __wid="uwdD75Ah"><STYLE data-type="content" type="text/css" codemirror="true" __wid="bmUpm7sL">html .dialog table.package-repositories input {
+};</PRE></DIV><DIV class="paragraph style-paragraph collapsed" data-id="kk2sTtWu" name="Package Repository Manager Style" __wid="DXenE4ap"><STYLE data-type="content" type="text/css" codemirror="true" __wid="ZUGWEMrt">html .dialog table.package-repositories input {
   margin-bottom: 8px;
-}</STYLE></DIV><DIV class="paragraph body-paragraph collapsed" data-id="3EuDgYs5" name="Package Management Dialog Template" __wid="ujQAYUTh"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="true" id="package-management-dialog-template" __wid="MGnpjr9J"><DIV class="modal" __wid="DuKYPDfK"></DIV>
-<DIV class="dialog packages ${className}" __wid="t5kbqsXA">
-	<DIV class="title" __wid="2zGvA3n2">${title}</DIV>
-	<DIV class="body" __wid="pPqsAwu4">
-		<DIV __wid="7MxedS65">Select the repository you want to install or update packages from:</DIV>
-		<DIV class="pullData" __wid="BH4Q3nam">
-			<SELECT class="repositories" __wid="Xybbt4ng">${PackageRepositoryManager.packageRepositories.map(repository => `<OPTION value="${repository.packageRepositoryName};${repository.packageRepositoryTag}" __wid="WNcDMKRA">${repository.packageRepositoryName} ${repository.packageRepositoryTag}</OPTION>`).join("")}</SELECT>
-			<INPUT type="text" class="repository-name" placeholder="Repository Name" name="repository-name" title="Repository Name" required __wid="vHbMFzQr"/>
-			<INPUT type="text" class="repository-tag" placeholder="Repository Tag" name="repository-tag" title="Repository Tag" required __wid="Gb7HpLTb"/>
-			<DIV class="update-package-list button" __wid="ubwibzfL">Update List</DIV>
+}</STYLE></DIV><DIV class="paragraph body-paragraph collapsed" data-id="3EuDgYs5" name="Package Management Dialog Template" __wid="SfYVmTLV"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="true" id="package-management-dialog-template" __wid="92rD3J6q"><DIV class="modal" __wid="sSJzhbRa"></DIV>
+<DIV class="dialog packages ${className}" __wid="J8EzCQAH">
+	<DIV class="title" __wid="VegHZhRb">${title}</DIV>
+	<DIV class="body" __wid="URpRyrN8">
+		<DIV __wid="9g2sXvtA">Select the repository you want to install or update packages from:</DIV>
+		<DIV class="pullData" __wid="sYdKM6Fu">
+			<SELECT class="repositories" __wid="fQRMSgDT">${PackageRepositoryManager.packageRepositories.map(repository => `<OPTION value="${repository.packageRepositoryName};${repository.packageRepositoryTag}" __wid="CfGEg59a">${repository.packageRepositoryName} ${repository.packageRepositoryTag}</OPTION>`).join("")}</SELECT>
+			<INPUT type="text" class="repository-name" placeholder="Repository Name" name="repository-name" title="Repository Name" required __wid="h2SERhmQ"/>
+			<INPUT type="text" class="repository-tag" placeholder="Repository Tag" name="repository-tag" title="Repository Tag" required __wid="XRHgT7gn"/>
+			<DIV class="update-package-list button" __wid="mYpumTZa">Update List</DIV>
 		</DIV>
-		<DIV __wid="Z39JzdpE">Select tags to filter for them:</DIV>
-		<DIV class="tag-filter-container" __wid="LtRntc5E"></DIV>
-		<DIV __wid="xaSA8Pep">Select the packages you want to install or update from <B __wid="3MqUDwbW"><SPAN class="current-repository" __wid="fiDww64S"></SPAN></B>:</DIV>
-		<TABLE class="packages install-and-update-packages" __wid="29pVyuQy">
-		<THEAD __wid="uWxbDsSs">
-		<TR __wid="LMfu9zZJ">
-			<TH __wid="bjQbiKAH"><I class="material-icons" id="checkbox-all" __wid="gefHbGgi"></I></TH>
-			<TH __wid="byjbNq2U">Status</TH>
-			<TH __wid="bj6Jb2kS">Installed Version</TH>
-			<TH __wid="kUHNNpDn">Repository Version</TH>
-			<TH __wid="bL6mJw8z">Name</TH>
-			<TH __wid="FMiUgwXh">Description</TH>
-			<TH __wid="es24aWS7">Tags</TH>
-			<TH __wid="2rrq6uZX">Dependencies</TH>
-			<TH __wid="Rae6JLyU">Changelog</TH>
+		<DIV __wid="WZrr7A3R">Select tags to filter for them:</DIV>
+		<DIV class="tag-filter-container" __wid="b27VNuNN"></DIV>
+		<DIV __wid="pDD4ujH7">Select the packages you want to install or update from <B __wid="ahemNGTi"><SPAN class="current-repository" __wid="qu2XSfCJ"></SPAN></B>:</DIV>
+		<TABLE class="packages install-and-update-packages" __wid="usGzrQCE">
+		<THEAD __wid="a7u2rjfQ">
+		<TR __wid="isjqc2R2">
+			<TH __wid="EtWx6hY6"><I class="material-icons" id="checkbox-all" __wid="apSCNsSZ"></I></TH>
+			<TH __wid="cxuZUVrj">Status</TH>
+			<TH __wid="yUuDk45D">Installed Version</TH>
+			<TH __wid="XaAPEbWy">Repository Version</TH>
+			<TH __wid="XavjKi9H">Name</TH>
+			<TH __wid="gVt4rnBY">Description</TH>
+			<TH __wid="NtS3rdw9">Tags</TH>
+			<TH __wid="75R4wjeC">Dependencies</TH>
+			<TH __wid="FKgWMJxm">Changelog</TH>
 		</TR>
 		</THEAD>
-		<TBODY __wid="rmvXWfFg"></TBODY>
+		<TBODY __wid="EymGrBgG"></TBODY>
 		</TABLE>
 	</DIV>
-	<DIV class="actions" __wid="WZDjJ7yt">
-		<DIV class="button ok" __wid="MgCXkshk">OK</DIV>
-		<DIV class="button cancel" __wid="c6em6a9m">Cancel</DIV>
+	<DIV class="actions" __wid="hApXEfRM">
+		<DIV class="button ok" __wid="FhzTVCYt">OK</DIV>
+		<DIV class="button cancel" __wid="Au2NAeHE">Cancel</DIV>
 	</DIV>
-</DIV></DIV></DIV><DIV class="paragraph code-paragraph collapsed" name="Package Management Dialogs" data-id="7epQSVbJ" style __wid="9eQxjnSK"><PRE data-type="content" type="text/javascript" id="package-management-dialogs" __wid="DTUDmmtK">const SectionPullingUtils = require("#section-pulling-utils");
+</DIV></DIV></DIV><DIV class="paragraph code-paragraph collapsed" name="Package Management Dialogs" data-id="7epQSVbJ" style __wid="Rhuu6ZSC"><PRE data-type="content" type="text/javascript" id="package-management-dialogs" __wid="6YGfa543">const SectionPullingUtils = require("#section-pulling-utils");
 const PackageRepositoryManager = require("#package-repository-manager");
 
 /******************************************************************************/
@@ -16540,7 +16577,7 @@ exports.exportPackageToGitHubDialog = (properties) => {
 
 		urlInput.focus();
 	});
-};</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Package Management Dialogs Style" data-id="aaSLkDgy" style __wid="hHUUw2aR"><STYLE data-type="content" type="text/css" codemirror="true" class="themable" __wid="ksPaEFYm">html .dialog.install-and-update-packages {
+};</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Package Management Dialogs Style" data-id="aaSLkDgy" style __wid="RaQ8rWZi"><STYLE data-type="content" type="text/css" codemirror="true" class="themable" __wid="r84939R9">html .dialog.install-and-update-packages {
 	transform: translate(-50%, 0);
 	top: 5vh;
 	max-height: 90vh;
@@ -16757,7 +16794,7 @@ html .tag-filter {
 html .tag-filter.selected {
 	background: var(--color-accent);
 	color: var(--color-accent-text);
-}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" data-id="RWa722Wd" name="Execute installed packages" run-on-load="true" last-execution-state="success" __wid="X4qhrTLL"><PRE data-type="content" type="text/javascript" __wid="rmjS9ZUs">const SectionPullingUtils = require('#section-pulling-utils');
+}</STYLE></DIV><DIV class="paragraph code-paragraph collapsed" data-id="RWa722Wd" name="Execute installed packages" run-on-load="true" last-execution-state="success" __wid="Lqk9L3ZF"><PRE data-type="content" type="text/javascript" __wid="BP7NmcSt">const SectionPullingUtils = require('#section-pulling-utils');
 
 let liveSelector = document.liveQuerySelectorAll('.section[data-type="package"]');
 liveSelector.added((section) => {
@@ -20794,6 +20831,102 @@ html #section-tree.hide-system-sections li.hidden[data-type="system"],
 html #section-tree.hide-package-sections li.hidden[data-type="package"] {
 	display: none;
 }</STYLE></DIV></DIV></DIV>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
