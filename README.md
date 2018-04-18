@@ -28,4 +28,4 @@ Codestrates is a research prototype in active development. Many features are sti
 
 ---
 
-<p align="center">&copy;&nbsp;2017&nbsp;Aarhus&nbsp;University</p>
+<p align="center">&copy;&nbsp;2018&nbsp;Aarhus&nbsp;University</p>
