@@ -3243,15 +3243,15 @@ document.addEventListener("keydown", actionHappend);
 document.addEventListener("touchstart", actionHappend);
 document.addEventListener("touchmove", actionHappend);
 document.addEventListener("touchend", actionHappend);
-actionHappend();</PRE></DIV></DIV><DIV name="Dialogs" class="section section-hidden" data-type="system" data-group="basic" data-id="aUnGvNB7" __wid="kAgZ2uVM"><DIV class="paragraph body-paragraph locked" draggable="false" name="Documentation" data-id="AVYTegUf" __wid="RNHF8FDC"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="false" class="section-documentation" __wid="8L6adaNi"><H2 __wid="7PmzrEqA">Description</H2>
-<DIV __wid="G7QNTkzd">The dialog section adds support to write custom non-modal dialogs that can be used for various purposes. For example, it is used to overwrite a browser's default dialogs with non-blocking dialogs. This section also provides a dialog to show tags and restore them.</DIV>
-<H2 __wid="MkkFXhwc">Usage</H2>
-<DIV __wid="uXvtPNrs">You can either use one of the basic dialog functions <CODE __wid="95bAKwhR">promt()</CODE>, <CODE __wid="KvvxXetH">alert()</CODE> and <CODE __wid="V8gpGKuF">confirm()</CODE> or create your own dialogs using the <CODE __wid="YtB49BhD">#dialog-template</CODE>.</DIV>
-<H3 __wid="EUbNBKS6">confirm(message, [title = ""], [options= {} ])</H3>
-<DIV __wid="9jezm4fn">The confirm function has three parameters <CODE __wid="Dn7Dxxs8">message</CODE>, <CODE __wid="mZUA2KGW">[title]</CODE>, and <CODE __wid="SjXB6mMW">[options]</CODE>. The options parameter can take an object literal with the properties <CODE __wid="ARACaS2R">trueLabel</CODE>, <CODE __wid="xxnyWXEU">falseLabel</CODE>, and <CODE __wid="gwy6RN4u">className</CODE>. The default values for the options object are set to <CODE __wid="MiU3VZZj">"OK"</CODE> for the <CODE __wid="ZfZ975mS">trueLabel</CODE>, <CODE __wid="f9gDMm4B">"Cancel"</CODE> for the <CODE __wid="WVwA8pJp">falseLabel</CODE>, and <CODE __wid="ZZXren2i">""</CODE> (empty string) for the <CODE __wid="7AmrJFJE">className</CODE>.
+actionHappend();</PRE></DIV></DIV><DIV name="Dialogs" class="section section-hidden" data-type="system" data-group="basic" data-id="aUnGvNB7" __wid="e6Ab2N5f"><DIV class="paragraph body-paragraph locked" draggable="false" name="Documentation" data-id="AVYTegUf" __wid="6pYzagbS"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="false" class="section-documentation" __wid="Zr4VTvXv"><H2 __wid="9XGVMkFi">Description</H2>
+<DIV __wid="pJymMyPc">The dialog section adds support to write custom non-modal dialogs that can be used for various purposes. For example, it is used to overwrite a browser's default dialogs with non-blocking dialogs. This section also provides a dialog to show tags and restore them.</DIV>
+<H2 __wid="xVRQLRNR">Usage</H2>
+<DIV __wid="AVEWzwgX">You can either use one of the basic dialog functions <CODE __wid="3By6FL8B">promt()</CODE>, <CODE __wid="j9QHczGE">alert()</CODE> and <CODE __wid="3aX8NHNR">confirm()</CODE> or create your own dialogs using the <CODE __wid="NTkEFr89">#dialog-template</CODE>.</DIV>
+<H3 __wid="cqK8pLhS">confirm(message, [title = ""], [options= {} ])</H3>
+<DIV __wid="P5Gmtgyx">The confirm function has three parameters <CODE __wid="Dd4Z8Yjb">message</CODE>, <CODE __wid="5CiysPzK">[title]</CODE>, and <CODE __wid="LkkAzNeX">[options]</CODE>. The options parameter can take an object literal with the properties <CODE __wid="KbWWcJ8q">trueLabel</CODE>, <CODE __wid="YSD3PsQr">falseLabel</CODE>, and <CODE __wid="PRpG4YkZ">className</CODE>. The default values for the options object are set to <CODE __wid="rM8LRSc3">"OK"</CODE> for the <CODE __wid="acVnkj3a">trueLabel</CODE>, <CODE __wid="iE2Tn6is">"Cancel"</CODE> for the <CODE __wid="Qig8RFd4">falseLabel</CODE>, and <CODE __wid="qXTWNxSB">""</CODE> (empty string) for the <CODE __wid="CeD5ueZV">className</CODE>.
 
 
-</DIV><DIV __wid="LDpdwtvN"></DIV><PRE __wid="AuVLQHrv">const myCustomOptionsConfirmResult = await confirm("Do you like liquorice?", "Mother of all Questions", {
+</DIV><DIV __wid="cKcRA2EL"></DIV><PRE __wid="xn2568R4">const myCustomOptionsConfirmResult = await confirm("Do you like liquorice?", "Mother of all Questions", {
     trueLabel: "Absolutely",
     falseLabel: "Hell no!"
 });
@@ -3260,8 +3260,8 @@ if (myCustomOptionsConfirmResult) {
     } else {
         console.log('Pressed "Hell no!" on confirm');
     }
-}</PRE><DIV __wid="JMVRtiw9"></DIV></DIV></DIV><DIV class="paragraph data-paragraph locked collapsed" name="Properties" data-id="Xz6yvM28" __wid="uesPQbWT"><PRE data-type="content" type="application/json" class="section-properties" contenteditable="false" __wid="r9ThJUAA">{
-  "version": "1.2.2",
+}</PRE><DIV __wid="zkHQS8Dr"></DIV></DIV></DIV><DIV class="paragraph data-paragraph collapsed locked" name="Properties" data-id="Xz6yvM28" __wid="taD4cuUG"><PRE data-type="content" type="application/json" class="section-properties" contenteditable="false" __wid="EisEaMDs">{
+  "version": "1.2.3",
   "description": "Provides a dialog template and basic functions to use them.",
   "changelog": {
     "1.0": "Initital Release",
@@ -3270,16 +3270,17 @@ if (myCustomOptionsConfirmResult) {
     "1.1.2": "Added some styling for inputs and selects.",
     "1.2": "Replace className parameter by an optional options object. The object can have a className property with the className set to the dialog, and strings (optional) that set the labels for the ok and cancel action buttons.",
     "1.2.1": "Removed specific select style to favor of global style.",
-    "1.2.2": "Outfactored tagging code to its own system section."
+    "1.2.2": "Outfactored tagging code to its own system section.",
+    "1.2.3": "Fixed select dropdown color."
   }
 }</PRE></DIV>
 
-<DIV class="paragraph body-paragraph collapsed locked" name="Dialog Template" draggable="false" data-id="wtHuW5uq" __wid="VW3Lgedd"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="false" id="dialog-template" __wid="qUjYXKRP"><DIV class="modal" __wid="JNZG9mUP"></DIV>
-<DIV class="dialog ${className}" __wid="f4TExxQb">
-	<DIV class="title" __wid="sGBJTqqH">${title}</DIV>
-	<DIV class="body" __wid="5aaM5Kp2">${message}</DIV>
-	<DIV class="actions" __wid="3E3qDEHS">${actions}</DIV>
-</DIV></DIV></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" last-execution-state="success" name="Dialog Utils" data-id="LkND9ZyA" __wid="38GjiRrE"><PRE data-type="content" type="text/javascript" id="dialog-utils" __wid="g9hUJtaf">/**
+<DIV class="paragraph body-paragraph collapsed locked" name="Dialog Template" draggable="false" data-id="wtHuW5uq" __wid="8HLGKrBS"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="false" id="dialog-template" __wid="RLkPmzyu"><DIV class="modal" __wid="Qs3MdPqZ"></DIV>
+<DIV class="dialog ${className}" __wid="xFspTBNM">
+	<DIV class="title" __wid="2bWyZyvp">${title}</DIV>
+	<DIV class="body" __wid="jh48NmwU">${message}</DIV>
+	<DIV class="actions" __wid="FRNKLkU2">${actions}</DIV>
+</DIV></DIV></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" last-execution-state="success" name="Dialog Utils" data-id="LkND9ZyA" __wid="bn3mkHQk"><PRE data-type="content" type="text/javascript" id="dialog-utils" __wid="iDcKQYmb">/**
  * Shows an alert to the user.
  *
  * @param message      The message of the alert.
@@ -3453,163 +3454,170 @@ exports.confirm = (message, title = "", options = {}) => {
 
 		document.body.appendChild(transient);
 	});
-};</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Dialog Style" draggable="false" data-id="L4rzUGdH" style __wid="KcdJyqSL"><STYLE data-type="content" type="text/css" codemirror="true" class="themable" __wid="naxuCdKf">@keyframes dialogAnimation {
-	from {
-		transform: translate(-50%, -50%) translate(0, 96px) scale(0.75);
-		opacity: 0;
-	}
+};</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Dialog Style" draggable="false" data-id="L4rzUGdH" style __wid="tKtE9HTy"><STYLE data-type="content" type="text/css" codemirror="true" class="themable" __wid="9GgkyAQY">@keyframes dialogAnimation {
+  from {
+    transform: translate(-50%, -50%) translate(0, 96px) scale(0.75);
+    opacity: 0;
+  }
 }
 
 @keyframes modalAnimation {
-	from {
-		opacity: 0;
-	}
+  from {
+    opacity: 0;
+  }
 }
 
 html .dialog {
-	display: flex;
-	flex-direction: column;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	min-width: 384px;
-	max-width: calc(100vw - 32px);
-	z-index: 400;
-	box-shadow: var(--material-shadow-z24);
-	border-radius: 2px;
-	background: var(--color-primary-shade-1);
-	animation: dialogAnimation var(--navigation-transition);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 384px;
+  max-width: calc(100vw - 32px);
+  z-index: 400;
+  box-shadow: var(--material-shadow-z24);
+  border-radius: 2px;
+  background: var(--color-primary-shade-1);
+  animation: dialogAnimation var(--navigation-transition);
 }
 
 html .modal {
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100vw;
-	height: 100vh;
-	background: var(--color-primary-text);
-	opacity: 0.25;
-	pointer-events: none;
-	z-index: 399;
-	animation: modalAnimation var(--navigation-transition);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-primary-text);
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 399;
+  animation: modalAnimation var(--navigation-transition);
 }
 
 /******************************************************************************/
 
 html .dialog .title {
-	color: var(--color-primary-text);
-	display: flex;
-	align-items: center;
-	font-size: 1.425rem;
-	font-weight: 500;
-	letter-spacing: 0.02em;
-	line-height: 2rem;
-	flex: 1;
-	margin: 0;
-	padding: 24px 24px 0;
+  color: var(--color-primary-text);
+  display: flex;
+  align-items: center;
+  font-size: 1.425rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 2rem;
+  flex: 1;
+  margin: 0;
+  padding: 24px 24px 0;
 }
 
 html .dialog .body {
-	color: var(--color-secondary-text);
-	font-size: 1rem;
-	font-weight: 400;
-	letter-spacing: 0.02em;
-	line-height: 1.25rem;
-	margin-top: 20px;
-	padding: 0 24px 24px;
-	max-height: 80vh;
-	overflow-y: auto;
-	max-width: 512px;
+  color: var(--color-secondary-text);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.25rem;
+  margin-top: 20px;
+  padding: 0 24px 24px;
+  max-height: 80vh;
+  overflow-y: auto;
+  max-width: 512px;
 }
 
 html .dialog .actions {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: flex-end;
-	padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 8px;
 }
 
 /******************************************************************************/
 
 html .dialog .button {
-	color: var(--color-primary-text);
-	background: none;
-	font-size: 1rem;
-	font-weight: 500;
-	letter-spacing: 0.04em;
-	line-height: 2.25rem;
-	text-decoration: none;
-	text-transform: uppercase;
-	display: inline-block;
-	box-sizing: border-box;
-	min-width: 64px;
-	height: 36px;
-	padding: 0 16px;
-	border: none;
-	outline: none;
-	text-align: center;
-	overflow: hidden;
-	vertical-align: middle;
-	border-radius: 2px;
-	cursor: pointer;
-	margin-right: 8px;
-	user-select: none;
+  color: var(--color-primary-text);
+  background: none;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 2.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 64px;
+  height: 36px;
+  padding: 0 16px;
+  border: none;
+  outline: none;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+  user-select: none;
 }
 
 html .dialog .button:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
 
 html .dialog .button:hover {
-	background-color: var(--color-primary-shade-2);
+  background-color: var(--color-primary-shade-2);
 }
 
 /******************************************************************************/
 
 html .dialog .body input {
-	font-size: 1rem;
-	width: 100%;
-	padding: 4px;
-	outline: 0;
-	color: var(--color-primary-text);
-	background-color: transparent;
-	border: 0;
-	border-bottom: 1px solid var(--color-tertiary-text);
-	margin-top: 8px;
-	margin-bottom: 16px;
+  font-size: 1rem;
+  width: 100%;
+  padding: 4px;
+  outline: 0;
+  color: var(--color-primary-text);
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--color-tertiary-text);
+  margin-top: 8px;
+  margin-bottom: 16px;
 }
 
 html .dialog .body input:focus {
-	border-bottom-color: var(--color-secondary-text);
+  border-bottom-color: var(--color-secondary-text);
 }
 
 html .dialog .body input:invalid {
-	border-bottom-color: var(--material-color-red);
+  border-bottom-color: var(--material-color-red);
 }
 
 html .dialog .body input::-webkit-calendar-picker-indicator {
-	opacity: 1.0;
+  opacity: 1.0;
 }
 
 html .dialog .body input::-webkit-calendar-picker-indicator:hover {
-	background: var(--color-primary-shade-2);
+  background: var(--color-primary-shade-2);
 }
 
 /******************************************************************************/
 
 html .dialog .body select {
-	font-size: 1rem;
-	border: none;
-	border-radius: 2px;
-	outline: none;
-	padding: 4px;
-	margin-top: 8px;
-	margin-bottom: 16px;
-	width: 100%;
+  font-size: 1rem;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  padding: 4px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  width: 100%;
+  background: var(--color-primary-shade-3);
+  color: var(--color-primary-text);
+}
+
+html .dialog .body select-selected {
+  background: var(--color-accent);
+  color: var(--color-accent-text);
 }</STYLE></DIV>
-<DIV class="paragraph code-paragraph collapsed" data-id="us8cGJst" name="Dialog Examples" last-execution-state="success" __wid="RDMfymvm"><PRE data-type="content" type="text/javascript" __wid="crxVNtGh">// Dialogs return promises, so either ".then()" or "async()" needs to be used to make code wait for them.
+<DIV class="paragraph code-paragraph collapsed" data-id="us8cGJst" name="Dialog Examples" last-execution-state="success" __wid="kNhTw5Z9"><PRE data-type="content" type="text/javascript" __wid="McfwDsgL">// Dialogs return promises, so either ".then()" or "async()" needs to be used to make code wait for them.
 (async() => {
 
 	await alert("ALERT ALERT", "ALERT");
@@ -17486,19 +17494,20 @@ html .paragraph .paragraph-header:hover .type-input {
 
 html .paragraph .paragraph-header .type-input:before {
 	content: "type: ";
-}</STYLE></DIV></DIV><DIV class="section section-hidden" name="CodeMirror" data-type="system" data-group="editing" data-id="w3Chj5iH" __wid="jZy3abRd"><DIV class="paragraph body-paragraph locked collapsed" draggable="false" name="Documentation" data-id="WFLXUc55" __wid="64eNwCAz"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="false" class="section-documentation hide-variable-names" __wid="P7ECwMAG"><H2 __wid="xkxcRxjH">Description</H2><DIV __wid="33Rhajkh">CodeMirror integration, touching the code below should be done with <I __wid="Pq6fFLLe">serious </I>care.</DIV><DIV __wid="tScB2Hyj"><BR __wid="Sz6hmBdM"/></DIV><DIV __wid="aHzPc3Ht">Using CodeMirror version <DIV class="variable" contenteditable="false" data-name="version" __wid="j6B3z3MW"></DIV><SPAN style="font-size: 11pt;" __wid="X7AmKZ7P">.</SPAN></DIV><H2 __wid="XpRBW3U5">Modes</H2><DIV __wid="bmpp2s3J"><SPAN style="font-size: 11pt;" __wid="cX4WMC9G"><DIV class="variable" contenteditable="false" data-name="modes" __wid="9m4ZJxMX"></DIV></SPAN></DIV></DIV></DIV><DIV class="paragraph data-paragraph collapsed locked" name="Properties" data-id="Ldb88iyx" __wid="avuv5vpv"><PRE data-type="content" type="application/json" class="section-properties" contenteditable="false" __wid="Ks5K7HyR">{
-  "version": "1.0.4",
+}</STYLE></DIV></DIV><DIV class="section section-hidden" name="CodeMirror" data-type="system" data-group="editing" data-id="w3Chj5iH" __wid="THPmmyfa"><DIV class="paragraph body-paragraph locked collapsed" draggable="false" name="Documentation" data-id="WFLXUc55" __wid="wqa6T6dc"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="false" class="section-documentation hide-variable-names" __wid="nttFHqij"><H2 __wid="UcTPEJGY">Description</H2><DIV __wid="dPnkGDvd">CodeMirror integration, touching the code below should be done with <I __wid="uWM25ZEc">serious </I>care.</DIV><DIV __wid="SVkis8nM"><BR __wid="MV9ACdSs"/></DIV><DIV __wid="XT2mSdMW">Using CodeMirror version <DIV class="variable" contenteditable="false" data-name="version" __wid="hPdi3Jeb"></DIV><SPAN style="font-size: 11pt;" __wid="24neTQFJ">.</SPAN></DIV><H2 __wid="Hq4wY2rH">Modes</H2><DIV __wid="NSHsrgHV"><SPAN style="font-size: 11pt;" __wid="FjhYteCW"><DIV class="variable" contenteditable="false" data-name="modes" __wid="tunuakVj"></DIV></SPAN></DIV></DIV></DIV><DIV class="paragraph data-paragraph locked collapsed" name="Properties" data-id="Ldb88iyx" __wid="wXv8yQXi"><PRE data-type="content" type="application/json" class="section-properties" contenteditable="false" __wid="x4epRnr9">{
+  "version": "1.0.5",
   "description": "CodeMirror integration into Codestrates.",
   "changelog": {
     "1.0": "Initital Release",
     "1.0.1": "Added description.",
     "1.0.2": "Added JSON beautify.",
     "1.0.3": "Changed indentWithTab to false",
-    "1.0.4": "Updated monokai theme to also color string literals correctly."
+    "1.0.4": "Updated monokai theme to also color string literals correctly.",
+    "1.0.5": "Added comment shortcut for Windows."
   }
 }</PRE></DIV>
 
-<DIV class="paragraph code-paragraph collapsed" draggable="false" name="Base Editor" data-id="CvXXTasc" __wid="WjCXW5tr"><PRE data-type="content" type="text/javascript" id="base-editor" class="editors" __wid="hrC72wLX">const ClientManager = require("#client-manager");
+<DIV class="paragraph code-paragraph collapsed" draggable="false" name="Base Editor" data-id="CvXXTasc" __wid="39fkhKpM"><PRE data-type="content" type="text/javascript" id="base-editor" class="editors" __wid="g5M25hgH">const ClientManager = require("#client-manager");
 
 /******************************************************************************/
 
@@ -17685,7 +17694,7 @@ class Editor {
 	}
 }
 
-exports.Editor = Editor;</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Code Editor" data-id="Gy9JEzBe" __wid="VYxQsxpG"><PRE data-type="content" type="text/javascript" id="code-editor" class="editors" __wid="pb4k9aGZ">const {
+exports.Editor = Editor;</PRE></DIV><DIV class="paragraph code-paragraph collapsed" draggable="false" name="Code Editor" data-id="Gy9JEzBe" __wid="tkEXFiRs"><PRE data-type="content" type="text/javascript" id="code-editor" class="editors" __wid="kHEmnkDd">const {
   Editor
 } = require("#base-editor");
 
@@ -17843,7 +17852,7 @@ class CodeEditor extends Editor {
     return content;
   }
 }
-exports.CodeEditor = CodeEditor;</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="HTML Editor" draggable="false" data-id="5HXrC3wK" __wid="yGNcSMPh"><PRE data-type="content" type="text/javascript" id="html-editor" class="editors" __wid="7j4pHFjg">const {
+exports.CodeEditor = CodeEditor;</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="HTML Editor" draggable="false" data-id="5HXrC3wK" __wid="SGcNje58"><PRE data-type="content" type="text/javascript" id="html-editor" class="editors" __wid="vgPQDCev">const {
 	Editor
 } = require("#base-editor");
 
@@ -17991,7 +18000,7 @@ class HTMLEditor extends Editor {
 	}
 }
 
-exports.HTMLEditor = HTMLEditor;</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="CodeMirror Integration Code" data-id="yvE9WeT6" draggable="false" run-on-load="true" last-execution-state="success" style __wid="UWffmVrs"><PRE data-type="content" type="text/javascript" __wid="2apt76cR">// Import CodeMirror basics style
+exports.HTMLEditor = HTMLEditor;</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="CodeMirror Integration Code" data-id="yvE9WeT6" draggable="false" run-on-load="true" last-execution-state="success" style __wid="CQCRvYUb"><PRE data-type="content" type="text/javascript" __wid="tdXJ2yQv">// Import CodeMirror basics style
 importStyle([
 	"codemirror.css",
 
@@ -18085,7 +18094,8 @@ importLib([
 
 	const extraKeys = {
 		"Ctrl-Space": "autocomplete",
-		"Cmd-/": "toggleComment"
+		"Cmd-/": "toggleComment",
+		"Ctrl-/": "toggleComment"
 	};
 
 	//////////
@@ -18181,7 +18191,7 @@ importLib([
 			}
 		});
 	});
-});</PRE></DIV><DIV class="paragraph code-paragraph locked collapsed" draggable="false" name="CodeMirror OpenDialog" run-on-load="true" last-execution-state="success" data-id="Ki28VD7x" __wid="xznhGePb"><PRE data-type="content" type="text/javascript" contenteditable="false" __wid="8FZnKxFT">// CodeMirror, copyright (c) by Marijn Haverbeke and others
+});</PRE></DIV><DIV class="paragraph code-paragraph locked collapsed" draggable="false" name="CodeMirror OpenDialog" run-on-load="true" last-execution-state="success" data-id="Ki28VD7x" __wid="K6ccYqft"><PRE data-type="content" type="text/javascript" contenteditable="false" __wid="7ArS6gNw">// CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: http://codemirror.net/LICENSE
 
 // Open simple dialogs on top of an editor. Relies on dialog.css.
@@ -18337,14 +18347,14 @@ importLib([
 
     return close;
   });
-});</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Editor Utils" data-id="Sc5xz6BJ" __wid="LkabG74v"><PRE data-type="content" type="text/javascript" id="editor-utils" __wid="X2yayFsL">exports.editorDragDrop = (bool) => {
+});</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Editor Utils" data-id="Sc5xz6BJ" __wid="t6HveGdy"><PRE data-type="content" type="text/javascript" id="editor-utils" __wid="pBjqLw6f">exports.editorDragDrop = (bool) => {
 	const contents = document.querySelectorAll("[data-type='content']");
 	Array.prototype.forEach.call(contents, (content) => {
 		if (content.__editor) {
 			content.__editor.editor.setOption("dragDrop", bool);
 		}
 	});
-};</PRE></DIV><DIV class="paragraph code-paragraph locked collapsed" name="Codemirror Addon Lint Transient" data-id="tLZkwit3" __wid="KBNQz22N"><PRE data-type="content" type="text/javascript" id="codemirror-addon-lint-transient" contenteditable="false" __wid="sA8TqkEZ">// CodeMirror, copyright (c) by Marijn Haverbeke and others
+};</PRE></DIV><DIV class="paragraph code-paragraph locked collapsed" name="Codemirror Addon Lint Transient" data-id="tLZkwit3" __wid="NkySYWps"><PRE data-type="content" type="text/javascript" id="codemirror-addon-lint-transient" contenteditable="false" __wid="6auWYK4w">// CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: http://codemirror.net/LICENSE
 
 (function(mod) {
@@ -18603,7 +18613,7 @@ importLib([
     if (this.state.lint) startLinting(this);
   });
 });</PRE></DIV>
-<DIV class="paragraph style-paragraph collapsed" name="CodeMirror Integration CSS" draggable="false" data-id="xjJqeVWB" __wid="sfNx34cW"><STYLE data-type="content" type="text/css" codemirror="true" class="themable" __wid="UeWXkJgf">html .CodeMirror {
+<DIV class="paragraph style-paragraph collapsed" name="CodeMirror Integration CSS" draggable="false" data-id="xjJqeVWB" __wid="HxQexXwp"><STYLE data-type="content" type="text/css" codemirror="true" class="themable" __wid="QFcHLtb8">html .CodeMirror {
 	isolation: isolate;
 	height: auto;
 	font-family: var(--font-monospace);
@@ -18648,7 +18658,7 @@ html .paragraph .paragraph-header .toggle-html i:after {
 html .paragraph .paragraph-header .toggle-html:after {
 	content: "Toggle HTML Editor";
 }</STYLE></DIV>
-<DIV class="paragraph style-paragraph collapsed" name="CodeMirror Monokai Theme" draggable="false" data-id="63U8sryX" __wid="TsJsBZG5"><STYLE data-type="content" type="text/css" codemirror="true" class="themable" __wid="sfNAjPZm">/* Based on Sublime Text's Monokai theme */
+<DIV class="paragraph style-paragraph collapsed" name="CodeMirror Monokai Theme" draggable="false" data-id="63U8sryX" __wid="hi2FvZ2b"><STYLE data-type="content" type="text/css" codemirror="true" class="themable" __wid="UbBx3pAK">/* Based on Sublime Text's Monokai theme */
 
 html .cm-s-monokai.CodeMirror {
 	background: none;
@@ -18784,7 +18794,7 @@ html .cm-s-monokai .CodeMirror-matchingbracket {
 html .cm-s-monokai span.cm-matchhighlight {
 	background: #353;
 }</STYLE></DIV>
-<DIV class="paragraph style-paragraph collapsed" data-id="Mf3uBNUQ" name="Tabs, Linebreaks and Rulers" __wid="RX8sj9hb"><STYLE data-type="content" type="text/css" codemirror="true" class="themable" contenteditable="true" __wid="ijCMMtbr">html .CodeMirror-rulers {
+<DIV class="paragraph style-paragraph collapsed" data-id="Mf3uBNUQ" name="Tabs, Linebreaks and Rulers" __wid="M7YbuFKT"><STYLE data-type="content" type="text/css" codemirror="true" class="themable" contenteditable="true" __wid="QX8stSPD">html .CodeMirror-rulers {
 	color: var(--color-primary-text);
 	opacity: 0.1;
 	z-index: 2;
@@ -20831,6 +20841,62 @@ html #section-tree.hide-system-sections li.hidden[data-type="system"],
 html #section-tree.hide-package-sections li.hidden[data-type="package"] {
 	display: none;
 }</STYLE></DIV></DIV></DIV>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
