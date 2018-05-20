@@ -1,5 +1,5 @@
 <!doctype html>
-<html __wid="8iiFCgMH" version="13" mode="edit"><head __wid="nyQjClRO"><meta __wid="VC-iR3Y0" name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-capable" content="yes" __wid="h-Ul6mwY"/><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" __wid="iiS6bfZA"/><script __wid="znuXkD9m" id="script-main">webstrate.on("loaded", function () { new Function(document.querySelector("#bootstrap").textContent)(); });</script><title __wid="F6LQLpsp">Codestrate Packages</title>
+<html __wid="8iiFCgMH" version="13" mode="edit"><head __wid="nyQjClRO"><meta __wid="VC-iR3Y0" name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-capable" content="yes" __wid="h-Ul6mwY"/><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" __wid="iiS6bfZA"/><script __wid="znuXkD9m" id="script-main">webstrate.on("loaded", function () { new Function(document.querySelector("#bootstrap").textContent)(); });</script><title __wid="F6LQLpsp">Codestrate-Packages</title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" __wid="6EZTL7cK"/>
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" __wid="uHtXDWTx"/>
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" __wid="LUQGv6Nm"/>
@@ -20886,7 +20886,7 @@ html #section-tree.hide-package-sections li.hidden[data-type="package"] {
 
 	/**
    * Applies permissions to current document.
-   * 
+   *
    * @param [] auth Array containing document permissions (e.g., [{username:"raedle",
    * provider:"github",permissions:"rw"}.{username:"anonymous",provider:"",
    * permissions:"r"}])
@@ -20904,7 +20904,7 @@ html #section-tree.hide-package-sections li.hidden[data-type="package"] {
 
 	/**
    * Grant permissions to username using the given authentication provider.
-   * 
+   *
    * @param String username Username of user that is granted specific permissions to
    * the current document.
    * @param String permissions Document permissions for username (e.g., "r" or "rw").
@@ -21279,7 +21279,7 @@ PackageIconsCode.initPackageIcons();</PRE></DIV><DIV class="paragraph code-parag
 document.liveQuerySelectorAll(".section").added(element => {
 	element.liveAttribute("data-type").changed((value, oldValue) => {
 		if (oldValue === undefined) return;
-		
+
 		if (value === "package") {
 			PackageIconsCode.showPackageIcon(element.getAttribute("data-id"));
 		} else if (oldValue === "package") {
@@ -21304,9 +21304,9 @@ let currentPackages = [];
 
 exports.initPackageIcons = async() => {
 	let transient = document.querySelector("#package-icons");
-	
+
 	if (transient) return;
-	
+
 	transient = document.createElement("transient");
 	transient.id = "package-icons";
 
@@ -21319,7 +21319,7 @@ exports.initPackageIcons = async() => {
 
 	// Add Packages Menu
 	const packagesMenu = createElement(["package-icon", "package-icon-menu"], false);
-	
+
 	const packagesSwap = createElement(["package-button", "package-button-swap"], () => {
 		exports.togglePackagesRepositories();
 	});
@@ -21332,7 +21332,7 @@ exports.initPackageIcons = async() => {
 	packagesMenu.appendChild(packagesRefresh);
 	packagesMenu.appendChild(packagesSwap);
 	packages.appendChild(packagesMenu);
-	
+
 	// Add Packages All Utility
 	const packagesAll = createElement(["package-icon", "package-icon-all"], false);
 
@@ -21363,7 +21363,7 @@ exports.initPackageIcons = async() => {
 	packagesAll.appendChild(packagesInstallAll);
 	packagesAll.appendChild(packagesRemoveAll);
 	packages.appendChild(packagesAll);
-	
+
 	// Add repository Menu
 	const repositoriesMenu = createElement(["package-icon", "package-icon-menu"], false);
 
@@ -21375,7 +21375,7 @@ exports.initPackageIcons = async() => {
 		// Open dialog for repository selection
 		const pullData = await SectionPullingUtils.showPullSectionsDialog("", "HEAD", "Add Package Repository");
 		if (!pullData) return;
-		
+
 		PackageRepositoryManager.addPackageRepository(pullData.pullFrom, pullData.pullVersion);
 		exports.refreshRepositoryIcons();
 	});
@@ -21434,9 +21434,9 @@ exports.refreshRepositoryIcons = async() => {
 /******************************************************************************/
 
 exports.getPackageIconPackages = () => {
-	
+
 	return new Promise((resolve, reject) => {
-	
+
 		(async() => {
 
 			// Pull Codestrate in iFrame
@@ -21519,7 +21519,7 @@ exports.getPackageIconPackage = (packageStatus, url = false) => {
 			});
 			packageIconPackage.appendChild(pushButton);
 		}
-		
+
 		const removeButton = createElement(["package-button", "remove-package-button", "package-button-second"], () => {
 			const localPackageSections = Array.from(document.querySelectorAll(packageSectionQuerySelector));
 
@@ -21527,7 +21527,7 @@ exports.getPackageIconPackage = (packageStatus, url = false) => {
 		});
 		packageIconPackage.appendChild(removeButton);
 	}
-	
+
 	// Add install button
 	if (packageStatus.prototype) {
 		const installButton = createElement(["package-button", "install-package-button"], async() => {
@@ -21550,7 +21550,7 @@ exports.getPackageIconPackage = (packageStatus, url = false) => {
 		const installButton = createElement(["package-button", "install-package-button", "disabled"], false);
 		packageIconPackage.appendChild(installButton);
 	}
-	
+
 	return packageIconPackage;
 };
 
@@ -21829,7 +21829,7 @@ html #package-icons .package-icon .package-button:hover {
 html #package-icons .package-icon:hover .package-button-second {
 	transform: translate(-72px, 0);
 }
-	
+
 html #package-icons .package-icon:hover .package-button-third {
 	transform: translate(-144px, 0);
 }
@@ -22755,11 +22755,11 @@ exports.updateTheme = (id, name) => {
 /******************************************************************************/
 
 exports.actionStarted = (action) => {
-	Codestrate.persistentLog.info(`${action} started.`, exports.logName);	
+	Codestrate.persistentLog.info(`${action} started.`, exports.logName);
 };
 
 exports.actionFinished = (action) => {
-	Codestrate.persistentLog.info(`${action} finished.`, exports.logName);	
+	Codestrate.persistentLog.info(`${action} finished.`, exports.logName);
 };
 
 /******************************************************************************/
@@ -23338,7 +23338,7 @@ html[transient-theme="Notebook"] .add-file:after {
 	-webkit-user-select: none;  /* Chrome all / Safari all */
 	-moz-user-select: none;     /* Firefox all */
 	-ms-user-select: none;      /* IE 10+ */
-	user-select: none;          /* Likely future */   
+	user-select: none;          /* Likely future */
 }
 
 html[transient-theme="Notebook"] .paragraph.collapsed .text-tools {
@@ -23450,7 +23450,7 @@ html[transient-theme="Notebook"] .text-tools .text-h1,
 html[transient-theme="Notebook"] .text-tools .text-h2,
 html[transient-theme="Notebook"] .text-tools .text-h3,
 html[transient-theme="Notebook"] .text-tools .text-set-variable,
-html[transient-theme="Notebook"] .text-tools .text-hide-variable-names, 
+html[transient-theme="Notebook"] .text-tools .text-hide-variable-names,
 html[transient-theme="Notebook"] .text-tools .text-convert-to-html {
 	margin-left: 10px;
 	margin-top: 2px;
@@ -23652,7 +23652,7 @@ html[transient-theme="Notebook"] #package-icons .package-icon .package-button:ho
 html[transient-theme="Notebook"] #package-icons .package-icon:hover .package-button-second {
 	transform: translate(-72px, 0);
 }
-	
+
 html[transient-theme="Notebook"] #package-icons .package-icon:hover .package-button-third {
 	transform: translate(-144px, 0);
 }
@@ -23952,7 +23952,7 @@ html[transient-theme="Notebook"] .remote-cursor:after {
 }
 
 html[transient-theme="Notebook"] .remote-cursor.hidden {
-	opacity: 0;	
+	opacity: 0;
 }
 
 html[transient-theme="Notebook"] .remote-click {
@@ -24029,10 +24029,10 @@ html[transient-theme="Notebook"] .cursor .rect ~ .rect {
 	max-height: 100vh;
 	z-index: 100;
 	opacity: 0;
-	
+
 	overflow: hidden;
 	overflow-y: auto;
-	
+
 	transform: translate3d(calc(100% - 20px), 0, 0);
 	transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
 }
@@ -24059,9 +24059,9 @@ html[transient-theme="Notebook"] .paragraph-prototype {
 	transform: translate3d(20px, 0, 0);
 	transition: transform 250ms ease-in-out;
 	cursor: pointer;
-	
+
 	box-shadow: 0px 0px 5px black;
-	
+
 	user-select: none;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -24085,7 +24085,7 @@ html[transient-theme="Notebook"] .drop-indicator {
 /* 	position: absolute; */
 	width: calc(100% + 10px);
 	margin-left: -5px;
-	
+
 	height: 5px;
 	background-color: rgba(255, 255, 255, .9);
 }
@@ -28281,7 +28281,7 @@ const updateIdleTime = (senderId, idleTime) => {
 const idleClients = [];
 
 const stopUpdateIdleTime = (clientId) => {
-	
+
 	// Clear update interval
 	const clients = idleClients.filter((c) => c.clientId === clientId).forEach((c) => clearInterval(c.interval));
 };
@@ -28781,9 +28781,9 @@ document.liveQuerySelectorAll('.avatars .avatar.self').added(augmentAvatar);</PR
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
-	-webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%); 
-	-webkit-transform: rotate(0.000001deg); 
-	-webkit-border-radius: 50%; 
+	-webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+	-webkit-transform: rotate(0.000001deg);
+	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	transform: translateZ(0);
 }
@@ -29099,7 +29099,7 @@ function getRemoteCursorPostion(msg) {
 		if (paragraph !== null) {
 			let paraRect = paragraph.getBoundingClientRect();
 			let bodyRect = document.body.getBoundingClientRect();
-			x = msg.data.paraX + paraRect.left - bodyRect.left + 
+			x = msg.data.paraX + paraRect.left - bodyRect.left +
 				parseInt(document.defaultView.getComputedStyle(document.body).marginLeft);
 			y = msg.data.paraY + paraRect.top - bodyRect.top +
 				parseInt(document.defaultView.getComputedStyle(document.body).marginTop);
@@ -29115,7 +29115,7 @@ function getRemoteCursorPostion(msg) {
 /*
 for (var i = 0; i&lt;webstrate.clients.length; i++) {
   if (webstrate.clients[i] == webstrate.clientId) continue;
-  clientJoin(webstrate.clients[i]); 
+  clientJoin(webstrate.clients[i]);
 }*/
 webstrate.clients.forEach(clientJoin);</PRE></DIV><DIV class="paragraph style-paragraph collapsed" name="Shared Pointers Style" data-id="GfyCc8Cd" __wid="gVf9CCQ5"><STYLE data-type="content" type="text/css" codemirror="true" class="themable" __wid="q5FAxHND">html .remote-cursor {
 	position: absolute;
@@ -29147,7 +29147,7 @@ html .remote-cursor:after {
 }
 
 html .remote-cursor.hidden {
-	opacity: 0;	
+	opacity: 0;
 }
 
 html .remote-click {
@@ -29192,7 +29192,7 @@ html .remote-click.animate {
 
 <DIV class="paragraph code-paragraph collapsed" name="Levenshtein" run-on-load="true" last-execution-state="success" draggable="false" data-id="M7kDfXK2" __wid="xm28STRC"><PRE data-type="content" type="text/javascript" __wid="YymgnVGX">String.prototype.levenshtein = function(b) {
 	a = this;
-	if (a.length === 0) return b.length; 
+	if (a.length === 0) return b.length;
 	if (b.length === 0) return a.length;
 
 	// Swap to save some memory O(min(a,b)) instead of O(a) what do you think of my coding?
@@ -29318,7 +29318,7 @@ webstrate.on("clientJoin", function(clientId) {
 // When a client leaves we delete its cursor
 webstrate.on("clientPart", function(clientId) {
 	if (clientCursors[clientId] && clientCursors[clientId].parentElement) {
-		clientCursors[clientId].parentElement.removeChild(clientCursors[clientId]);    
+		clientCursors[clientId].parentElement.removeChild(clientCursors[clientId]);
 	}
 	delete clientCursors[clientId];
 	delete lastSignals[clientId];
@@ -29344,7 +29344,7 @@ var signalSelection = function(selection) {
 	};
 
 	// We have to send the WID of the anchor, extent and focus node. We also send the text of the nodes
-	// Because we need it to find the proper text node on the other side. 
+	// Because we need it to find the proper text node on the other side.
 	// As soon as text nodes will have WIDs we will not need to do this.
 	msg.anchorNode = selection.anchorNode.nodeType == 3 ? selection.anchorNode.parentNode.webstrate.id : selection.anchorNode.webstrate.id;
 	msg.extentNode = selection.extentNode.nodeType == 3 ? selection.extentNode.parentNode.webstrate.id : selection.extentNode.webstrate.id;
@@ -29382,7 +29382,7 @@ document.addEventListener("selectionchange", function(event) {
 		anchorNode.parentElement.closest('.paragraph.body-paragraph') &&
 		anchorNode.parentElement.closest('[data-type="content"][contenteditable="true"]')
 	) {
-		signalSelection(lastSelection);	
+		signalSelection(lastSelection);
 	}
 });
 
@@ -29415,7 +29415,7 @@ function drawCursor(msg, clientId) {
 	try {
 		var preceding = (anchor.compareDocumentPosition(focus) == 4) || (anchor.compareDocumentPosition(focus) === 0 && msg.focusOffset > msg.anchorOffset);
 	} catch (err) {
-		return;  
+		return;
 	}
 
 	// If its a backwards selection we switch. This can throw an exception if anchor and focus are the same.
@@ -29426,10 +29426,10 @@ function drawCursor(msg, clientId) {
 			range.setEnd(focus, msg.focusOffset);
 		} else {
 			range.setStart(focus, msg.focusOffset);
-			range.setEnd(anchor, msg.anchorOffset);          
+			range.setEnd(anchor, msg.anchorOffset);
 		}
 	} catch (err) {
-		return;  
+		return;
 	}
 	// If the cursor is already somewhere in the document we detach it from its parent
 	if (clientCursors[clientId].parentElement) clientCursors[clientId].parentElement.removeChild(clientCursors[clientId]);
@@ -29438,7 +29438,7 @@ function drawCursor(msg, clientId) {
 	// Prune out rects from elements with display block (fills the whole width of the screen)
 	var rects = [];
 	for (var i = 0; i&lt;allRects.length; i++) {
-		if (allRects[i].width !== window.innerWidth) rects.push(allRects[i]);        	
+		if (allRects[i].width !== window.innerWidth) rects.push(allRects[i]);
 	}
 
 	// If there's no rects in the range we create one that can be used for the cursor.
@@ -29486,7 +29486,7 @@ function drawCursor(msg, clientId) {
 function addClient(clientId) {
 
 	// If the client is this one, return.
-	if (clientId == webstrate.clientId) return; 
+	if (clientId == webstrate.clientId) return;
 
 	// Get user's color
 	var color = ClientManager.getClientColor(clientId);
@@ -29860,7 +29860,7 @@ const changeSlide = (step) => {
   const visible = exports.presentationVisible();
   const transient = exports.presentationVisible(true);
   const isFocusOnSlideNotes = !!document.activeElement.closest('.slide-notes');
-  
+
   if ((!visible && !transient) || isFocusOnSlideNotes) return;
 
   const currentSlide = exports.currentSlide(transient);
@@ -30191,12 +30191,12 @@ importLib([
 
 				let element = document.importNode(template.content, true);
 				injectNavigationKeyEvents(element);
-				
+
 				// append element to transient because events will be triggered on every client, which can
 				// cause an element to be added multiple times instead of just once
 				let transient = document.createElement("transient");
 				transient.appendChild(element);
-				
+
 				renderTo.appendChild(transient);
 			} else if (eventType === "exit") {
 				renderTo.innerHTML = "";
@@ -30218,7 +30218,7 @@ importLib([
 			const transcludes = slide.querySelectorAll("slide-content");
 			const id = slide.getAttribute("id");
 			const scriptId = `${id}-script`;
-			
+
 			const skipTranscludes = !transcludes.length;
 			const skipScripts = !document.querySelector(`#${scriptId}`);
 
@@ -30903,7 +30903,7 @@ html #snackbar .presentation-button i:after {
 	#sections .section > .paragraph > .slide.slide-hidden {
 		outline: none;
 	}
-	
+
 	#sections .section > .paragraph > .slide table thead {
 		display: table-row-group;
 	}
@@ -30917,18 +30917,18 @@ const muteVideo = (video) => {
 // observe the document for added video elements with muted attribute set or
 // muted attribute set to true
 let observer = new MutationObserver((mutations) => {
-	
+
 	mutations.forEach((mutation) => {
-		
+
 		Array.prototype.forEach.call(mutation.addedNodes, (node) => {
-			
+
 			// only process element nodes
 			if (node.nodeType !== Node.ELEMENT_NODE) return;
-			
+
 			if (node.matches(mutedVideoSelector)) {
 				muteVideo(node);
 			}
-			
+
 			const mutedVideos = node.querySelectorAll(mutedVideoSelector);
 			Array.prototype.forEach.call(mutedVideos, muteVideo);
 		});
@@ -30979,12 +30979,12 @@ liveSelector.added((paragraph) => {
   const liveAttribute = content.liveAttribute("class");
   liveAttribute.changed(() => {
     if (content.classList.contains("slide")) {
-      
+
       // add default slide template
       if (!content.hasAttribute("slide-template")) {
         content.setAttribute("slide-template", "default");
       }
-      
+
       PresentationConfig.updateSlideTemplates(paragraph);
     } else {
       const select = header.querySelector('select.slide-template-input');
@@ -32338,12 +32338,12 @@ html .paragraph.output:not(.collapsed):not(.fullscreen):not([transient-fullscree
 			optionsPre.innerText = JSON.stringify(options);
 			plotDiv.appendChild(optionsPre);
 		}
-		
+
 		// Now we'll output the div
 		let newOutput = output.bind(this);
 		newOutput(plotDiv);
 	}
-	
+
 	// We listen for .plotly-plot being added
 	document.liveQuerySelectorAll(".plotly-plot").added((plotDiv) => {
 		// When a plot is added extract the data from the pres
@@ -32373,7 +32373,7 @@ html .paragraph.output:not(.collapsed):not(.fullscreen):not([transient-fullscree
 
 	vm.addToGlobalContext({
 		plot
-	});	
+	});
 });</PRE></DIV><DIV class="paragraph body-paragraph" data-id="8tRYpCkh" name="Examples" __wid="cw8LSc4V"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="true" __wid="cvVMxik5"><H2 __wid="GVhQBD5z">
 	Examples:
 </H2></DIV></DIV><DIV class="paragraph code-paragraph" data-id="JG7HKGia" name="Line and scattor plot" last-execution-state="success" __wid="6tS7r7vq"><PRE data-type="content" type="text/javascript" __wid="AYmV8JeU">var trace1 = {
@@ -32459,7 +32459,7 @@ plot(data, layout, {scrollZoom: true});</PRE></DIV></DIV><DIV class="section sec
 		"folder": "packages/KX9BMP3y-Vega_Lite_Plotting"
 	}
 }</PRE></DIV><DIV class="paragraph body-paragraph locked collapsed" data-id="qDDJtgei" name="Assets" style __wid="AdWPGFPg"><DIV data-type="content" type="text/html" codemirror="true" contenteditable="false" class="writing" __wid="xgqyZ4qp"><A href="vega.js" target="_blank" __wid="DvaeG4vP">vega.js</A><DIV __wid="mQz6LPbV"><A href="vega-lite.js" target="_blank" __wid="Y4WGVcWu">vega-lite.js</A><BR __wid="McZk3PnZ"/><A href="vega-embed.js" target="_blank" style="font-family: var(--font-secondary); font-size: 1rem; background-color: var(--color-primary-shade-2);" __wid="hQaC3ntp">vega-embed.js</A><BR __wid="rs6VuAfX"/><A href="seattle-weather.csv" target="_blank" style="font-family: var(--font-secondary); font-size: 1rem; background-color: var(--color-primary-shade-2);" __wid="j52ued5T">seattle-weather.csv</A></DIV></DIV></DIV><DIV class="paragraph code-paragraph collapsed" data-id="wpqsPzzf" name="Vega code" last-execution-state="success" run-on-load="true" __wid="PWMHE646"><PRE data-type="content" type="text/javascript" __wid="6KMdqhTr">importLib(["vega.js", "vega-lite.js", "vega-embed.js"]).then(() => {
-	
+
 	// vplot renders a static vega plot where the spec is stored with the plot
 	function vplot(spec, selector) {
 		// Create the div that will contain the plot
@@ -32507,7 +32507,7 @@ plot(data, layout, {scrollZoom: true});</PRE></DIV></DIV><DIV class="section sec
 		} else {
 			// Else just use output
 			let outputBound = output.bind(this);
-			outputBound(vegaDiv);	
+			outputBound(vegaDiv);
 		}
 		vegaDiv.classList.add("vegalive");
 		const specId = spec;
@@ -32536,14 +32536,14 @@ plot(data, layout, {scrollZoom: true});</PRE></DIV></DIV><DIV class="section sec
 		specNode.webstrate.on("deleteText*", function(position, value) {
   		vegaEmbed(vegaView, require(specId));
 		});
-	}); 
+	});
 
 	const vm = Codestrate.VirtualMachines.get("text/javascript");
 
 	vm.addToGlobalContext({
 		vplot,
 		vplotlive
-	});	
+	});
 });</PRE></DIV><DIV class="paragraph style-paragraph collapsed" data-id="GRmzwAuY" draggable="false" style name="Vega style" __wid="AwpAC2mQ"><STYLE data-type="content" type="text/css" codemirror="true" __wid="jsAnznZt">.vega canvas, .vegalive canvas {
 	background-color: white;
 }
@@ -32619,7 +32619,7 @@ vplotlive("#seattle-precipitation");</PRE></DIV></DIV><DIV class="section sectio
 		functionPre.innerText = JSON.stringify(f);
 		fplotDiv.appendChild(functionPre);
 	}
-	
+
 	document.liveQuerySelectorAll(".fplot").added((fplotDiv) => {
 		if (fplotDiv.querySelector("transient")) return;
 		const f = JSON.parse(fplotDiv.querySelector(".function").innerText);
@@ -32636,7 +32636,7 @@ vplotlive("#seattle-precipitation");</PRE></DIV></DIV><DIV class="section sectio
 
 	vm.addToGlobalContext({
 		fplot
-	});	
+	});
 });</PRE></DIV><DIV class="paragraph style-paragraph collapsed" data-id="bAuFXPkk" name="Function plot style" __wid="m7CbsqHF"><STYLE data-type="content" type="text/css" codemirror="true" __wid="LkkVfVZc">.fplot {
 	padding-top: 4px;
 }
@@ -32696,7 +32696,7 @@ vplotlive("#seattle-precipitation");</PRE></DIV></DIV><DIV class="section sectio
 		"1.0": "Initital version",
 		"1.0.1": "Added missing JavaScript dependency to pdf.worker.js.",
 		"1.1": "A pdf body paragraph can be added through the toolbar, which will render a dropped pdf inside of it.",
-		"1.1.1": "Fixed pdf rendering when multiple paragraphs with pdfs are in a document and one document is scrolled. This issue was caused because all pdf paragraphs shared the same pdf renderer.",		
+		"1.1.1": "Fixed pdf rendering when multiple paragraphs with pdfs are in a document and one document is scrolled. This issue was caused because all pdf paragraphs shared the same pdf renderer.",
 		"1.1.2": "Text highlight button is added only once.",
 		"1.2": "Added debounce on scroll and resize events to make scrolling and resizing not jerk.",
 		"1.2.1": "Displaying/rendering pdf also in transient-fullscreen=\"false\" mode.",
@@ -32763,8 +32763,8 @@ exports.AnnotationLayer = function(svg, strokeWidth) {
 		this.path.setAttribute("d", generatePath(this.points));
 	});
 
-	svg.parentElement.addEventListener("touchend", function(e) { 
-		this.path = null;  
+	svg.parentElement.addEventListener("touchend", function(e) {
+		this.path = null;
 	});
 
 	function getCoords(elem) {
@@ -32859,9 +32859,9 @@ exports.AnnotationLayer = function(svg, strokeWidth) {
 
 	function showHighlightButton() {
 		if (hideTimer !== null) {
-			clearTimeout(hideTimer);	
+			clearTimeout(hideTimer);
 		}
-		highlightButton.classList.remove("hidden");	
+		highlightButton.classList.remove("hidden");
 	}
 
 	document.addEventListener("selectionchange", (e) => {
@@ -32908,7 +32908,7 @@ exports.AnnotationLayer = function(svg, strokeWidth) {
 		var offsetTop = scrollTop - pageTop;
 		console.log(pageTop, scrollTop, offsetTop);
 		for (var i = 0; i&lt;rects.length; i++) {
-			var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");	
+			var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
 			rect.setAttribute("x", rects[i].left * scale);
 			rect.setAttribute("y", (rects[i].top + offsetTop) * scale);
 			rect.setAttribute("width", rects[i].width * scale);
@@ -33038,13 +33038,13 @@ exports.processFileDrop = function (event, callback) {
 		callback("Just one file!");
 		return;
 	} else if (event.dataTransfer.files.length === 0) {
-		callback("That's not a file?");  
+		callback("That's not a file?");
 		return;
 	} else if (event.dataTransfer.files[0].type !== "application/pdf") {
 		callback("That's not a pdf!");
 		return;
 	}
-	
+
 	let file = event.dataTransfer.files[0];
 	if (file.size > 104857600) {
 		callback("Max 100MB!");
@@ -33244,7 +33244,7 @@ exports.processFileDrop = function (event, callback) {
           let canvas = pages[i].querySelector("canvas");
           if (canvas) canvas.remove();
         }
-				
+
 				// render visible pages on next tick
 				setTimeout(renderVisiblePages, 0);
         oldWindowWidth = this.containerWidth;
@@ -33641,17 +33641,17 @@ exports.getOutputScale = getOutputScale;</PRE></DIV><DIV class="paragraph style-
   };
 }</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Point" data-id="Kesc5XiM" __wid="Hqyu2v3D"><PRE data-type="content" type="text/javascript" class="transformer" __wid="SgqT8ycc">/**
  * A simple point class.
- * 
+ *
  * @class Point
  */
 class Point {
 
   /**
    * Creates an instance of Point.
-   * 
+   *
    * @param {any} x The x value.
    * @param {any} y The y value.
-   * 
+   *
    * @memberOf Point
    */
   constructor(x, y) {
@@ -33661,9 +33661,9 @@ class Point {
 
   /**
    * Returns the string representation of the point.
-   * 
+   *
    * @returns The string representation of the point.
-   * 
+   *
    * @memberOf Point
    */
   toString() {
@@ -33672,7 +33672,7 @@ class Point {
 }</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Matrix" data-id="Kny7FsRx" __wid="RjdgW4nE"><PRE data-type="content" type="text/javascript" class="transformer" __wid="WVcfSHLj">/**
  * The matrix class provides convenient functions for affine transformations, e.g., translate, rotate,
  * and scale. It also offers functions like matrix multiplication or creating an inverse matrix.
- * 
+ *
  * @class Matrix
  */
 class Matrix {
@@ -33681,13 +33681,13 @@ class Matrix {
    * Creates an instance of Matrix. The matrix needs to be a two-dimensional array. The first index will
    * be rows and the second index will be columns. The array needs to be in a n x m format. For example,
    * an array [[1, 2, 3], [4, 5, 6], [7, 8 ,9]] will result in the following matrix:
-   * 
+   *
    * 1   2   3
    * 4   5   6
    * 7   8   9
-   * 
+   *
    * @param {any} M A two-dimensional array.
-   * 
+   *
    * @memberOf Matrix
    */
   constructor(M) {
@@ -33701,7 +33701,7 @@ class Matrix {
   /**
    * Sets the matrix. The matrix needs to be a two-dimensional array. The first index will be rows and
    * the second index will be columns. The array needs to be in a n x m format.
-   * 
+   *
    * @memberOf Matrix
    */
   set matrix(matrix) {
@@ -33712,7 +33712,7 @@ class Matrix {
 
   /**
    * Returns the matrix as a two-dimensional array.
-   * 
+   *
    * @memberOf Matrix
    */
   get matrix() {
@@ -33721,9 +33721,9 @@ class Matrix {
 
   /**
    * Returns number of rows of matrix.
-   * 
+   *
    * @readonly
-   * 
+   *
    * @memberOf Matrix
    */
   get rows() {
@@ -33732,9 +33732,9 @@ class Matrix {
 
   /**
    * Returns number of columns of matrix.
-   * 
+   *
    * @readonly
-   * 
+   *
    * @memberOf Matrix
    */
   get columns() {
@@ -33780,10 +33780,10 @@ class Matrix {
 
   /**
    * Translates the matrix by tx and ty.
-   * 
+   *
    * @param {Number} tx The translation value in x.
    * @param {Number} ty The translation value in y.
-   * 
+   *
    * @memberOf Matrix
    */
   translate(tx, ty, truncate = true) {
@@ -33798,9 +33798,9 @@ class Matrix {
 
   /**
    * Rotates the matrix by angle. The rotation value has to be in degrees.
-   * 
+   *
    * @param {Number} angle The rotation value in degrees.
-   * 
+   *
    * @memberOf Matrix
    */
   rotate(angle, truncate = true) {
@@ -33819,10 +33819,10 @@ class Matrix {
 
   /**
    * Scales the matrix by sx and sy.
-   * 
+   *
    * @param {Number} sx The scale value in x.
    * @param {Number} sy The scale value in y.
-   * 
+   *
    * @memberOf Matrix
    */
   scale(sx, sy, truncate = true) {
@@ -33837,10 +33837,10 @@ class Matrix {
 
   /**
    * Skwes the matrix in degX and degY.
-   * 
+   *
    * @param {Number} degX The skew value in x in degrees.
    * @param {Number} degY The skew value in y in degrees.
-   * 
+   *
    * @memberOf Matrix
    */
   skew(degX, degY, truncate = true) {
@@ -33862,10 +33862,10 @@ class Matrix {
    * Multiplies a given matrix with this matrix and returns the result as new matrix instance. In order
    * to perform the matrix multiplication, rows of matrix M1 need to match columns of matrix M2 as well
    * as columns of matrix M1 need to match rows of matrix M2.
-   * 
+   *
    * @param {any} M The matrix used to multiply with this matrix.
    * @returns The multipied matrix.
-   * 
+   *
    * @memberOf Matrix
    */
   multiply(M, truncate = true) {
@@ -33894,9 +33894,9 @@ class Matrix {
 
   /**
    * Multiplies this matrix by the given matrix and replaces this matrix by the resulting matrix.
-   * 
+   *
    * @param {any} The matrix used to multiply with this matrix.
-   * 
+   *
    * @memberOf Matrix
    */
   multiplyBy(M) {
@@ -33907,9 +33907,9 @@ class Matrix {
 
   /**
    * Creates a copy of the matrix.
-   * 
+   *
    * @returns The copy of this matrix.
-   * 
+   *
    * @memberOf Matrix
    */
   copy() {
@@ -33920,11 +33920,11 @@ class Matrix {
 
   /**
    * Returns the inverse matrix of this matrix.
-   * 
+   *
    * http://blog.acipo.com/matrix-inversion-in-javascript/
-   * 
+   *
    * @readonly
-   * 
+   *
    * @memberOf Matrix
    */
   get inverse() {
@@ -34049,9 +34049,9 @@ class Matrix {
   /**
    * Converts the matrix to a CSS matrix transform. It respects whether the matrix should be a
    * CSS matrix() or CSS matrix3d().
-   * 
+   *
    * @returns The CSS transform.
-   * 
+   *
    * @memberOf Matrix
    */
   toCss(fixed = true) {
@@ -34106,10 +34106,10 @@ class Matrix {
 
   /**
    * Returns true if matrix M equals to this matrix.
-   * 
+   *
    * @param {any} M A matrix to compare to.
    * @returns True if this matrix and matrix M are equal.
-   * 
+   *
    * @memberOf Matrix
    */
   equals(M) {
@@ -34118,12 +34118,12 @@ class Matrix {
 
   /**
    * Returns true if both matrix have the same matrix values, false otherwise.
-   * 
+   *
    * @static
    * @param {any} M1 Matrix 1.
    * @param {any} M2 Matrix 2.
    * @returns True if matrix M1 and M2 are equal.
-   * 
+   *
    * @memberOf Matrix
    */
   static equals(M1, M2) {
@@ -34132,11 +34132,11 @@ class Matrix {
 
   /**
    * Creates an n x n identity matrix.
-   * 
+   *
    * @static
    * @param {any} n The number of rows and columns to create this n x n identity matrix.
    * @returns The identity matrix.
-   * 
+   *
    * @memberOf Matrix
    */
   static identity(n) {
@@ -34155,11 +34155,11 @@ class Matrix {
 
   /**
    * Creates a matrix from a DOM element (e.g., a HTMLElement or a SVGElement).
-   * 
+   *
    * @static
    * @param {any} element A DOM element from which the matrix is created from.
    * @returns The matrix.
-   * 
+   *
    * @memberOf Matrix
    */
   static from(element) {
@@ -34232,10 +34232,10 @@ class Matrix {
   }
 
   /**
-   * Returns the matrix in a human readable format. 
-   * 
+   * Returns the matrix in a human readable format.
+   *
    * @returns The matrix in string format.
-   * 
+   *
    * @memberOf Matrix
    */
   toString() {
@@ -34243,14 +34243,14 @@ class Matrix {
   }
 }</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="Transform" data-id="quFaQdBQ" __wid="j4Mz8zjQ"><PRE data-type="content" type="text/javascript" class="transformer" __wid="F4DHKeBq">/**
  * The base class for a transforms.
- * 
+ *
  * @class Transform
  */
 class Transform {
 
   /**
    * Creates an instance of Transform. It will create an instance with a default identity matrix.
-   * 
+   *
    * @memberOf Transform
    */
   constructor() {
@@ -34264,9 +34264,9 @@ class Transform {
 
   /**
    * Applies this transform to the matrix given as parameter.
-   * 
+   *
    * @param {any} matrix The matrix to which this transform will be applied.
-   * 
+   *
    * @memberOf Transform
    */
   apply(matrix) {
@@ -34280,9 +34280,9 @@ class Transform {
 
   /**
    * Unapplies this transformation from the matrix given as paramter.
-   * 
+   *
    * @param {any} matrix The matrix from which this transform will be unapplied.
-   * 
+   *
    * @memberOf Transform
    */
   unapply(matrix) {
@@ -34310,7 +34310,7 @@ class Transform {
   }
 }</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="TranslateTransform" data-id="vvdD8jr8" __wid="hzaNq3Sf"><PRE data-type="content" type="text/javascript" class="transformer" __wid="wQn9zmGQ">/**
  * The translate transform.
- * 
+ *
  * @class TranslateTransform
  * @extends {Transform}
  */
@@ -34318,10 +34318,10 @@ class TranslateTransform extends Transform {
 
   /**
    * Creates an instance of TranslateTransform. It will translate a matrix by tx and ty.
-   * 
+   *
    * @param {any} tx The translate value in x.
    * @param {any} ty The translate value in y.
-   * 
+   *
    * @memberOf TranslateTransform
    */
   constructor(x = 0, y = 0) {
@@ -34361,7 +34361,7 @@ class TranslateTransform extends Transform {
 
   /**
    * Reset translate transform.
-   * 
+   *
    * @memberOf TranslateTransform
    */
   reset() {
@@ -34380,7 +34380,7 @@ class TranslateTransform extends Transform {
   }
 }</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="RotateTransform" data-id="McadRmZp" __wid="MxAv9k43"><PRE data-type="content" type="text/javascript" class="transformer" __wid="kuMzg7uP">/**
  * The rotate transform.
- * 
+ *
  * @class RotateTransform
  * @extends {Transform}
  */
@@ -34388,9 +34388,9 @@ class RotateTransform extends Transform {
 
   /**
    * Creates an instance of RotateTransform. It will rotate a matrix by an angle [in degrees].
-   * 
+   *
    * @param {any} deg The rotate value in degrees.
-   * 
+   *
    * @memberOf RotateTransform
    */
   constructor(angle = 0) {
@@ -34442,7 +34442,7 @@ class RotateTransform extends Transform {
 
   /**
    * Reset rotate transform.
-   * 
+   *
    * @memberOf RotateTransform
    */
   reset() {
@@ -34461,7 +34461,7 @@ class RotateTransform extends Transform {
   }
 }</PRE></DIV><DIV class="paragraph code-paragraph collapsed" name="ScaleTransform" data-id="GfrFKqKY" __wid="FkvZ77Wd"><PRE data-type="content" type="text/javascript" class="transformer" __wid="au9Zs9Tq">/**
  * The scale transform.
- * 
+ *
  * @class ScaleTransform
  * @extends {Transform}
  */
@@ -34469,10 +34469,10 @@ class ScaleTransform extends Transform {
 
   /**
    * Creates an instance of ScaleTransform. It will scale a matrix by x and y.
-   * 
+   *
    * @param {any} x The scale factor in x.
    * @param {any} y The scale factor in y.
-   * 
+   *
    * @memberOf ScaleTransform
    */
   constructor(x = 1.0, y = 1.0) {
@@ -34515,7 +34515,7 @@ class ScaleTransform extends Transform {
 
   /**
    * Reset scale transform.
-   * 
+   *
    * @memberOf ScaleTransform
    */
   reset() {
@@ -34557,9 +34557,9 @@ class ScaleTransform extends Transform {
 
   /**
    * Applies this transform to the matrix given as parameter.
-   * 
+   *
    * @param {any} matrix The matrix to which this transform will be applied.
-   * 
+   *
    * @memberOf TransformOrigin
    */
   apply(matrix) {
@@ -34580,9 +34580,9 @@ class ScaleTransform extends Transform {
 
   /**
    * Unapplies this transformation from the matrix given as paramter.
-   * 
+   *
    * @param {any} matrix The matrix from which this transform will be unapplied.
-   * 
+   *
    * @memberOf TransformOrigin
    */
   unapply(matrix) {
@@ -34614,7 +34614,7 @@ class ScaleTransform extends Transform {
 
   /**
    * Reset transform origin.
-   * 
+   *
    * @memberOf TransformOrigin
    */
   reset() {
@@ -34637,7 +34637,7 @@ class ScaleTransform extends Transform {
  * added transform in the exact order in which they have been added to the transform group. The unapply
  * function will unapply all transform in the reverse order in which they have been added to the
  * transform group.
- * 
+ *
  * @class TransformGroup
  * @extends {Transform}
  */
@@ -34645,7 +34645,7 @@ class TransformGroup extends Transform {
 
   /**
    * Creates an instance of TransformGroup.
-   * 
+   *
    * @memberOf TransformGroup
    */
   constructor() {
@@ -34658,12 +34658,12 @@ class TransformGroup extends Transform {
    * Add a transform (e.g., TranslateTransform, RotateTransform, or ScaleTransform) to the transform
    * group. All transforms will be applied in the order they were added to the transform group. If a
    * transform group is unapplied, it will unapply all transforms in reverse order.
-   * 
+   *
    * @param {Transform} transform A transform of type Transform (e.g., TranslateTransform, RotateTransform,
    * or ScaleTransform). Eventually, a TransformGroup can also be added.
-   * 
+   *
    * @throws {Error} Throws an error if transform is not of type Transform.
-   * 
+   *
    * @memberOf TransformGroup
    */
   add(transform, inverse = false) {
@@ -34683,12 +34683,12 @@ class TransformGroup extends Transform {
   /**
    * Remove a transform from this transform group. The transform has to be part of the transform group,
    * otherwise an error will be thrown.
-   * 
+   *
    * @param {Transform} transform
-   * 
+   *
    * @throws {Error} Throws an error if transform is not of type Transform and if transform is not part
    * of transform group.
-   * 
+   *
    * @memberOf TransformGroup
    */
   remove(transform) {
@@ -34711,9 +34711,9 @@ class TransformGroup extends Transform {
   /**
    * Applies all transforms in the order in which they have been added to this transform group. The
    * TransformGroup#apply function is specified in Transform ({@see Transform#apply}).
-   * 
+   *
    * @param {any} matrix The matrix to which transforms are applied.
-   * 
+   *
    * @memberOf TransformGroup
    */
   apply(matrix, type = null) {
@@ -34734,9 +34734,9 @@ class TransformGroup extends Transform {
   /**
    * Unapplies all transforms in reverse order in which they have been added to this transform group. The
    * TransformGroup#unapply function is specified in Transform ({@see Transform#unapply}).
-   * 
+   *
    * @param {any} matrix The matrix from which the transforms are unapplied.
-   * 
+   *
    * @memberOf TransformGroup
    */
   unapply(matrix, type = null) {
@@ -34756,7 +34756,7 @@ class TransformGroup extends Transform {
 
   /**
    * Reset transform group.
-   * 
+   *
    * @memberOf TransformGroup
    */
   reset() {
@@ -34769,9 +34769,9 @@ class TransformGroup extends Transform {
 
   /**
    * Transform group to string.
-   * 
+   *
    * @returns Transform group in string representation.
-   * 
+   *
    * @memberOf TransformGroup
    */
   toString() {
@@ -34799,7 +34799,7 @@ const module = {};
         if (target.transformer) {
 					// check if transform property in style attribute changed
 					let transformer = target.transformer;
-					
+
 					// only update if no update is in progress (update only happens on requestAnimationFrame)
 					// and if current element matrix is different from transformer's current element matrix
 					if (
@@ -34840,18 +34840,18 @@ const module = {};
  * element as constructor parameter and binds itself to this element. The transform stack allows push
  * and pop of transforms. A transform is immediately applied on the element and poping will immediately
  * unapply the transform from the element.
- * 
+ *
  * @class Transformer
  */
 class Transformer {
 
   /**
    * Creates an instance of Transformer. It takes a DOM element as contstructor parameter to which
-   * this transform stack will bind itself. The transform stack will receive the elements current 
+   * this transform stack will bind itself. The transform stack will receive the elements current
    * transform as matrix, which will be used to apply transforms.
-   * 
-   * @param {any} element A DOM element to which transforms will be applied. 
-   * 
+   *
+   * @param {any} element A DOM element to which transforms will be applied.
+   *
    * @memberOf Transformer
    */
   constructor(element, callback, debug = false) {
@@ -34913,9 +34913,9 @@ class Transformer {
 
   /**
    * Get transform matrix from element transform.
-   * 
+   *
    * @returns Element transform matrix.
-   * 
+   *
    * @memberOf Transformer
    */
   getTransformMatrix() {
@@ -34924,7 +34924,7 @@ class Transformer {
 
   /**
    * Refresh transfroms from element transform.
-   * 
+   *
    * @memberOf Transformer
    */
   refreshTransforms() {
@@ -34937,7 +34937,7 @@ class Transformer {
   /**
    * Reapplies all transforms again. This function should be used when any of the transforms in the transform
    * chain changed.
-   * 
+   *
    * @memberOf TransformStack
    */
   reapplyTransforms(updateElementsTransform = true) {
@@ -34963,7 +34963,7 @@ class Transformer {
   /**
    * Merge render transform to main transform and reset
    * render transform on success.
-   * 
+   *
    * @memberOf Transformer
    */
   complete() {
@@ -34975,9 +34975,9 @@ class Transformer {
 
   /**
    * Updates the element's transform matrix.
-   * 
+   *
    * @returns A promise resolved when element updated successfully.
-   * 
+   *
    * @memberOf TransformStack
    */
   updateElement() {
@@ -35016,16 +35016,16 @@ class Transformer {
 
   /**
    * Sets the element's transform also compensating for various vendor prefixes.
-   * 
+   *
    * @param {any} cssTansform The CSS transform.
-   * 
+   *
    * @memberOf TransformStack
    */
   setCssTransform(cssTransform) {
 
     // Stop listening for DOM changes on style element.
     module.disconnectObserver();
-		
+
 		// Make sure the element is positioned absolute and its origin is at point (0, 0, 0).
 		this.element.style.position = "absolute";
 		this.element.style.transformOrigin = "0 0 0";
@@ -35046,9 +35046,9 @@ class Transformer {
 
   /**
    * tbd.
-   * 
+   *
    * @returns
-   * 
+   *
    * @memberOf Transformer
    */
   getTransformHierarchy() {
@@ -35074,7 +35074,7 @@ class Transformer {
 
   /**
    * tbd.
-   * 
+   *
    * @returns
    *
    * @memberOf Transformer
@@ -35093,9 +35093,9 @@ class Transformer {
 
   /**
    * tbd.
-   * 
+   *
    * @param {any} m
-   * 
+   *
    * @memberOf Transformer
    */
   applyToLocalTransform(m, type = null) {
@@ -35108,9 +35108,9 @@ class Transformer {
 
   /**
    * tbd.
-   * 
+   *
    * @param {any} m
-   * 
+   *
    * @memberOf Transformer
    */
   applyToGlobalTransform(m, type = null) {
@@ -35135,9 +35135,9 @@ class Transformer {
 
   /**
    * tbd.
-   * 
+   *
    * @param {any} m
-   * 
+   *
    * @memberOf Transformer
    */
   unapplyFromGlobalTransform(m, type = null) {
@@ -35162,10 +35162,10 @@ class Transformer {
 
   /**
    * Converts a point from global coordinates to local coordinates.
-   * 
+   *
    * @param {Point} point The point with global x- and y-coordinates.
    * @returns The point with local x- and y-coordinates.
-   * 
+   *
    * @memberOf TransformStack
    */
   fromGlobalToLocal(point) {
@@ -35193,14 +35193,14 @@ class Transformer {
 
   /**
    * Converts a point from local coordinates to global coordinates.
-   * 
+   *
    * @param {any} point The point with local x- and y-coordinates.
    * @returns The point with global x- and y-coordinates.
-   * 
+   *
    * @memberOf TransformStack
    */
   fromLocalToGlobal(point) {
-		
+
     if (!(point instanceof Point)) {
       throw new Error(`point needs to be of instance ${Point.name}`);
     }
@@ -35209,7 +35209,7 @@ class Transformer {
     m.translate(point.x, point.y);
 
     this.unapplyFromGlobalTransform(m);
-		
+
 		// adjust x and y according to ancestor element offset
     let ancestor = this.getAncesterElementWithoutTransformer();
     let {
@@ -35224,12 +35224,12 @@ class Transformer {
 
   /**
    * Converts a delta point from global coordinates to local coordinates.
-   * 
+   *
    * @param {any} point The delta point with global x- and y-coordinates.
    * @returns The delta point with local x- and y-coordinates.
-   * 
+   *
    * @memberOf TransformStack
-   * 
+   *
    * @see TransformStack#fromGlobalToLocal
    */
   fromGlobalToLocalDelta(deltaPoint) {
@@ -35260,9 +35260,9 @@ class Transformer {
 
   /**
    * tbd.
-   * 
+   *
    * @readonly
-   * 
+   *
    * @memberOf Transformer
    */
   get localRotation() {
@@ -35273,9 +35273,9 @@ class Transformer {
 
   /**
    * tbd.
-   * 
+   *
    * @readonly
-   * 
+   *
    * @memberOf Transformer
    */
   get globalRotation() {
@@ -35286,9 +35286,9 @@ class Transformer {
 
   /**
    * tbd.
-   * 
+   *
    * @readonly
-   * 
+   *
    * @memberOf Transformer
    */
   get localScale() {
@@ -35299,9 +35299,9 @@ class Transformer {
 
   /**
    * tbd.
-   * 
+   *
    * @readonly
-   * 
+   *
    * @memberOf Transformer
    */
   get globalScale() {
@@ -35312,9 +35312,9 @@ class Transformer {
 
   /**
    * tbd.
-   * 
+   *
    * @readonly
-   * 
+   *
    * @memberOf Transformer
    */
   get globalScaleTest() {
@@ -35360,7 +35360,7 @@ class Transformer {
 
   /**
    * tbd.
-   * 
+   *
    * @memberOf Transformer
    */
   destroy() {
@@ -35784,10 +35784,10 @@ exports.Canvas = class Canvas {
 
       let disposable = this.target.addDisposableEventListener("pointerdown", (e) => this._onPointerDown(e));
       this._disposables.push(disposable);
-      
+
       disposable = this.target.addDisposableEventListener("pointermove", (e) => this._onPointerMove(e));
       this._disposables.push(disposable);
-      
+
       disposable = this.target.addDisposableEventListener("pointerup", (e) => this._onPointerUp(e));
       this._disposables.push(disposable);
 
@@ -35813,12 +35813,12 @@ exports.Canvas = class Canvas {
         this._dispatchTouchEvent(e, this._onPointerDown);
       });
       this._disposables.push(disposable);
-      
+
       disposable = this.target.addDisposableEventListener("touchmove", (e) => {
         this._dispatchTouchEvent(e, this._onPointerMove);
       });
       this._disposables.push(disposable);
-      
+
       disposable = this.target.addDisposableEventListener("touchend", (e) => {
         this._dispatchTouchEvent(e, this._onPointerUp);
       });
@@ -36474,8 +36474,8 @@ svg.drawing-canvas {
 	display: none;
 }
 
-@media only screen 
-	and (min-device-width : 768px) 
+@media only screen
+	and (min-device-width : 768px)
 	and (max-device-width : 1024px)  {
 		#test-canvas > .tool-palette,
 		.canvas > .tool-palette {
@@ -36614,7 +36614,7 @@ document.liveQuerySelectorAll('.drawable').added(enableDrawing);</PRE></DIV><DIV
 		y: p1.y
 	};
 
-	// Transform to line 
+	// Transform to line
 	var coefficient = a1.x * a2.y - a2.x * a1.y;
 	var a = normal.x * c2.x + normal.y * c2.y;
 	var b = (normal.x * c1.x + normal.y * c1.y) / a;
@@ -36878,9 +36878,9 @@ html #snackbar[canvas-tools="true"] .drawing {
     if (canvasObject.transformer) {
       return;
     }
-    
+
     const canvas = canvasObject.closest('.canvas');
-    
+
     if (!canvas) {
       throw new Error(`canvas object transformer only works with Canvas package`);
     }
@@ -37001,7 +37001,7 @@ importLib([
    * @memberOf MarkdownNote
    */
   const makeMarkdownNoteInteractive = (element) => {
-    
+
     // only add marked html container once
     if (element.querySelector('.marked-html')) {
       return;
@@ -41142,7 +41142,6 @@ html .markdown-output .csv-data th {
 
 
 
-	
 
 
 
@@ -41171,54 +41170,55 @@ html .markdown-output .csv-data th {
 
 
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 
 
 
 
 
-	
-	
-	
-	
-	
-	
 
 
 
 
 
 
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	</body></html>
